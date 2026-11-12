@@ -1,0 +1,341 @@
+{
+  "config_sha256": "868b3da6edad0196a9c7d8027829842a1f4b14a88eaff3e037d6aaaf40e8a3f4",
+  "groups": [
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "amplitude_only",
+      "domain": "stress",
+      "with_faults": false,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 0
+      },
+      "all_cases_baseline_passed": false,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.6404202930814373,
+          "minimum": 0.6318942923919662,
+          "maximum": 0.6489462937709084
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.2647758470639299,
+          "minimum": 1.2344686125516542,
+          "maximum": 1.2950830815762058
+        },
+        "complex_nrmse": {
+          "mean": 0.07376155910693719,
+          "minimum": 0.07317390220083048,
+          "maximum": 0.07434921601304388
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 72,
+        "false_negatives": 0,
+        "true_negatives": 1976
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "amplitude_only",
+      "domain": "stress",
+      "with_faults": true,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 0
+      },
+      "all_cases_baseline_passed": false,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.6415362625234575,
+          "minimum": 0.6319724634437975,
+          "maximum": 0.6511000616031176
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.29705933914452,
+          "minimum": 1.2886072706671747,
+          "maximum": 1.3055114076218652
+        },
+        "complex_nrmse": {
+          "mean": 0.07386656106985472,
+          "minimum": 0.07319557902717223,
+          "maximum": 0.0745375431125372
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 10,
+        "false_positives": 73,
+        "false_negatives": 0,
+        "true_negatives": 1965
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "intermediate",
+      "domain": "stress",
+      "with_faults": false,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.32684420265057024,
+          "minimum": 0.32151107407083435,
+          "maximum": 0.33217733123030607
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9984622105889542,
+          "minimum": 1.9669568578943186,
+          "maximum": 2.02996756328359
+        },
+        "complex_nrmse": {
+          "mean": 0.04981156664017361,
+          "minimum": 0.049722107811726576,
+          "maximum": 0.04990102546862065
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 7,
+        "false_negatives": 0,
+        "true_negatives": 2041
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "intermediate",
+      "domain": "stress",
+      "with_faults": true,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.32681671163751713,
+          "minimum": 0.3210461659856517,
+          "maximum": 0.3325872572893826
+        },
+        "active_phase_rmse_deg": {
+          "mean": 2.0092082492378,
+          "minimum": 1.9682889214430936,
+          "maximum": 2.050127577032506
+        },
+        "complex_nrmse": {
+          "mean": 0.04978830974936704,
+          "minimum": 0.04967264216955875,
+          "maximum": 0.049903977329175335
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 10,
+        "false_positives": 7,
+        "false_negatives": 0,
+        "true_negatives": 2031
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": false,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.1536834405317671,
+          "minimum": 0.15145094860936445,
+          "maximum": 0.15591593245416976
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9144993570053792,
+          "minimum": 1.9099771871216285,
+          "maximum": 1.9190215268891297
+        },
+        "complex_nrmse": {
+          "mean": 0.036781129335070634,
+          "minimum": 0.03672096638843887,
+          "maximum": 0.036841292281702395
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 2048
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": true,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.154398494565658,
+          "minimum": 0.1517709988382101,
+          "maximum": 0.15702599029310588
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.918442387763975,
+          "minimum": 1.903961007958687,
+          "maximum": 1.932923767569263
+        },
+        "complex_nrmse": {
+          "mean": 0.0367340568865792,
+          "minimum": 0.03666297519567087,
+          "maximum": 0.03680513857748754
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 10,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 2038
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "phase_only",
+      "domain": "stress",
+      "with_faults": false,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.14590386191649735,
+          "minimum": 0.14429072728685396,
+          "maximum": 0.14751699654614073
+        },
+        "active_phase_rmse_deg": {
+          "mean": 3.1442755123309065,
+          "minimum": 3.1198299544565553,
+          "maximum": 3.1687210702052577
+        },
+        "complex_nrmse": {
+          "mean": 0.055817504929628906,
+          "minimum": 0.05553759074100271,
+          "maximum": 0.05609741911825511
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 2047
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "phase_only",
+      "domain": "stress",
+      "with_faults": true,
+      "denominator": 2,
+      "counts": {
+        "completed": 2,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 2
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.1492493795314221,
+          "minimum": 0.14790881085403518,
+          "maximum": 0.150589948208809
+        },
+        "active_phase_rmse_deg": {
+          "mean": 3.141089865655835,
+          "minimum": 3.126855803594635,
+          "maximum": 3.1553239277170344
+        },
+        "complex_nrmse": {
+          "mean": 0.055655356987099905,
+          "minimum": 0.05532738312175671,
+          "maximum": 0.0559833308524431
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 10,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 2037
+      }
+    }
+  ]
+}

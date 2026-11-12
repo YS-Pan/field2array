@@ -1,0 +1,108 @@
+{
+  "purpose": "Visual explanation only; original frozen K4 data unchanged",
+  "new_scientific_runs": 0,
+  "files": [
+    {
+      "path": "coefficient_agreement.png",
+      "bytes": 237759,
+      "sha256": "e7228e4329a74ca5d2580ceac2d6a75c6ea5ceca9fd89d34059cb6f0563b1113"
+    },
+    {
+      "path": "element_maps.png",
+      "bytes": 211408,
+      "sha256": "7ca83b3bb5d114494ae07567a4968992a98dbed0cce3dcf7cc181aad8c8d9e87"
+    },
+    {
+      "path": "k4-explained.mp4",
+      "bytes": 813051,
+      "sha256": "93ce34ddb68fbce18fc17e04ab02da95d49f1326ebbbbf1ba6e7f66e80e61883"
+    },
+    {
+      "path": "k4-preview.gif",
+      "bytes": 747369,
+      "sha256": "e9f9a7c5b925d7b243c4a208a7eb5d035ae696c230043e58989bfbc3afdc14a3"
+    },
+    {
+      "path": "make_video.py",
+      "bytes": 15209,
+      "sha256": "e333f1528a8bb3584d29ccacfeb49df76c75ac11023721bb1cc1f7e862f77c3f"
+    },
+    {
+      "path": "state_error_comparison.png",
+      "bytes": 236260,
+      "sha256": "122284f6db08ced4704e3cbd3f80ed9a479be15ed397aaab309689a31d9b747c"
+    },
+    {
+      "path": "static_figures.py",
+      "bytes": 19574,
+      "sha256": "08295212857fcd3a03a0d05b34044745790777840a3a574d1ecbbade2a1df9d3"
+    },
+    {
+      "path": "static_manifest.json",
+      "bytes": 16644,
+      "sha256": "9d3c3e93ae4e6a4afe6bde4525f2019909d6b9fa4ae503276f4f92c3ac190e7b"
+    },
+    {
+      "path": "storyboard.png",
+      "bytes": 590558,
+      "sha256": "3ce92496133a130f8e3b281161d2228be8baf24417226766565dae3988f6c40d"
+    },
+    {
+      "path": "verification.json",
+      "bytes": 611,
+      "sha256": "21dda94d00f1211b466b4981e9f00e29b5804f288e5333e1227906a340e21be8"
+    },
+    {
+      "path": "verify_media.py",
+      "bytes": 3446,
+      "sha256": "e419009a5852f45de8362a800c1b8b76d37e942a4931c077fc50c200a2edb8bc"
+    },
+    {
+      "path": "video-all_cases.png",
+      "bytes": 79967,
+      "sha256": "0b8f7cdf24f08ff599310a36ab14162fa5eb4cec62f3cbc449ed688040925dc2"
+    },
+    {
+      "path": "video-boundary.png",
+      "bytes": 81220,
+      "sha256": "227b169b729f35850299918da95a7c032fcf6fca31f1a6a0ee15808ed7f79bcd"
+    },
+    {
+      "path": "video-compare.png",
+      "bytes": 76057,
+      "sha256": "8d1d5f5a5a287ee7bd3e88aa319f2afc8a074960471d55ddaafed36ac1de96b4"
+    },
+    {
+      "path": "video-conclusion.png",
+      "bytes": 102428,
+      "sha256": "ccc57d1b59df7c4a136a8da783be61f7b8dec2b39155bb1eddaaf679f6b3bc78"
+    },
+    {
+      "path": "video-encode.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "video-error.png",
+      "bytes": 67502,
+      "sha256": "594c5d94d0e73a5b7abb83918c479be99d815b3d3d1a7c82f5709afffc9408a5"
+    },
+    {
+      "path": "video-intro.png",
+      "bytes": 105471,
+      "sha256": "81b233bd06486b812c16f9ce57f27285cbcaefaa97ebcedae5ff5f8a56e609a9"
+    },
+    {
+      "path": "video-provenance.json",
+      "bytes": 1973,
+      "sha256": "a44756399478cfb660a752893516bdfe3f86bc9c7af1af07adb93401b9e0efa9"
+    },
+    {
+      "path": "video-truth.png",
+      "bytes": 90546,
+      "sha256": "b6b14e621fe3a25bde38c4384fef04843c0c7be2129831359ba207bad6269e86"
+    }
+  ],
+  "file_count": 20,
+  "bytes": 3497053
+}

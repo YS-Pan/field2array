@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "purpose": "Static explanatory figures from frozen synthetic K4 archives",
+  "new_scientific_runs": 0,
+  "font_files": [
+    "C:/Windows/Fonts/msyh.ttc",
+    "C:/Windows/Fonts/msyhbd.ttc"
+  ],
+  "sources": {
+    "artifacts/runs/k4-research-20261112/confirmation/results.json": {
+      "sha256": "4c1bae0c53280b356702b4515e870cc8f2271bd849314691121fb14686a28935",
+      "bytes": 197958
+    },
+    "artifacts/runs/k4-research-20261112/development/results.json": {
+      "sha256": "76189267c6e49942a80b3b2e4033abed876022a09a20261f34b9c70618f443a4",
+      "bytes": 174093
+    },
+    "artifacts/runs/k4-research-20261112/confirmation/f11700000000_seed71312002_faulted_mild.npz": {
+      "sha256": "b9fd1be5143924b69a789455c76eed4e50f09adebd3d5488032c2cb0508f98b1",
+      "bytes": 2092591
+    },
+    "artifacts/runs/k4-research-20261112/confirmation/f11700000000_seed71312002_faulted_mild.json": {
+      "sha256": "ef302ed69e028171672da89605858384a4158c90f10dd62349ba6cd80a9be884",
+      "bytes": 8292
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_mild.npz": {
+      "sha256": "0b8bdf63e35715ef0485d76c965da0e13837d5c826ab69c9582370819e241eb3",
+      "bytes": 2092614
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_mild.json": {
+      "sha256": "7c38ab168c5ec64af5479610436c9f87b4b3087b7d1625a509f1df050a29c4f0",
+      "bytes": 8268
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_amplitude_only.npz": {
+      "sha256": "022c1999a3e9aef441ee6e1dab63833c70e937d67f5af6f96bc3336c11227727",
+      "bytes": 1979964
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_amplitude_only.json": {
+      "sha256": "b9d0c078cb4fe016a51a50a6fda50ef6bf6884cede350b0caeec638076b06357",
+      "bytes": 9341
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_intermediate.npz": {
+      "sha256": "6dd1fade4cde15e3398e4464c840afa4d0d2ba5a63579f0a75b1ca14b9dea2b4",
+      "bytes": 2093425
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_intermediate.json": {
+      "sha256": "d7005694f8678211a3371de57e5729cafa100159dda40fb1970b948fdb458110",
+      "bytes": 8564
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_phase_only.npz": {
+      "sha256": "62e8dd6dcfb8d9a283017264b697459ccad1be629e6e6838ee85195d43bba1aa",
+      "bytes": 2066763
+    },
+    "artifacts/runs/k4-research-20261112/development/f11700000000_seed61312002_faulted_phase_only.json": {
+      "sha256": "2b30b00f9bdafa2887f08f103e64586bdbc6373a5bf0e87944a9f0f68daa6fbd",
+      "bytes": 8430
+    }
+  },
+  "figures": {
+    "element_maps.png": {
+      "case_ids": [
+        "f11700000000_seed71312002_faulted_mild"
+      ],
+      "alignment": "saved single evaluation-only complex scalar",
+      "panels": {
+        "真值 · 幅度": {
+          "vmin": -7,
+          "vmax": 3,
+          "finite_min": -6.64335342562664,
+          "finite_max": 2.4977555528061144,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "恢复 · 幅度": {
+          "vmin": -7,
+          "vmax": 3,
+          "finite_min": -6.394230706401953,
+          "finite_max": 2.6891729826455384,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "恢复 − 真值 · 幅度": {
+          "vmin": -0.7,
+          "vmax": 0.7,
+          "finite_min": -0.645986503690543,
+          "finite_max": 0.469223784283298,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "真值 · 相位": {
+          "vmin": -20,
+          "vmax": 65,
+          "finite_min": -15.468981591424775,
+          "finite_max": 59.43089879852532,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "恢复 · 相位": {
+          "vmin": -20,
+          "vmax": 65,
+          "finite_min": -16.99314534615428,
+          "finite_max": 57.25044029906046,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "恢复 − 真值 · 相位": {
+          "vmin": -8,
+          "vmax": 8,
+          "finite_min": -6.715326748343798,
+          "finite_max": 7.2553466756034775,
+          "clipped_count": 0,
+          "masked_count": 1
+        }
+      },
+      "mask_rule": "saved amplitude_score_mask and aligned_phase_score_mask; dead cell excluded from displayed amplitude/phase maps",
+      "coordinate_layout": "logical row-major 32x32, actual adjacent rows staggered 5.5 mm",
+      "sha256": "7ca83b3bb5d114494ae07567a4968992a98dbed0cce3dcf7cc181aad8c8d9e87",
+      "pixel_size": [
+        1800,
+        1300
+      ]
+    },
+    "coefficient_agreement.png": {
+      "case_ids": [
+        "f11700000000_seed71312002_faulted_mild"
+      ],
+      "scatter_amplitude_bounds": [
+        -7,
+        3
+      ],
+      "scatter_phase_bounds": [
+        -20,
+        65
+      ],
+      "histograms": {
+        "正常阵元幅度分布": {
+          "normal_count": 1019,
+          "bins": [
+            -3.25,
+            -3.0,
+            -2.75,
+            -2.5,
+            -2.25,
+            -2.0,
+            -1.75,
+            -1.5,
+            -1.25,
+            -1.0,
+            -0.75,
+            -0.5,
+            -0.25,
+            0.0,
+            0.25,
+            0.5,
+            0.75,
+            1.0,
+            1.25,
+            1.5,
+            1.75,
+            2.0,
+            2.25,
+            2.5,
+            2.75,
+            3.0,
+            3.25
+          ],
+          "true_std": 1.4642863595964257,
+          "recovered_std": 1.4458372243164053,
+          "true_range": {
+            "vmin": -3.25,
+            "vmax": 3.25,
+            "finite_min": -2.4979799056263747,
+            "finite_max": 2.4977555528061144,
+            "clipped_count": 0,
+            "masked_count": 0
+          },
+          "recovered_range": {
+            "vmin": -3.25,
+            "vmax": 3.25,
+            "finite_min": -2.714438537261334,
+            "finite_max": 2.6891729826455384,
+            "clipped_count": 0,
+            "masked_count": 0
+          }
+        },
+        "正常阵元相位分布": {
+          "normal_count": 1019,
+          "bins": [
+            -22.0,
+            -20.428571428571427,
+            -18.857142857142858,
+            -17.285714285714285,
+            -15.714285714285715,
+            -14.142857142857142,
+            -12.571428571428571,
+            -11.0,
+            -9.428571428571429,
+            -7.857142857142858,
+            -6.2857142857142865,
+            -4.714285714285715,
+            -3.1428571428571423,
+            -1.571428571428573,
+            0.0,
+            1.5714285714285694,
+            3.1428571428571423,
+            4.714285714285715,
+            6.285714285714285,
+            7.857142857142858,
+            9.428571428571427,
+            11.0,
+            12.57142857142857,
+            14.142857142857139,
+            15.714285714285715,
+            17.285714285714285,
+            18.857142857142854,
+            20.42857142857143,
+            22.0
+          ],
+          "true_std": 5.2120798222925115,
+          "recovered_std": 5.543705976230688,
+          "true_range": {
+            "vmin": -22.0,
+            "vmax": 22.0,
+            "finite_min": -15.468981591424775,
+            "finite_max": 14.82530216476335,
+            "clipped_count": 0,
+            "masked_count": 0
+          },
+          "recovered_range": {
+            "vmin": -22.0,
+            "vmax": 22.0,
+            "finite_min": -16.99314534615428,
+            "finite_max": 15.52425002081673,
+            "clipped_count": 0,
+            "masked_count": 0
+          }
+        }
+      },
+      "normal_count": 1019,
+      "all_injected_ids": [
+        28,
+        80,
+        109,
+        405,
+        1003
+      ],
+      "excluded_dead_id": 28,
+      "clipped_count": 0,
+      "sha256": "e7228e4329a74ca5d2580ceac2d6a75c6ea5ceca9fd89d34059cb6f0563b1113",
+      "pixel_size": [
+        1800,
+        1380
+      ]
+    },
+    "state_error_comparison.png": {
+      "map_case_ids": [
+        "f11700000000_seed61312002_faulted_mild",
+        "f11700000000_seed61312002_faulted_amplitude_only",
+        "f11700000000_seed61312002_faulted_intermediate",
+        "f11700000000_seed61312002_faulted_phase_only"
+      ],
+      "groups": [
+        {
+          "regime": "mild",
+          "case_ids": [
+            "f11700000000_seed61312001_healthy_mild",
+            "f11700000000_seed61312001_faulted_mild",
+            "f11700000000_seed61312002_healthy_mild",
+            "f11700000000_seed61312002_faulted_mild"
+          ],
+          "total": 4,
+          "passed": 4,
+          "independent_roots": 2
+        },
+        {
+          "regime": "amplitude_only",
+          "case_ids": [
+            "f11700000000_seed61312001_healthy_amplitude_only",
+            "f11700000000_seed61312001_faulted_amplitude_only",
+            "f11700000000_seed61312002_healthy_amplitude_only",
+            "f11700000000_seed61312002_faulted_amplitude_only"
+          ],
+          "total": 4,
+          "passed": 0,
+          "independent_roots": 2
+        },
+        {
+          "regime": "intermediate",
+          "case_ids": [
+            "f11700000000_seed61312001_healthy_intermediate",
+            "f11700000000_seed61312001_faulted_intermediate",
+            "f11700000000_seed61312002_healthy_intermediate",
+            "f11700000000_seed61312002_faulted_intermediate"
+          ],
+          "total": 4,
+          "passed": 4,
+          "independent_roots": 2
+        },
+        {
+          "regime": "phase_only",
+          "case_ids": [
+            "f11700000000_seed61312001_healthy_phase_only",
+            "f11700000000_seed61312001_faulted_phase_only",
+            "f11700000000_seed61312002_healthy_phase_only",
+            "f11700000000_seed61312002_faulted_phase_only"
+          ],
+          "total": 4,
+          "passed": 4,
+          "independent_roots": 2
+        }
+      ],
+      "map_ranges": {
+        "mild": {
+          "vmin": -2.6,
+          "vmax": 2.6,
+          "finite_min": -0.47590267866257874,
+          "finite_max": 0.5564310537609117,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "amplitude_only": {
+          "vmin": -2.6,
+          "vmax": 2.6,
+          "finite_min": -2.4941442644268714,
+          "finite_max": 1.9793282838898731,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "intermediate": {
+          "vmin": -2.6,
+          "vmax": 2.6,
+          "finite_min": -1.1697583971808043,
+          "finite_max": 1.0965269325897034,
+          "clipped_count": 0,
+          "masked_count": 1
+        },
+        "phase_only": {
+          "vmin": -2.6,
+          "vmax": 2.6,
+          "finite_min": -0.6692924411810046,
+          "finite_max": 0.7711607648507932,
+          "clipped_count": 0,
+          "masked_count": 1
+        }
+      },
+      "aggregate_metrics": {
+        "mild": {
+          "active_amplitude_rmse_db": {
+            "mean": 0.15404096754871255,
+            "worst": 0.15702599029310588
+          },
+          "active_phase_rmse_deg": {
+            "mean": 1.9164708723846768,
+            "worst": 1.932923767569263
+          },
+          "complex_nrmse": {
+            "mean": 0.03675759311082492,
+            "worst": 0.036841292281702395
+          }
+        },
+        "amplitude_only": {
+          "active_amplitude_rmse_db": {
+            "mean": 0.6409782778024474,
+            "worst": 0.6511000616031176
+          },
+          "active_phase_rmse_deg": {
+            "mean": 1.280917593104225,
+            "worst": 1.3055114076218652
+          },
+          "complex_nrmse": {
+            "mean": 0.07381406008839594,
+            "worst": 0.0745375431125372
+          }
+        },
+        "intermediate": {
+          "active_amplitude_rmse_db": {
+            "mean": 0.3268304571440437,
+            "worst": 0.3325872572893826
+          },
+          "active_phase_rmse_deg": {
+            "mean": 2.0038352299133773,
+            "worst": 2.050127577032506
+          },
+          "complex_nrmse": {
+            "mean": 0.049799938194770334,
+            "worst": 0.049903977329175335
+          }
+        },
+        "phase_only": {
+          "active_amplitude_rmse_db": {
+            "mean": 0.14757662072395972,
+            "worst": 0.150589948208809
+          },
+          "active_phase_rmse_deg": {
+            "mean": 3.142682688993371,
+            "worst": 3.1687210702052577
+          },
+          "complex_nrmse": {
+            "mean": 0.055736430958364405,
+            "worst": 0.05609741911825511
+          }
+        }
+      },
+      "scope": "development only; two independent roots; only mild has confirmation support",
+      "pairing_checked": "exact identical truth, injected fault indices and training unit noise across regimes",
+      "sha256": "122284f6db08ced4704e3cbd3f80ed9a479be15ed397aaab309689a31d9b747c",
+      "pixel_size": [
+        2000,
+        1340
+      ]
+    }
+  },
+  "checks": {
+    "f11700000000_seed71312002_faulted_mild": {
+      "amplitude_scored": 1023,
+      "phase_scored": 1023,
+      "full_complex_scored": 1024,
+      "truth_active_estimate_low": 0,
+      "metrics_recomputed_from_arrays": {
+        "active_amplitude_rmse_db": 0.1570132360634833,
+        "active_phase_rmse_deg": 1.9692742703220905,
+        "complex_nrmse": 0.03759260430279942
+      },
+      "alignment_matches_saved_complex_scalar": true,
+      "logical_row_major_mapping_verified_against_elements_m": true
+    },
+    "f11700000000_seed61312002_faulted_mild": {
+      "amplitude_scored": 1023,
+      "phase_scored": 1023,
+      "full_complex_scored": 1024,
+      "truth_active_estimate_low": 0,
+      "metrics_recomputed_from_arrays": {
+        "active_amplitude_rmse_db": 0.15702599029310588,
+        "active_phase_rmse_deg": 1.903961007958687,
+        "complex_nrmse": 0.03680513857748754
+      },
+      "alignment_matches_saved_complex_scalar": true,
+      "logical_row_major_mapping_verified_against_elements_m": true
+    },
+    "f11700000000_seed61312002_faulted_amplitude_only": {
+      "amplitude_scored": 1023,
+      "phase_scored": 1023,
+      "full_complex_scored": 1024,
+      "truth_active_estimate_low": 0,
+      "metrics_recomputed_from_arrays": {
+        "active_amplitude_rmse_db": 0.6511000616031176,
+        "active_phase_rmse_deg": 1.2886072706671747,
+        "complex_nrmse": 0.0745375431125372
+      },
+      "alignment_matches_saved_complex_scalar": true,
+      "logical_row_major_mapping_verified_against_elements_m": true
+    },
+    "f11700000000_seed61312002_faulted_intermediate": {
+      "amplitude_scored": 1023,
+      "phase_scored": 1023,
+      "full_complex_scored": 1024,
+      "truth_active_estimate_low": 0,
+      "metrics_recomputed_from_arrays": {
+        "active_amplitude_rmse_db": 0.3325872572893826,
+        "active_phase_rmse_deg": 1.9682889214430936,
+        "complex_nrmse": 0.049903977329175335
+      },
+      "alignment_matches_saved_complex_scalar": true,
+      "logical_row_major_mapping_verified_against_elements_m": true
+    },
+    "f11700000000_seed61312002_faulted_phase_only": {
+      "amplitude_scored": 1023,
+      "phase_scored": 1023,
+      "full_complex_scored": 1024,
+      "truth_active_estimate_low": 0,
+      "metrics_recomputed_from_arrays": {
+        "active_amplitude_rmse_db": 0.14790881085403518,
+        "active_phase_rmse_deg": 3.1553239277170344,
+        "complex_nrmse": 0.0559833308524431
+      },
+      "alignment_matches_saved_complex_scalar": true,
+      "logical_row_major_mapping_verified_against_elements_m": true
+    }
+  },
+  "selection_rule": "Maximum aligned full-array complex NRMSE among all 20 completed confirmation cases; explicit paired faulted development seed 61312002 across four registered regimes.",
+  "script": {
+    "path": "artifacts/runs/k4-visuals-20261112/static_figures.py",
+    "sha256": "08295212857fcd3a03a0d05b34044745790777840a3a574d1ecbbade2a1df9d3"
+  },
+  "versions": {
+    "numpy": "2.5.4",
+    "matplotlib": "3.10.9"
+  }
+}

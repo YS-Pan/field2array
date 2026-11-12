@@ -1,0 +1,245 @@
+{
+  "config_sha256": "868b3da6edad0196a9c7d8027829842a1f4b14a88eaff3e037d6aaaf40e8a3f4",
+  "cases": [
+    {
+      "name": "f11700000000_seed61312001_healthy_mild",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_healthy_amplitude_only",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": false,
+      "regime": {
+        "name": "amplitude_only",
+        "amplitude_std_db": 1.0,
+        "phase_std_deg": 0.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_healthy_phase_only",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": false,
+      "regime": {
+        "name": "phase_only",
+        "amplitude_std_db": 0.0,
+        "phase_std_deg": 5.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_healthy_intermediate",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": false,
+      "regime": {
+        "name": "intermediate",
+        "amplitude_std_db": 0.5,
+        "phase_std_deg": 3.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_faulted_mild",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_faulted_amplitude_only",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": true,
+      "regime": {
+        "name": "amplitude_only",
+        "amplitude_std_db": 1.0,
+        "phase_std_deg": 0.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_faulted_phase_only",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": true,
+      "regime": {
+        "name": "phase_only",
+        "amplitude_std_db": 0.0,
+        "phase_std_deg": 5.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312001_faulted_intermediate",
+      "pair_id": "f11700000000_seed61312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312001,
+      "with_faults": true,
+      "regime": {
+        "name": "intermediate",
+        "amplitude_std_db": 0.5,
+        "phase_std_deg": 3.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_healthy_mild",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_healthy_amplitude_only",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": false,
+      "regime": {
+        "name": "amplitude_only",
+        "amplitude_std_db": 1.0,
+        "phase_std_deg": 0.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_healthy_phase_only",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": false,
+      "regime": {
+        "name": "phase_only",
+        "amplitude_std_db": 0.0,
+        "phase_std_deg": 5.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_healthy_intermediate",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": false,
+      "regime": {
+        "name": "intermediate",
+        "amplitude_std_db": 0.5,
+        "phase_std_deg": 3.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_faulted_mild",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_faulted_amplitude_only",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": true,
+      "regime": {
+        "name": "amplitude_only",
+        "amplitude_std_db": 1.0,
+        "phase_std_deg": 0.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_faulted_phase_only",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": true,
+      "regime": {
+        "name": "phase_only",
+        "amplitude_std_db": 0.0,
+        "phase_std_deg": 5.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed61312002_faulted_intermediate",
+      "pair_id": "f11700000000_seed61312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 61312002,
+      "with_faults": true,
+      "regime": {
+        "name": "intermediate",
+        "amplitude_std_db": 0.5,
+        "phase_std_deg": 3.0,
+        "domain": "stress"
+      },
+      "domain": "stress",
+      "status": "pending"
+    }
+  ]
+}

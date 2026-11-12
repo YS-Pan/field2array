@@ -1,0 +1,58 @@
+{
+  "stage": "development",
+  "started_utc": "2026-11-12T06:00:02.398466+00:00",
+  "completed_utc": "2026-11-12T06:00:13.941229+00:00",
+  "config_sha256": "868b3da6edad0196a9c7d8027829842a1f4b14a88eaff3e037d6aaaf40e8a3f4",
+  "source_hashes": {
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\k4_research.py": "5c1511bdfe2182eb7b8bf4c7f5d4f94fc741299be6c1cfb5161f149dce280cd4",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\thesis_coded.py": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\large_error_validation.py": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\inverse.py": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\validation.py": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\diagnostics.py": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\physics.py": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\simulation.py": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\scripts\\run_k4_research.py": "5271188f114d3ab556575c17c98fd10566635c64eb8bd89682e5fcac744b3717"
+  },
+  "operator_inputs": [
+    {
+      "path": "D:\\project\\trifles\\20261027 array reconstruct\\outputs\\large_error_validation_20261028_independent_noise\\operators_11.7GHz.npz",
+      "sha256": "f02f654b7aaedfb13c48fad7012eff33628d8f15220f79d0fb1f78bc3fde6cdc",
+      "frequency_hz": 11700000000.0
+    }
+  ],
+  "operators": [
+    {
+      "path": "D:\\project\\trifles\\20261027 array reconstruct\\outputs\\large_error_validation_20261028_independent_noise\\operators_11.7GHz.npz",
+      "sha256": "f02f654b7aaedfb13c48fad7012eff33628d8f15220f79d0fb1f78bc3fde6cdc",
+      "generated": false,
+      "verification": {
+        "training": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.535797024768222e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        },
+        "validation": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.2645929054414965e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        },
+        "test": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.489279848667131e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        }
+      },
+      "frequency_hz": 11700000000.0
+    }
+  ],
+  "registered_case_count": 16,
+  "completed_case_count": 16,
+  "failed_case_count": 0,
+  "timed_out_case_count": 0,
+  "rejected_case_count": 0,
+  "total_seconds": 11.54303280000022
+}

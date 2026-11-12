@@ -1,0 +1,24 @@
+{
+  "new_scientific_runs": 0,
+  "static_input_hashes_verified": 12,
+  "video_input_hashes_verified": 5,
+  "original_evidence_unchanged": 137,
+  "video_probe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "24/1",
+        "duration": "47.000000",
+        "nb_frames": "1128"
+      }
+    ]
+  },
+  "full_video_decode_passed": true,
+  "all_three_static_figures_visually_inspected": true,
+  "storyboard_and_compare_boundary_frames_inspected": true,
+  "issues": []
+}

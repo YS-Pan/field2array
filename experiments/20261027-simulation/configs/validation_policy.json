@@ -1,0 +1,31 @@
+{
+  "version": "1.0",
+  "registered_on": "2026-10-27",
+  "registered_before_first_simulation_result": true,
+  "scope": "Synthetic scalar equivalent-radiation coefficients; no port excitation claim",
+  "independent_model_limits": {
+    "active_amplitude_rmse_db": 0.5,
+    "active_phase_rmse_deg": 5.0,
+    "complex_nrmse": 0.10,
+    "fault_precision": 0.95,
+    "fault_recall": 0.95,
+    "healthy_false_positive_rate": 0.01
+  },
+  "detection": {
+    "amplitude_deviation_db": 3.0,
+    "phase_deviation_deg": 20.0,
+    "phase_min_relative_amplitude": 0.1
+  },
+  "conditions": [
+    "Known geometry and calibrated coherent complex samples",
+    "Scalar finite-aperture truth tested against point-source inversion",
+    "Regularization selected using independent spatial samples, never coefficient truth",
+    "Common complex gain is unidentifiable and reported separately",
+    "Holdout scenarios/seeds are retained after any algorithm iteration",
+    "Ill-conditioned or badly mismatched cases must be reported as failures or rejected"
+  ],
+  "real_data_gate": {
+    "enabled": false,
+    "reason": "User chose virtual validation first; measurement type and geometry not confirmed"
+  }
+}

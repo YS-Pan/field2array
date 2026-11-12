@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "array-reconstruct"
+version = "0.1.0"
+description = "Simulation-first near-field array diagnostics"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.11", "matplotlib>=3.8"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "setuptools>=68"]
+gpu = ["torch"]
+
+[project.scripts]
+array-reconstruct = "array_reconstruct.simulation_cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+array_reconstruct = ["data/*.csv", "data/*.json"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

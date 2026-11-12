@@ -1,0 +1,143 @@
+{
+  "selection_date": "2026-11-12",
+  "scope": "Reviewed small original K4 results and media; the complete local manifests also list files not distributed in Git.",
+  "file_count": 27,
+  "total_bytes": 2918881,
+  "files": [
+    {
+      "path": "artifacts/runs/k4-research-20261112/confirmation/case_matrix.json",
+      "bytes": 8420,
+      "sha256": "cac195062c2e890c978afdc54216cdfa5270144c3bf3248816aa61bce0e89e72"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/confirmation/group_summary.json",
+      "bytes": 2445,
+      "sha256": "b1a76efdc29a01657ed454333ada4308da45c23e8e3220a70180ffaa324f2767"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/confirmation/policy_snapshot.json",
+      "bytes": 4726,
+      "sha256": "53414dd181b6e6ad2808f86aeb702ceda31e94dd14bd0a0518bd40731b434110"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/confirmation/results.json",
+      "bytes": 197958,
+      "sha256": "4c1bae0c53280b356702b4515e870cc8f2271bd849314691121fb14686a28935"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/confirmation/run_receipt.json",
+      "bytes": 3420,
+      "sha256": "eb1c01474278d09887a262b3f4068df5d952eec0b787eaa5ce2964b850126a32"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/development/case_matrix.json",
+      "bytes": 6902,
+      "sha256": "bcc3d725d269c25eeaeeb12100c09d4144805df1655e8e797b4e907281e2becf"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/development/group_summary.json",
+      "bytes": 9438,
+      "sha256": "e2b1eefcc0772b567ef6ceecea876bedbf2ef45f2c755c62f6b26502d7220d20"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/development/policy_snapshot.json",
+      "bytes": 5149,
+      "sha256": "868b3da6edad0196a9c7d8027829842a1f4b14a88eaff3e037d6aaaf40e8a3f4"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/development/results.json",
+      "bytes": 174093,
+      "sha256": "76189267c6e49942a80b3b2e4033abed876022a09a20261f34b9c70618f443a4"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/development/run_receipt.json",
+      "bytes": 3418,
+      "sha256": "5bdb5a1bbf2a65d5682ce37ddcd9390d0978e8617fe9c776b5838bb476ba54a1"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/generated-operator-verification.json",
+      "bytes": 2009,
+      "sha256": "1c8fd5fa17c81524242a551e7c0d9156fb0103a205ee0c92fb9c077aa2c3b2da"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/k4-results.png",
+      "bytes": 163603,
+      "sha256": "6f2655aa4c7a660bcbe229cfc25edc871254b0b7c23c3cc4fae794364f5140ff"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/legacy-compatibility.json",
+      "bytes": 1894,
+      "sha256": "3712907502924216bac3cc0f61f77c6023334c4eaccf258f671a44f92088c133"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/manifest.json",
+      "bytes": 28126,
+      "sha256": "4b95f868c37f171b6ae3eb9f42af9a975eb016b3c52f417d7ec4b49fedfbe070"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/metrics.csv",
+      "bytes": 5172,
+      "sha256": "2ec9dd347c553188686f1832426f7f396df3e9c76a02d9b17bc6fff4f28f806e"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/source_snapshot/experiments/20261027-simulation/scripts/run_k4_research.py",
+      "bytes": 1287,
+      "sha256": "5271188f114d3ab556575c17c98fd10566635c64eb8bd89682e5fcac744b3717"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/source_snapshot/experiments/20261027-simulation/src/array_reconstruct/k4_research.py",
+      "bytes": 32201,
+      "sha256": "5c1511bdfe2182eb7b8bf4c7f5d4f94fc741299be6c1cfb5161f149dce280cd4"
+    },
+    {
+      "path": "artifacts/runs/k4-research-20261112/verification.json",
+      "bytes": 205,
+      "sha256": "95fe3f4b5a5cf619432a3738633af1e0d6efd2425ca331acc2ff0f024123320e"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/coefficient_agreement.png",
+      "bytes": 237759,
+      "sha256": "e7228e4329a74ca5d2580ceac2d6a75c6ea5ceca9fd89d34059cb6f0563b1113"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/element_maps.png",
+      "bytes": 211408,
+      "sha256": "7ca83b3bb5d114494ae07567a4968992a98dbed0cce3dcf7cc181aad8c8d9e87"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/k4-explained.mp4",
+      "bytes": 813051,
+      "sha256": "93ce34ddb68fbce18fc17e04ab02da95d49f1326ebbbbf1ba6e7f66e80e61883"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/k4-preview.gif",
+      "bytes": 747369,
+      "sha256": "e9f9a7c5b925d7b243c4a208a7eb5d035ae696c230043e58989bfbc3afdc14a3"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/manifest.json",
+      "bytes": 3340,
+      "sha256": "a1bc7d2c1b1761eb58eaaded816ab2a1e6d8569257145e36445742e0a3dc00b4"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/state_error_comparison.png",
+      "bytes": 236260,
+      "sha256": "122284f6db08ced4704e3cbd3f80ed9a479be15ed397aaab309689a31d9b747c"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/static_manifest.json",
+      "bytes": 16644,
+      "sha256": "9d3c3e93ae4e6a4afe6bde4525f2019909d6b9fa4ae503276f4f92c3ac190e7b"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/verification.json",
+      "bytes": 611,
+      "sha256": "21dda94d00f1211b466b4981e9f00e29b5804f288e5333e1227906a340e21be8"
+    },
+    {
+      "path": "artifacts/runs/k4-visuals-20261112/video-provenance.json",
+      "bytes": 1973,
+      "sha256": "a44756399478cfb660a752893516bdfe3f86bc9c7af1af07adb93401b9e0efa9"
+    }
+  ]
+}

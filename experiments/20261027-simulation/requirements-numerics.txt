@@ -1,0 +1,5 @@
+# Versions used for this local validation; memory has its own independent lock.
+numpy==2.2.6
+scipy==1.18.0
+matplotlib==3.10.9
+pytest==9.0.3

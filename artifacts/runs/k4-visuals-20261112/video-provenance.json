@@ -1,0 +1,52 @@
+{
+  "new_scientific_runs": 0,
+  "duration_seconds": 47,
+  "width": 1280,
+  "height": 720,
+  "output_fps": 24,
+  "audio": "none; Chinese captions burned in",
+  "case_selection": "Largest complex NRMSE among faulted independent-confirmation cases",
+  "example_case": "f11700000000_seed71312002_faulted_mild",
+  "development_comparison_seed": 61312002,
+  "alignment": "Saved one-complex-scalar aligned coefficients, exactly as scored",
+  "display": "Logical row/column 32x32 layout (row0 at bottom), not restated physical geometry; animations are visual comparison/case switching, not solver iterations",
+  "ranges": {
+    "amplitude_db": [
+      -8,
+      3
+    ],
+    "phase_deg": [
+      -70,
+      70
+    ],
+    "amplitude_error_db": [
+      -0.8,
+      0.8
+    ],
+    "phase_error_deg": [
+      -8,
+      8
+    ],
+    "development_amplitude_error_db": [
+      -2.5,
+      2.5
+    ]
+  },
+  "underflow_counts": {
+    "truth_amplitude": 1,
+    "recovered_amplitude": 1
+  },
+  "error_clipping": {
+    "amplitude": 0,
+    "phase": 0,
+    "development_mild": 0,
+    "development_amplitude_only": 0
+  },
+  "sources": {
+    "artifacts\\runs\\k4-research-20261112\\confirmation\\results.json": "4c1bae0c53280b356702b4515e870cc8f2271bd849314691121fb14686a28935",
+    "artifacts\\runs\\k4-research-20261112\\development\\results.json": "76189267c6e49942a80b3b2e4033abed876022a09a20261f34b9c70618f443a4",
+    "artifacts\\runs\\k4-research-20261112\\confirmation\\f11700000000_seed71312002_faulted_mild.npz": "b9fd1be5143924b69a789455c76eed4e50f09adebd3d5488032c2cb0508f98b1",
+    "artifacts\\runs\\k4-research-20261112\\development\\f11700000000_seed61312002_faulted_mild.npz": "0b8bdf63e35715ef0485d76c965da0e13837d5c826ab69c9582370819e241eb3",
+    "artifacts\\runs\\k4-research-20261112\\development\\f11700000000_seed61312002_faulted_amplitude_only.npz": "022c1999a3e9aef441ee6e1dab63833c70e937d67f5af6f96bc3336c11227727"
+  }
+}

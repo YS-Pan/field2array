@@ -1,0 +1,3 @@
+interface:
+  display_name: "Agent Teams"
+  short_description: "Choose solo, direct, or layered collaboration for each task"

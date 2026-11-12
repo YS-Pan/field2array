@@ -1,0 +1,305 @@
+{
+  "config_sha256": "53414dd181b6e6ad2808f86aeb702ceda31e94dd14bd0a0518bd40731b434110",
+  "cases": [
+    {
+      "name": "f11700000000_seed71312001_healthy_mild",
+      "pair_id": "f11700000000_seed71312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312001,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312001_faulted_mild",
+      "pair_id": "f11700000000_seed71312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312001,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312002_healthy_mild",
+      "pair_id": "f11700000000_seed71312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312002,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312002_faulted_mild",
+      "pair_id": "f11700000000_seed71312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312002,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312003_healthy_mild",
+      "pair_id": "f11700000000_seed71312003",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312003,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312003_faulted_mild",
+      "pair_id": "f11700000000_seed71312003",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312003,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312004_healthy_mild",
+      "pair_id": "f11700000000_seed71312004",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312004,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312004_faulted_mild",
+      "pair_id": "f11700000000_seed71312004",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312004,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312005_healthy_mild",
+      "pair_id": "f11700000000_seed71312005",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312005,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312005_faulted_mild",
+      "pair_id": "f11700000000_seed71312005",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312005,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312006_healthy_mild",
+      "pair_id": "f11700000000_seed71312006",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312006,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312006_faulted_mild",
+      "pair_id": "f11700000000_seed71312006",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312006,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312007_healthy_mild",
+      "pair_id": "f11700000000_seed71312007",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312007,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312007_faulted_mild",
+      "pair_id": "f11700000000_seed71312007",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312007,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312008_healthy_mild",
+      "pair_id": "f11700000000_seed71312008",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312008,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312008_faulted_mild",
+      "pair_id": "f11700000000_seed71312008",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312008,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312009_healthy_mild",
+      "pair_id": "f11700000000_seed71312009",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312009,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312009_faulted_mild",
+      "pair_id": "f11700000000_seed71312009",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312009,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312010_healthy_mild",
+      "pair_id": "f11700000000_seed71312010",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312010,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    },
+    {
+      "name": "f11700000000_seed71312010_faulted_mild",
+      "pair_id": "f11700000000_seed71312010",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312010,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "pending"
+    }
+  ]
+}

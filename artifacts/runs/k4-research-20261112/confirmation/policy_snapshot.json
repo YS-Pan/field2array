@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "registered_on": "2026-11-12",
+  "synthetic_only": true,
+  "geometry": {
+    "array_side": 32,
+    "pitch_m": 0.011,
+    "row_offset_m": 0.0055,
+    "scan_side": 63,
+    "scan_step_m": 0.00835,
+    "scan_distance_m": 0.06,
+    "frequency_hz": 11700000000.0,
+    "validation_x_offset_m": 0.004175,
+    "test_y_offset_m": -0.0027,
+    "test_z_offset_m": 0.007
+  },
+  "truth": {
+    "source_aperture_wavelength_fraction": 0.1,
+    "quadrature_order": 3,
+    "directionality_power": 0.0,
+    "probe_aperture_m": 0.0,
+    "coupling": "identity",
+    "common_gain": [
+      1.0,
+      0.0
+    ]
+  },
+  "scenario": {
+    "name": "span5_phase5",
+    "amplitude_distribution": "uniform",
+    "amplitude_half_range_db": 2.5,
+    "amplitude_std_db": null,
+    "phase_std_deg": 5.0
+  },
+  "frequencies_hz": [
+    11700000000.0
+  ],
+  "fault_states": [
+    false,
+    true
+  ],
+  "initial_snr_db": 40.0,
+  "alphas": [
+    1e-08,
+    2.1544346900318822e-08,
+    4.641588833612772e-08,
+    1e-07,
+    2.1544346900318822e-07,
+    4.6415888336127725e-07,
+    1e-06,
+    2.1544346900318822e-06,
+    4.641588833612773e-06,
+    1e-05,
+    2.1544346900318823e-05,
+    4.641588833612773e-05,
+    0.0001,
+    0.00021544346900318823,
+    0.00046415888336127773,
+    0.001,
+    0.002154434690031882,
+    0.004641588833612773,
+    0.01,
+    0.021544346900318822,
+    0.046415888336127725,
+    0.1,
+    0.21544346900318823,
+    0.46415888336127725,
+    1.0
+  ],
+  "targets": {
+    "baseline": {
+      "active_amplitude_rmse_db": 0.5,
+      "active_phase_rmse_deg": 5.0,
+      "complex_nrmse": 0.1
+    }
+  },
+  "max_total_seconds": 1800,
+  "max_case_seconds": 120,
+  "phase_mask_ratio": 0.1,
+  "coefficient_gauge": "Evaluation only: one complex scalar minimizes coefficient squared error. Unaligned errors are also reported.",
+  "selection": "Training-only common gain and nominal-centered ridge; the unchanged 25 alpha grid is selected by independent noisy spatial validation. Truth, injected labels and final test are excluded.",
+  "state_stability": "Unknown nonreference per-element state errors are fixed over training, validation and test; reference unchanged. No inter-session gain, phase, base-response drift, geometry or probe uncertainty.",
+  "noise": "Each plane uses uncoded initial clean RMS/100, fixed across the four codes. Proper complex independent state/plane noise; matched latent streams across regimes and healthy/faulted cases.",
+  "seed_policy": "Normal/fault streams use root.spawn(3); receiver noise keys (64001,plane,state); state errors keys (64002,state).spawn(2). Pairing across regimes/health intentional. All replicate roots below are disjoint from historical/development roots.",
+  "domain_assignment": "Preassigned by simulation state-error regime; no truth-based selection, rejection, relabeling or conditional relaxation.",
+  "rejection_rule": "None. Failed, timed-out, unstarted and rejected cases remain in their registered denominator and fail baseline acceptance.",
+  "coverage_requirement": 1.0,
+  "coefficient_acceptance": "Every registered declared-domain case must return successfully and meet all three baseline gates. Fault detection is descriptive and separately scored.",
+  "limitations": [
+    "Scalar equivalent radiating coefficients only; relative gain/phase accuracy.",
+    "11.7 GHz only; one specified i.i.d. normal scatter distribution.",
+    "Stable known geometry, ideal nominal coding, unknown fixed-per-code errors.",
+    "Finite Monte Carlo evidence is not a universal guarantee or 95 percent reliability certification.",
+    "No GPU, real-hardware, session-drift or injected-fault diagnosis certification."
+  ],
+  "stage": "confirmation",
+  "frozen": true,
+  "seeds": [
+    71312001,
+    71312002,
+    71312003,
+    71312004,
+    71312005,
+    71312006,
+    71312007,
+    71312008,
+    71312009,
+    71312010
+  ],
+  "excluded_seeds": [
+    20261029,
+    20261030,
+    20261031,
+    20261101,
+    20261102,
+    20261111,
+    20261112,
+    20261113,
+    61312001,
+    61312002
+  ],
+  "max_cases": 20,
+  "state_error_regimes": [
+    {
+      "name": "mild",
+      "amplitude_std_db": 0.2,
+      "phase_std_deg": 3.0,
+      "domain": "declared"
+    }
+  ],
+  "question": "Independent confirmation of the inherited stable mild K4 first-version domain; frozen before any new scientific result.",
+  "stopping_rule": "Exactly 20 cases unless execution budget is exceeded. No retuning after reading results. Any unmet case means baseline not confirmed for this version; preserve complete denominator. No midpoint promotion from development."
+}

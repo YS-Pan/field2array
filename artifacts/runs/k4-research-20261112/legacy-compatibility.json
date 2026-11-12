@@ -1,0 +1,45 @@
+{
+  "original_numerical_modules": [
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\thesis_coded.py",
+      "sha256": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\large_error_validation.py",
+      "sha256": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\inverse.py",
+      "sha256": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\validation.py",
+      "sha256": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\physics.py",
+      "sha256": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\simulation.py",
+      "sha256": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+      "legacy_equal": true
+    },
+    {
+      "path": "experiments\\20261027-simulation\\src\\array_reconstruct\\diagnostics.py",
+      "sha256": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+      "legacy_equal": true
+    }
+  ],
+  "cache": {
+    "path": "D:\\project\\trifles\\20261027 array reconstruct\\outputs\\large_error_validation_20261028_independent_noise\\operators_11.7GHz.npz",
+    "sha256": "f02f654b7aaedfb13c48fad7012eff33628d8f15220f79d0fb1f78bc3fde6cdc",
+    "bytes": 216964232,
+    "matches_historical_receipt": true
+  }
+}

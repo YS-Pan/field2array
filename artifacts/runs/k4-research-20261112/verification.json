@@ -1,0 +1,9 @@
+{
+  "cases_checked": 36,
+  "development_cases": 16,
+  "confirmation_cases": 20,
+  "independent_scoring": true,
+  "archive_and_policy_hashes": true,
+  "fixed_noise_checked": true,
+  "issues": []
+}

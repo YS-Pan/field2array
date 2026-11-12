@@ -1,0 +1,89 @@
+{
+  "config_sha256": "53414dd181b6e6ad2808f86aeb702ceda31e94dd14bd0a0518bd40731b434110",
+  "groups": [
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": false,
+      "denominator": 10,
+      "counts": {
+        "completed": 10,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 10
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.153536550486959,
+          "minimum": 0.14502203234370462,
+          "maximum": 0.16410690508600057
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9026583825742958,
+          "minimum": 1.8608651829554228,
+          "maximum": 1.9628996616676861
+        },
+        "complex_nrmse": {
+          "mean": 0.03648421416591402,
+          "minimum": 0.035835017243825616,
+          "maximum": 0.03754013225402902
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 0,
+        "true_negatives": 10237
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": true,
+      "denominator": 10,
+      "counts": {
+        "completed": 10,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 10
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.1549467752074674,
+          "minimum": 0.14517107182685116,
+          "maximum": 0.16614417047096447
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9041273095736906,
+          "minimum": 1.8443188361272107,
+          "maximum": 1.9692742703220905
+        },
+        "complex_nrmse": {
+          "mean": 0.0364981965647108,
+          "minimum": 0.035722473876264926,
+          "maximum": 0.03759260430279942
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 50,
+        "false_positives": 3,
+        "false_negatives": 0,
+        "true_negatives": 10187
+      }
+    }
+  ]
+}

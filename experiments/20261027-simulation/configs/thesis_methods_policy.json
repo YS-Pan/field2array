@@ -1,0 +1,164 @@
+{
+  "schema_version": 1,
+  "registered_on": "2026-10-28",
+  "registered_before_confirmation_results": true,
+  "synthetic_only": true,
+  "reference_policy": "configs/large_error_validation_policy.json",
+  "source_pdf_sha256": "417fd98bd9797218c15a09314db463970ed5740a06c6beda8d24e982d6744860",
+  "scope": "Scalar synthetic method experiments inspired by the thesis; no reproduction of its complete dual-polarization apparatus or inference of actual hardware port coefficients.",
+  "geometry": {
+    "array_side": 32,
+    "pitch_m": 0.011,
+    "row_offset_m": 0.0055,
+    "scan_side": 63,
+    "scan_step_m": 0.00835,
+    "scan_distance_m": 0.06,
+    "frequency_hz": 11700000000.0,
+    "validation_x_offset_m": 0.004175,
+    "test_y_offset_m": -0.0027,
+    "test_z_offset_m": 0.007
+  },
+  "truth": {
+    "source_aperture_wavelength_fraction": 0.1,
+    "quadrature_order": 3,
+    "coupling": "identity",
+    "common_gain": [
+      1.0,
+      0.0
+    ]
+  },
+  "scenario": {
+    "name": "span5_phase5",
+    "amplitude_distribution": "uniform",
+    "amplitude_half_range_db": 2.5,
+    "amplitude_std_db": null,
+    "phase_std_deg": 5.0
+  },
+  "confirmation_seeds": [
+    20261111,
+    20261112,
+    20261113
+  ],
+  "fault_states": [
+    false,
+    true
+  ],
+  "faults": "Same five multipliers and seeded location rule as the preceding large-error experiment; labels only enter scoring.",
+  "initial_snr_db": 40.0,
+  "selection": "The unchanged 25-point alpha grid from the reference policy is selected using independent noisy validation only; common gain uses training only. No coefficient truth, fault label, or final test data may select algorithms, controls, parameters, or display limits.",
+  "coefficient_limits": {
+    "active_amplitude_rmse_db": 0.5,
+    "active_phase_rmse_deg": 5.0,
+    "complex_nrmse": 0.1
+  },
+  "aperture": {
+    "thesis_pages": "PDF 101-106 / printed 93-98",
+    "development": "The six existing 11.7GHz span5_phase5 healthy/faulted cases may be used to debug implementation; confirmation uses the new seeds only.",
+    "propagation": "Consistent exp(-i omega t), outgoing exp(+ikR); backpropagation keeps propagating modes only; centered spatial zero padding factor 3.",
+    "cell": "Known staggered geometry; one nonoverlapping 11mm square per element, centered at its physical position; fixed 5x5 Gauss-Legendre quadrature of Fourier-interpolated complex field.",
+    "methods": [
+      "complex region mean with one training-fitted common scale",
+      "complex region mean divided by the region response to a known nominal point-model scan",
+      "mean amplitude and circular mean phase divided by the same-kind nominal regional reference",
+      "nominal-centered point-model ridge"
+    ],
+    "interpretation": "Regional aperture quantities are proxies. Scoring them as coefficients is a diagnostic, not an assertion that an aperture average equals feed amplitude. Preserve raw proxies and nominal references.",
+    "validation": "No ASM parameter tuning. Ridge alpha uses validation. All methods report independent forward test residuals and relative coefficient scores with the existing evaluation gauge. Interpolation adds no observations."
+  },
+  "coded": {
+    "thesis_pages": "PDF 17 / printed 9 literature review; not implemented in thesis chapter 5",
+    "status": "Project extension inspired by known excitation coding in the literature review.",
+    "patterns": {
+      "K1": [
+        "1"
+      ],
+      "K2": [
+        "1",
+        "(-1)^(row+column)"
+      ],
+      "K4": [
+        "1",
+        "(-1)^row",
+        "(-1)^column",
+        "(-1)^(row+column)"
+      ]
+    },
+    "noise": "Each training/validation/test plane uses fixed absolute complex RMS sigma equal to that case's initial uncoded clean plane RMS/100. Each excitation state has independent unit noise. A documented pairing reuses the latent noise between coded and repeated-uncoded alternatives.",
+    "budget_control": "Compare each K-state full scan with K full scans of unchanged excitation, independently noisy and averaged. Report K times training and validation observation counts; no claim of a free measurement gain.",
+    "inversion": "Joint nominal-centered ridge of the same unknown hardware error vector with known ideal diagonal patterns; common gain fitted to all training states only.",
+    "nonideal_control": {
+      "states": "K2 and K4",
+      "extra_amplitude_std_db": 0.2,
+      "extra_phase_std_deg": 3.0,
+      "reference_state_unchanged": true,
+      "fixed_across_measurement_planes": true,
+      "known_to_inversion": false,
+      "provenance": "Explicit sensitivity assumptions, not thesis or user chip specifications."
+    },
+    "conditioning": "Compute singular spectrum of the column-normalized joint matrix. Gram eigendecomposition is allowed only with direct-SVD numerical checks; retain direct SVD for poorly conditioned matrices.",
+    "scoring": "Original uncoded coefficient vector and independent uncoded test field; unchanged amplitude/phase/complex limits and separate injected-fault scores.",
+    "strong_nonideal_control": {
+      "states": "K2 and K4",
+      "extra_amplitude_std_db": 1.0,
+      "extra_phase_std_deg": 5.0,
+      "reference_state_unchanged": true,
+      "fixed_across_measurement_planes": true,
+      "known_to_inversion": false,
+      "pairing": "Use the same latent per-channel state errors as the mild sensitivity, scaled to the specified standard deviations.",
+      "provenance": "Additional explicit stress assumption, not a measured specification of the user chip or thesis hardware."
+    }
+  },
+  "calibration": {
+    "thesis_pages": "PDF 106-107 / printed 98-99, controller bounds from PDF 57 and 89 / printed 49 and 81",
+    "strategies": [
+      "AP once",
+      "A then P then AP, with remeasurement",
+      "AP then AP then AP, with remeasurement"
+    ],
+    "estimator": "Nominal-centered point-model ridge with training-only gain and independent noisy validation.",
+    "control_eligible": "Estimated amplitude at least 0.1 times median estimated amplitude; no injected-fault or coefficient truth used for controls.",
+    "amplitude_control": "Attenuate only estimated eligible channels above their current linear-amplitude mean; no extra attenuation for channels below it. Add the new attenuation to the existing command, quantize and clip.",
+    "phase_control": "Move eligible estimated phases toward their current circular mean, using accumulated wrapped 64-state commands.",
+    "attenuation_step_db": 0.2,
+    "attenuation_range_db": [
+      0.0,
+      25.4
+    ],
+    "phase_step_deg": 5.625,
+    "controller_provenance": "Borrowed F6522 control resolution is a simulation assumption, not a claim about the user's unspecified chip.",
+    "amplitude_to_phase_deg_per_db": [
+      0.0,
+      1.0
+    ],
+    "cross_talk_provenance": "The thesis describes interaction qualitatively; 1 degree per dB is an explicit sensitivity assumption.",
+    "noise": "Initial training and validation plane RMS/100 sets each plane's absolute receiver sigma, fixed across all subsequent attenuation states. Distinct plane/round streams, paired across strategies and cross-talk alternatives; observed SNR is reported per round.",
+    "budget": "AP once has initial and final measurement rounds; three-update strategies have initial plus three rounds. Each round includes a training and validation scan. Final scoring does not select a stopping round.",
+    "evaluation": "Separate normal-channel consistency from reconstruction error. Report all-channel and label-separated metrics, absolute total coefficient power and boresight power versus initial state, coherent efficiency, command saturation and true-fault/normal exclusions. Dead elements remain dead."
+  },
+  "reporting": {
+    "small_replication_count": 3,
+    "scope": "This is method sensitivity evidence, not broad chip reliability or a real-measurement claim.",
+    "visuals": "Shared limits for comparable maps; display saturation may improve legibility if limits and clipped counts are disclosed. Never change numerical source values. Visually inspect final figures."
+  },
+  "agent_configuration": {
+    "requested": {
+      "main": {
+        "model": "gpt-6-astra",
+        "reasoning_effort": "ultra"
+      },
+      "descendants": {
+        "model": "gpt-6.1-sol",
+        "reasoning_effort": "ultra",
+        "fork_turns": "none"
+      }
+    },
+    "actual_independently_verified": null
+  },
+  "revision": {
+    "version": 2,
+    "previous_sha256": "fd83100b28374cb228e741590bdccfe3c2f14959087f813376c2989fd3be16f0",
+    "previous_copy": "outputs/thesis_methods_20261028/policy_v1_before_confirmation.json",
+    "registered_before_confirmation_results": true,
+    "reason": "Add a stronger unknown code-state error sensitivity before any confirmation output; runner explicitly confirmed no confirmation run or output yet. Scientific methods, scoring and primary scenarios are unchanged."
+  }
+}

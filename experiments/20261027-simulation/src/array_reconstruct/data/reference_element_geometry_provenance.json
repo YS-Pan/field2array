@@ -1,0 +1,27 @@
+{
+  "source_archive": "temp/20261027 sources/analysis.zip",
+  "source_entry": "nf_cal/matlab/element_map.csv",
+  "source_entry_raw_bytes_sha256": "d2b0b69a76738556e2d759e3a74fe5080adba357b5a6a5b086680721962dfc01",
+  "export": "metadata/reference_element_geometry.csv",
+  "export_sha256": "d9553b6f0d1eaaa1a2c0228b6b568841abc85de5658a82befbffcb10a327bfa3",
+  "whitelist_columns": [
+    "unit",
+    "row",
+    "col",
+    "x_mm",
+    "y_mm",
+    "link",
+    "chip",
+    "chanH",
+    "chanV"
+  ],
+  "rows": 1024,
+  "row_col_pair_count": 1024,
+  "x_formula_mm": "11*col + 5.5*(row mod 2)",
+  "x_formula_failures": 0,
+  "y_formula_mm": "11*row",
+  "y_formula_failures": 0,
+  "unit_formula": "(31-col)*32+(31-row)",
+  "status": "Reference mapping configuration; physical hardware and measurement unit identity unverified",
+  "measurement_files_opened": false
+}

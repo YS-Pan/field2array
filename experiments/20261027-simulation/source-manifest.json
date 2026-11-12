@@ -1,0 +1,2629 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-10T03:55:49.725248+00:00",
+  "task": "20261110 migration only; no algorithm optimization or new simulation experiment",
+  "source_root": "D:\\project\\trifles\\20261027 array reconstruct",
+  "destination_root": "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation",
+  "source_git": {
+    "repository_detected": false,
+    "observation": "git rev-parse/status/log report not a git repository; no history can be copied."
+  },
+  "source_modified": false,
+  "algorithm_changes": [],
+  "migrated": [
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\pyproject.toml",
+      "source_relative_path": "pyproject.toml",
+      "destination_relative_path": "pyproject.toml",
+      "source_bytes": 536,
+      "destination_bytes": 563,
+      "source_sha256": "65d9f3c0b8a1fe8c5b3da0cda0a81a828007cb8e6d21da31d3b78d619ae98ff7",
+      "destination_sha256": "efc816e9a4daae133eef18285d705ef7e7c2f8be4155bd3b8f95cd80f304ec41",
+      "byte_identical": false,
+      "change_class": "entry/dependency/test-discovery adaptation"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\requirements-numerics.txt",
+      "source_relative_path": "requirements-numerics.txt",
+      "destination_relative_path": "requirements-numerics.txt",
+      "source_bytes": 140,
+      "destination_bytes": 140,
+      "source_sha256": "561a4f4420655045705cce4ed327f59d0424d207625a9de792d4102deaf7e20f",
+      "destination_sha256": "561a4f4420655045705cce4ed327f59d0424d207625a9de792d4102deaf7e20f",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\__init__.py",
+      "source_relative_path": "src/array_reconstruct/__init__.py",
+      "destination_relative_path": "src/array_reconstruct/__init__.py",
+      "source_bytes": 106,
+      "destination_bytes": 106,
+      "source_sha256": "67aaedcad337e7a1ea4c9b8f7e4ad62f790cb1c1100fbe485791499fa0d871fc",
+      "destination_sha256": "67aaedcad337e7a1ea4c9b8f7e4ad62f790cb1c1100fbe485791499fa0d871fc",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\physics.py",
+      "source_relative_path": "src/array_reconstruct/physics.py",
+      "destination_relative_path": "src/array_reconstruct/physics.py",
+      "source_bytes": 15749,
+      "destination_bytes": 15749,
+      "source_sha256": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+      "destination_sha256": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\inverse.py",
+      "source_relative_path": "src/array_reconstruct/inverse.py",
+      "destination_relative_path": "src/array_reconstruct/inverse.py",
+      "source_bytes": 12021,
+      "destination_bytes": 12021,
+      "source_sha256": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+      "destination_sha256": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\diagnostics.py",
+      "source_relative_path": "src/array_reconstruct/diagnostics.py",
+      "destination_relative_path": "src/array_reconstruct/diagnostics.py",
+      "source_bytes": 12893,
+      "destination_bytes": 12893,
+      "source_sha256": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+      "destination_sha256": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\simulation.py",
+      "source_relative_path": "src/array_reconstruct/simulation.py",
+      "destination_relative_path": "src/array_reconstruct/simulation.py",
+      "source_bytes": 27007,
+      "destination_bytes": 27007,
+      "source_sha256": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+      "destination_sha256": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\sparse.py",
+      "source_relative_path": "src/array_reconstruct/sparse.py",
+      "destination_relative_path": "src/array_reconstruct/sparse.py",
+      "source_bytes": 11057,
+      "destination_bytes": 11057,
+      "source_sha256": "baad673dccc85190cdf6a049645d45358f91ead10f363b9f442a0384995d6955",
+      "destination_sha256": "baad673dccc85190cdf6a049645d45358f91ead10f363b9f442a0384995d6955",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\sparse_validation.py",
+      "source_relative_path": "src/array_reconstruct/sparse_validation.py",
+      "destination_relative_path": "src/array_reconstruct/sparse_validation.py",
+      "source_bytes": 4720,
+      "destination_bytes": 4720,
+      "source_sha256": "ba536b78381ec7c732b6983139f620928996fb7ccd57e62f15865df474571212",
+      "destination_sha256": "ba536b78381ec7c732b6983139f620928996fb7ccd57e62f15865df474571212",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\validation.py",
+      "source_relative_path": "src/array_reconstruct/validation.py",
+      "destination_relative_path": "src/array_reconstruct/validation.py",
+      "source_bytes": 18334,
+      "destination_bytes": 18334,
+      "source_sha256": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+      "destination_sha256": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\array_plotting.py",
+      "source_relative_path": "src/array_reconstruct/array_plotting.py",
+      "destination_relative_path": "src/array_reconstruct/array_plotting.py",
+      "source_bytes": 2767,
+      "destination_bytes": 2767,
+      "source_sha256": "29b81539de6db8a0fcf9c74ce17ca2fcea4ad8655ca0a65d48db4d0148574ba6",
+      "destination_sha256": "29b81539de6db8a0fcf9c74ce17ca2fcea4ad8655ca0a65d48db4d0148574ba6",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\large_error_validation.py",
+      "source_relative_path": "src/array_reconstruct/large_error_validation.py",
+      "destination_relative_path": "src/array_reconstruct/large_error_validation.py",
+      "source_bytes": 29847,
+      "destination_bytes": 29847,
+      "source_sha256": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+      "destination_sha256": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\thesis_aperture.py",
+      "source_relative_path": "src/array_reconstruct/thesis_aperture.py",
+      "destination_relative_path": "src/array_reconstruct/thesis_aperture.py",
+      "source_bytes": 27674,
+      "destination_bytes": 27674,
+      "source_sha256": "f5a3d5f00cc6eb7638c849cd2f2fc922f2705b075d388e8eac4b681447fb79f0",
+      "destination_sha256": "f5a3d5f00cc6eb7638c849cd2f2fc922f2705b075d388e8eac4b681447fb79f0",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\thesis_calibration.py",
+      "source_relative_path": "src/array_reconstruct/thesis_calibration.py",
+      "destination_relative_path": "src/array_reconstruct/thesis_calibration.py",
+      "source_bytes": 27696,
+      "destination_bytes": 27696,
+      "source_sha256": "5bc8f61848a9d8f9113a3bd2ff6e0159ed7ec9db5fc9ee2b605ac48d9dab947d",
+      "destination_sha256": "5bc8f61848a9d8f9113a3bd2ff6e0159ed7ec9db5fc9ee2b605ac48d9dab947d",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\thesis_coded.py",
+      "source_relative_path": "src/array_reconstruct/thesis_coded.py",
+      "destination_relative_path": "src/array_reconstruct/thesis_coded.py",
+      "source_bytes": 25366,
+      "destination_bytes": 25366,
+      "source_sha256": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+      "destination_sha256": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_amplitude.py",
+      "source_relative_path": "src/array_reconstruct/joint_amplitude.py",
+      "destination_relative_path": "src/array_reconstruct/joint_amplitude.py",
+      "source_bytes": 14521,
+      "destination_bytes": 14521,
+      "source_sha256": "1768ba5f60db89764eaa311580d0da3fbf9ace0d2e878ff6991a9871118fd8ff",
+      "destination_sha256": "1768ba5f60db89764eaa311580d0da3fbf9ace0d2e878ff6991a9871118fd8ff",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_amplitude_fast.py",
+      "source_relative_path": "src/array_reconstruct/joint_amplitude_fast.py",
+      "destination_relative_path": "src/array_reconstruct/joint_amplitude_fast.py",
+      "source_bytes": 27678,
+      "destination_bytes": 27678,
+      "source_sha256": "70f9757b22715c531793c4172981425306558ecfc69e0229773587532087a92c",
+      "destination_sha256": "70f9757b22715c531793c4172981425306558ecfc69e0229773587532087a92c",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_amplitude_gpu.py",
+      "source_relative_path": "src/array_reconstruct/joint_amplitude_gpu.py",
+      "destination_relative_path": "src/array_reconstruct/joint_amplitude_gpu.py",
+      "source_bytes": 39546,
+      "destination_bytes": 39546,
+      "source_sha256": "8fd0d8f4dbdda356f45d2b96079bb133b1498859fa890a2f789e9fa4aef50caa",
+      "destination_sha256": "8fd0d8f4dbdda356f45d2b96079bb133b1498859fa890a2f789e9fa4aef50caa",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_geometry.py",
+      "source_relative_path": "src/array_reconstruct/joint_geometry.py",
+      "destination_relative_path": "src/array_reconstruct/joint_geometry.py",
+      "source_bytes": 48935,
+      "destination_bytes": 48935,
+      "source_sha256": "b37b040d3735cbcd38f0d0f0299456a19f444c29707dd9f77f8c49da096e3ace",
+      "destination_sha256": "b37b040d3735cbcd38f0d0f0299456a19f444c29707dd9f77f8c49da096e3ace",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_geometry_gpu.py",
+      "source_relative_path": "src/array_reconstruct/joint_geometry_gpu.py",
+      "destination_relative_path": "src/array_reconstruct/joint_geometry_gpu.py",
+      "source_bytes": 26677,
+      "destination_bytes": 26677,
+      "source_sha256": "cf66d638ca609cd2c9cb4095c14a4e108f31565dbdf4a9e58d607de070e1242c",
+      "destination_sha256": "cf66d638ca609cd2c9cb4095c14a4e108f31565dbdf4a9e58d607de070e1242c",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_geometry_gpu_amplitude.py",
+      "source_relative_path": "src/array_reconstruct/joint_geometry_gpu_amplitude.py",
+      "destination_relative_path": "src/array_reconstruct/joint_geometry_gpu_amplitude.py",
+      "source_bytes": 26759,
+      "destination_bytes": 26759,
+      "source_sha256": "422488b9a3760f38f12f2d2b0d936312d19da435f3c4243bc038501022d7a4c2",
+      "destination_sha256": "422488b9a3760f38f12f2d2b0d936312d19da435f3c4243bc038501022d7a4c2",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_geometry_finite_gpu.py",
+      "source_relative_path": "src/array_reconstruct/joint_geometry_finite_gpu.py",
+      "destination_relative_path": "src/array_reconstruct/joint_geometry_finite_gpu.py",
+      "source_bytes": 10790,
+      "destination_bytes": 10790,
+      "source_sha256": "49b5b9e1a43ad92196b968d9ebe4f90fbfeffd496e697e5ea7015712e2a39f9e",
+      "destination_sha256": "49b5b9e1a43ad92196b968d9ebe4f90fbfeffd496e697e5ea7015712e2a39f9e",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_finite_aperture_reference.py",
+      "source_relative_path": "src/array_reconstruct/joint_finite_aperture_reference.py",
+      "destination_relative_path": "src/array_reconstruct/joint_finite_aperture_reference.py",
+      "source_bytes": 16295,
+      "destination_bytes": 16295,
+      "source_sha256": "22937de0a965b8eaf6ef82e03d4b26b251420f4ee4c74ce92299789fde1c7d87",
+      "destination_sha256": "22937de0a965b8eaf6ef82e03d4b26b251420f4ee4c74ce92299789fde1c7d87",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_finite_aperture_vector_reference.py",
+      "source_relative_path": "src/array_reconstruct/joint_finite_aperture_vector_reference.py",
+      "destination_relative_path": "src/array_reconstruct/joint_finite_aperture_vector_reference.py",
+      "source_bytes": 11106,
+      "destination_bytes": 11106,
+      "source_sha256": "97fb6b398a7f43d6a2b6a0265ff22bdac4605136f31d5a37687b41f3e59f1203",
+      "destination_sha256": "97fb6b398a7f43d6a2b6a0265ff22bdac4605136f31d5a37687b41f3e59f1203",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_newton.py",
+      "source_relative_path": "src/array_reconstruct/joint_newton.py",
+      "destination_relative_path": "src/array_reconstruct/joint_newton.py",
+      "source_bytes": 15550,
+      "destination_bytes": 15550,
+      "source_sha256": "d6269139291392a8b786f54116c04cc9db016e6db6ec02053a7fa35e8aa9ad5c",
+      "destination_sha256": "d6269139291392a8b786f54116c04cc9db016e6db6ec02053a7fa35e8aa9ad5c",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_phase_gauge.py",
+      "source_relative_path": "src/array_reconstruct/joint_phase_gauge.py",
+      "destination_relative_path": "src/array_reconstruct/joint_phase_gauge.py",
+      "source_bytes": 10638,
+      "destination_bytes": 10638,
+      "source_sha256": "79279b2592974780f60f2d9b94a49adaf9ce092962b9b65b3f6c7e82051357b9",
+      "destination_sha256": "79279b2592974780f60f2d9b94a49adaf9ce092962b9b65b3f6c7e82051357b9",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_kernel.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_kernel.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_kernel.py",
+      "source_bytes": 11760,
+      "destination_bytes": 11760,
+      "source_sha256": "913adf812759d86c4165a2e180700223146bbcb1586ec1f1e56dc3ade86e2b69",
+      "destination_sha256": "913adf812759d86c4165a2e180700223146bbcb1586ec1f1e56dc3ade86e2b69",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_newton.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_newton.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_newton.py",
+      "source_bytes": 12150,
+      "destination_bytes": 12150,
+      "source_sha256": "1912ba9673399f4302a62bd3de6074e2535cc881d73d46a0c638c8c973b7c875",
+      "destination_sha256": "1912ba9673399f4302a62bd3de6074e2535cc881d73d46a0c638c8c973b7c875",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_cpu.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_cpu.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_cpu.py",
+      "source_bytes": 18040,
+      "destination_bytes": 18040,
+      "source_sha256": "f80cabff70bd954ceb088db83f563a40fdaf988c3046b3454bb80c17e600642e",
+      "destination_sha256": "f80cabff70bd954ceb088db83f563a40fdaf988c3046b3454bb80c17e600642e",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_gpu.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_gpu.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_gpu.py",
+      "source_bytes": 32882,
+      "destination_bytes": 32882,
+      "source_sha256": "1397961648f1afcdfa6ee804c9e82fc7cf62d5a5e8c10518143086b0d0e03d24",
+      "destination_sha256": "1397961648f1afcdfa6ee804c9e82fc7cf62d5a5e8c10518143086b0d0e03d24",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_information.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_information.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_information.py",
+      "source_bytes": 12149,
+      "destination_bytes": 12149,
+      "source_sha256": "36a308f0a0990306655dab97196b629c32d4d1fd5f81c1a139647436dac72dde",
+      "destination_sha256": "36a308f0a0990306655dab97196b629c32d4d1fd5f81c1a139647436dac72dde",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_pose_virtual.py",
+      "source_relative_path": "src/array_reconstruct/joint_pose_virtual.py",
+      "destination_relative_path": "src/array_reconstruct/joint_pose_virtual.py",
+      "source_bytes": 9329,
+      "destination_bytes": 9329,
+      "source_sha256": "75d04d21ab55d2e2bbdf91f93ae692f9873e43800da3d8a06f9207759667d1a7",
+      "destination_sha256": "75d04d21ab55d2e2bbdf91f93ae692f9873e43800da3d8a06f9207759667d1a7",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_virtual.py",
+      "source_relative_path": "src/array_reconstruct/joint_virtual.py",
+      "destination_relative_path": "src/array_reconstruct/joint_virtual.py",
+      "source_bytes": 34855,
+      "destination_bytes": 34855,
+      "source_sha256": "8e6304866c9dbc093cca02cdb20496e6d795b13d4f91bd7d40842faad443f9b8",
+      "destination_sha256": "8e6304866c9dbc093cca02cdb20496e6d795b13d4f91bd7d40842faad443f9b8",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_stress.py",
+      "source_relative_path": "src/array_reconstruct/joint_stress.py",
+      "destination_relative_path": "src/array_reconstruct/joint_stress.py",
+      "source_bytes": 25469,
+      "destination_bytes": 25469,
+      "source_sha256": "ff4dbc309a2ecb92e365e704bcf25dc4f588ef317d7823bcf8f638839c7ed5c8",
+      "destination_sha256": "ff4dbc309a2ecb92e365e704bcf25dc4f588ef317d7823bcf8f638839c7ed5c8",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_fit_io.py",
+      "source_relative_path": "src/array_reconstruct/joint_fit_io.py",
+      "destination_relative_path": "src/array_reconstruct/joint_fit_io.py",
+      "source_bytes": 3687,
+      "destination_bytes": 3687,
+      "source_sha256": "31a2e4a2e6d5bd9f1e44bd876aa464d68099fcccea48f2baf7ec4a8cc16d6c3a",
+      "destination_sha256": "31a2e4a2e6d5bd9f1e44bd876aa464d68099fcccea48f2baf7ec4a8cc16d6c3a",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\joint_diagnostics.py",
+      "source_relative_path": "src/array_reconstruct/joint_diagnostics.py",
+      "destination_relative_path": "src/array_reconstruct/joint_diagnostics.py",
+      "source_bytes": 55763,
+      "destination_bytes": 55763,
+      "source_sha256": "342c1881cc3e8a62de4e84dd3939f91c4a1aa3f4fc3f1655d10902e38d4e4b3e",
+      "destination_sha256": "342c1881cc3e8a62de4e84dd3939f91c4a1aa3f4fc3f1655d10902e38d4e4b3e",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\cli.py",
+      "source_relative_path": "src/array_reconstruct/cli.py",
+      "destination_relative_path": "src/array_reconstruct/cli.py",
+      "source_bytes": 10397,
+      "destination_bytes": 10397,
+      "source_sha256": "712cc145900f9b2daa7ecc92c063e08dc43eb37c374b4b291dcbdb52f82d8bf1",
+      "destination_sha256": "712cc145900f9b2daa7ecc92c063e08dc43eb37c374b4b291dcbdb52f82d8bf1",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\src\\array_reconstruct\\__main__.py",
+      "source_relative_path": "src/array_reconstruct/__main__.py",
+      "destination_relative_path": "src/array_reconstruct/__main__.py",
+      "source_bytes": 48,
+      "destination_bytes": 59,
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "destination_sha256": "fdefdb51b5c2b904ad03ebd96bacd464e0e05c66b2480fae5f690c0e42bc88a8",
+      "byte_identical": false,
+      "change_class": "entry/dependency/test-discovery adaptation"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_simulation.py",
+      "source_relative_path": "tests/test_simulation.py",
+      "destination_relative_path": "tests/test_simulation.py",
+      "source_bytes": 9735,
+      "destination_bytes": 9735,
+      "source_sha256": "d2702752e73a7f358cf968bd76c171cdea2f238ba9ca373078cd3e36cdef0d2d",
+      "destination_sha256": "d2702752e73a7f358cf968bd76c171cdea2f238ba9ca373078cd3e36cdef0d2d",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_inverse_physics.py",
+      "source_relative_path": "tests/test_inverse_physics.py",
+      "destination_relative_path": "tests/test_inverse_physics.py",
+      "source_bytes": 19275,
+      "destination_bytes": 19275,
+      "source_sha256": "890595f30bffeeddc121b66117fd1e6e3722f75dfcae2a43e8ce6b624d8b3d3b",
+      "destination_sha256": "890595f30bffeeddc121b66117fd1e6e3722f75dfcae2a43e8ce6b624d8b3d3b",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_sparse.py",
+      "source_relative_path": "tests/test_sparse.py",
+      "destination_relative_path": "tests/test_sparse.py",
+      "source_bytes": 15104,
+      "destination_bytes": 15104,
+      "source_sha256": "caf1552b599fb00ee14c9aed07a06bdbf607e49f8109bb531d1b55ac7b423492",
+      "destination_sha256": "caf1552b599fb00ee14c9aed07a06bdbf607e49f8109bb531d1b55ac7b423492",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_cli_sparse.py",
+      "source_relative_path": "tests/test_cli_sparse.py",
+      "destination_relative_path": "tests/test_cli_sparse.py",
+      "source_bytes": 3719,
+      "destination_bytes": 3719,
+      "source_sha256": "c15e4a21494bc79291472edf5c8b03a8a326f1ac045e033143df0632b15c0ec1",
+      "destination_sha256": "c15e4a21494bc79291472edf5c8b03a8a326f1ac045e033143df0632b15c0ec1",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_pipeline_boundary.py",
+      "source_relative_path": "tests/test_pipeline_boundary.py",
+      "destination_relative_path": "tests/test_pipeline_boundary.py",
+      "source_bytes": 7330,
+      "destination_bytes": 7330,
+      "source_sha256": "5dee247c41e5315c8d98d3f6abbb635eea5b60c22f74359c0e885fb6fecaac43",
+      "destination_sha256": "5dee247c41e5315c8d98d3f6abbb635eea5b60c22f74359c0e885fb6fecaac43",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_large_error_validation.py",
+      "source_relative_path": "tests/test_large_error_validation.py",
+      "destination_relative_path": "tests/test_large_error_validation.py",
+      "source_bytes": 19026,
+      "destination_bytes": 19026,
+      "source_sha256": "313f825bef138d3144191ed25ef4ce8a4f1db882e6960f6f4d92f8618db2e36a",
+      "destination_sha256": "313f825bef138d3144191ed25ef4ce8a4f1db882e6960f6f4d92f8618db2e36a",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_thesis_aperture.py",
+      "source_relative_path": "tests/test_thesis_aperture.py",
+      "destination_relative_path": "tests/test_thesis_aperture.py",
+      "source_bytes": 5989,
+      "destination_bytes": 5989,
+      "source_sha256": "846ed596ca8bf26bd463190233abcfd2c08d1eda584776688b8917b7d78602f7",
+      "destination_sha256": "846ed596ca8bf26bd463190233abcfd2c08d1eda584776688b8917b7d78602f7",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_thesis_calibration.py",
+      "source_relative_path": "tests/test_thesis_calibration.py",
+      "destination_relative_path": "tests/test_thesis_calibration.py",
+      "source_bytes": 12011,
+      "destination_bytes": 12011,
+      "source_sha256": "dded8e2524852ea4006b7308d2b5f229bc697dbb33bdd5d5ce21ec51f704d382",
+      "destination_sha256": "dded8e2524852ea4006b7308d2b5f229bc697dbb33bdd5d5ce21ec51f704d382",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_thesis_coded.py",
+      "source_relative_path": "tests/test_thesis_coded.py",
+      "destination_relative_path": "tests/test_thesis_coded.py",
+      "source_bytes": 15372,
+      "destination_bytes": 15372,
+      "source_sha256": "9de285441d04b01eb616fd8fa418ec8c184339420ff1667361fc1a3b2e0ad526",
+      "destination_sha256": "9de285441d04b01eb616fd8fa418ec8c184339420ff1667361fc1a3b2e0ad526",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_amplitude.py",
+      "source_relative_path": "tests/test_joint_amplitude.py",
+      "destination_relative_path": "tests/test_joint_amplitude.py",
+      "source_bytes": 6147,
+      "destination_bytes": 6147,
+      "source_sha256": "f18a27b583b4171b9d62319f6ff53c18da170c9bb3465fceef7ab8483c42c546",
+      "destination_sha256": "f18a27b583b4171b9d62319f6ff53c18da170c9bb3465fceef7ab8483c42c546",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_amplitude_fast.py",
+      "source_relative_path": "tests/test_joint_amplitude_fast.py",
+      "destination_relative_path": "tests/test_joint_amplitude_fast.py",
+      "source_bytes": 5464,
+      "destination_bytes": 5464,
+      "source_sha256": "45425afafbe60311dfac45f1fa0b78c3b91d5eb846706b02050c5f111b828d0d",
+      "destination_sha256": "45425afafbe60311dfac45f1fa0b78c3b91d5eb846706b02050c5f111b828d0d",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_amplitude_gpu.py",
+      "source_relative_path": "tests/test_joint_amplitude_gpu.py",
+      "destination_relative_path": "tests/test_joint_amplitude_gpu.py",
+      "source_bytes": 4919,
+      "destination_bytes": 4919,
+      "source_sha256": "1128cd7305ba86bc92b655b2b02f6a10b5155faef3cb1f9a8450c8d0404d3a34",
+      "destination_sha256": "1128cd7305ba86bc92b655b2b02f6a10b5155faef3cb1f9a8450c8d0404d3a34",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_geometry.py",
+      "source_relative_path": "tests/test_joint_geometry.py",
+      "destination_relative_path": "tests/test_joint_geometry.py",
+      "source_bytes": 17116,
+      "destination_bytes": 17116,
+      "source_sha256": "849a5f41efa6b59d4a83d89cc03b7273252859c20031ed7106147d2c16266140",
+      "destination_sha256": "849a5f41efa6b59d4a83d89cc03b7273252859c20031ed7106147d2c16266140",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_geometry_gpu.py",
+      "source_relative_path": "tests/test_joint_geometry_gpu.py",
+      "destination_relative_path": "tests/test_joint_geometry_gpu.py",
+      "source_bytes": 7679,
+      "destination_bytes": 7679,
+      "source_sha256": "d27c60388bc1473500c900bc480a3a8b3949f3655e07a66745f9bd23d6ea429e",
+      "destination_sha256": "d27c60388bc1473500c900bc480a3a8b3949f3655e07a66745f9bd23d6ea429e",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_geometry_gpu_amplitude.py",
+      "source_relative_path": "tests/test_joint_geometry_gpu_amplitude.py",
+      "destination_relative_path": "tests/test_joint_geometry_gpu_amplitude.py",
+      "source_bytes": 9469,
+      "destination_bytes": 9469,
+      "source_sha256": "9dbbb53a97b2c026c91cb931eae69913103a853d58c1a117dcc59cae8dcfad89",
+      "destination_sha256": "9dbbb53a97b2c026c91cb931eae69913103a853d58c1a117dcc59cae8dcfad89",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_newton.py",
+      "source_relative_path": "tests/test_joint_newton.py",
+      "destination_relative_path": "tests/test_joint_newton.py",
+      "source_bytes": 14298,
+      "destination_bytes": 14298,
+      "source_sha256": "9dfeb994c92db44bbc4210d5c4c838ad3cecf4219220f99d4c5a43eb65838dfe",
+      "destination_sha256": "9dfeb994c92db44bbc4210d5c4c838ad3cecf4219220f99d4c5a43eb65838dfe",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_phase_gauge.py",
+      "source_relative_path": "tests/test_joint_phase_gauge.py",
+      "destination_relative_path": "tests/test_joint_phase_gauge.py",
+      "source_bytes": 22681,
+      "destination_bytes": 22681,
+      "source_sha256": "0f6c6545349ad742dd54cf868deb18f29a73fe90860a0679457e155faf76d7b1",
+      "destination_sha256": "0f6c6545349ad742dd54cf868deb18f29a73fe90860a0679457e155faf76d7b1",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_pose_kernel.py",
+      "source_relative_path": "tests/test_joint_pose_kernel.py",
+      "destination_relative_path": "tests/test_joint_pose_kernel.py",
+      "source_bytes": 11620,
+      "destination_bytes": 11620,
+      "source_sha256": "3659ebd8e471c547d2bbd9313df0280c9becc6cedb7ebb97a26a1f4bc8fd4917",
+      "destination_sha256": "3659ebd8e471c547d2bbd9313df0280c9becc6cedb7ebb97a26a1f4bc8fd4917",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_pose_cpu.py",
+      "source_relative_path": "tests/test_joint_pose_cpu.py",
+      "destination_relative_path": "tests/test_joint_pose_cpu.py",
+      "source_bytes": 7404,
+      "destination_bytes": 7404,
+      "source_sha256": "ffe04a0d771df26a80623adc2d518edcf8eb4273144d5416d08ba92334445bb6",
+      "destination_sha256": "ffe04a0d771df26a80623adc2d518edcf8eb4273144d5416d08ba92334445bb6",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_pose_gpu_interface.py",
+      "source_relative_path": "tests/test_joint_pose_gpu_interface.py",
+      "destination_relative_path": "tests/test_joint_pose_gpu_interface.py",
+      "source_bytes": 9585,
+      "destination_bytes": 9585,
+      "source_sha256": "38ddd170df34739f1a77ac0415a83a10bbfe23ba681eb1f660658f8a385676bf",
+      "destination_sha256": "38ddd170df34739f1a77ac0415a83a10bbfe23ba681eb1f660658f8a385676bf",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_pose_information.py",
+      "source_relative_path": "tests/test_joint_pose_information.py",
+      "destination_relative_path": "tests/test_joint_pose_information.py",
+      "source_bytes": 7247,
+      "destination_bytes": 7247,
+      "source_sha256": "fecc7e4f8104cc961f74c2d8aa6ef5402e39baf57c5b4d1efd497309b5af373e",
+      "destination_sha256": "fecc7e4f8104cc961f74c2d8aa6ef5402e39baf57c5b4d1efd497309b5af373e",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_pose_virtual.py",
+      "source_relative_path": "tests/test_joint_pose_virtual.py",
+      "destination_relative_path": "tests/test_joint_pose_virtual.py",
+      "source_bytes": 7654,
+      "destination_bytes": 7654,
+      "source_sha256": "0ff708120c9d03615a5f7cf519fba21c5a7bde2fab0bf402f62b4249c4869972",
+      "destination_sha256": "0ff708120c9d03615a5f7cf519fba21c5a7bde2fab0bf402f62b4249c4869972",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_virtual.py",
+      "source_relative_path": "tests/test_joint_virtual.py",
+      "destination_relative_path": "tests/test_joint_virtual.py",
+      "source_bytes": 7458,
+      "destination_bytes": 7458,
+      "source_sha256": "521f7790b29b4c895a365fe2198d3b92ec0a14ab4fcdfe28b5a9ebb166c952fd",
+      "destination_sha256": "521f7790b29b4c895a365fe2198d3b92ec0a14ab4fcdfe28b5a9ebb166c952fd",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_stress.py",
+      "source_relative_path": "tests/test_joint_stress.py",
+      "destination_relative_path": "tests/test_joint_stress.py",
+      "source_bytes": 14361,
+      "destination_bytes": 14361,
+      "source_sha256": "cddf550f9ba322b1baf1f558f5f6fa041060a3c36148e98023113a4e2d2ae742",
+      "destination_sha256": "cddf550f9ba322b1baf1f558f5f6fa041060a3c36148e98023113a4e2d2ae742",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_fit_io.py",
+      "source_relative_path": "tests/test_joint_fit_io.py",
+      "destination_relative_path": "tests/test_joint_fit_io.py",
+      "source_bytes": 5445,
+      "destination_bytes": 5445,
+      "source_sha256": "035bc70372296422fa0b06158683a1100538f8b597016df0ec013669be2233c2",
+      "destination_sha256": "035bc70372296422fa0b06158683a1100538f8b597016df0ec013669be2233c2",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_diagnostics.py",
+      "source_relative_path": "tests/test_joint_diagnostics.py",
+      "destination_relative_path": "tests/test_joint_diagnostics.py",
+      "source_bytes": 34691,
+      "destination_bytes": 34691,
+      "source_sha256": "f8af115b9e9fe7757dbb57b4c5fa4f99891a61011c0e946c699861366ccf7f56",
+      "destination_sha256": "f8af115b9e9fe7757dbb57b4c5fa4f99891a61011c0e946c699861366ccf7f56",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_finite_vector_reference.py",
+      "source_relative_path": "tests/test_joint_finite_vector_reference.py",
+      "destination_relative_path": "tests/test_joint_finite_vector_reference.py",
+      "source_bytes": 7723,
+      "destination_bytes": 7723,
+      "source_sha256": "6ce4021e4619644d4672adea4e2b93eebc007d617088207ec8604d6b0af10741",
+      "destination_sha256": "6ce4021e4619644d4672adea4e2b93eebc007d617088207ec8604d6b0af10741",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\tests\\test_joint_finite_aperture_backend.py",
+      "source_relative_path": "tests/test_joint_finite_aperture_backend.py",
+      "destination_relative_path": "tests/test_joint_finite_aperture_backend.py",
+      "source_bytes": 7029,
+      "destination_bytes": 7029,
+      "source_sha256": "604ef334a79fc47e42fd7f4638169f34a4b3f86b660e377be1d4c5164bdb1818",
+      "destination_sha256": "604ef334a79fc47e42fd7f4638169f34a4b3f86b660e377be1d4c5164bdb1818",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\run_large_error_validation.py",
+      "source_relative_path": "scripts/run_large_error_validation.py",
+      "destination_relative_path": "scripts/run_large_error_validation.py",
+      "source_bytes": 965,
+      "destination_bytes": 965,
+      "source_sha256": "8a56b5b9dc540d50d851ebbcd788f5a7d1e9fa1ea779a2db3e350d888fc8f27a",
+      "destination_sha256": "8a56b5b9dc540d50d851ebbcd788f5a7d1e9fa1ea779a2db3e350d888fc8f27a",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\run_thesis_aperture.py",
+      "source_relative_path": "scripts/run_thesis_aperture.py",
+      "destination_relative_path": "scripts/run_thesis_aperture.py",
+      "source_bytes": 864,
+      "destination_bytes": 864,
+      "source_sha256": "4ea0d3681d5965d47005a34aa63cbfb6e44defb940c620b5d1cd9a549aab7017",
+      "destination_sha256": "4ea0d3681d5965d47005a34aa63cbfb6e44defb940c620b5d1cd9a549aab7017",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\run_thesis_calibration.py",
+      "source_relative_path": "scripts/run_thesis_calibration.py",
+      "destination_relative_path": "scripts/run_thesis_calibration.py",
+      "source_bytes": 1007,
+      "destination_bytes": 1007,
+      "source_sha256": "c91a9a8c1cc302044d95cdf5534f5a40a09ef425d019e90b0737804c68733bfe",
+      "destination_sha256": "c91a9a8c1cc302044d95cdf5534f5a40a09ef425d019e90b0737804c68733bfe",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\run_thesis_coded.py",
+      "source_relative_path": "scripts/run_thesis_coded.py",
+      "destination_relative_path": "scripts/run_thesis_coded.py",
+      "source_bytes": 968,
+      "destination_bytes": 968,
+      "source_sha256": "a28354920f0f2df394092808b0451685567f81c18e1168992f10fc27c6d55513",
+      "destination_sha256": "a28354920f0f2df394092808b0451685567f81c18e1168992f10fc27c6d55513",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\run_joint_geometry_oracle.py",
+      "source_relative_path": "scripts/run_joint_geometry_oracle.py",
+      "destination_relative_path": "scripts/run_joint_geometry_oracle.py",
+      "source_bytes": 7297,
+      "destination_bytes": 7297,
+      "source_sha256": "eb21c71102a4883d135bdb9e636fcb94d0c7132879b4cb39a2de8bebb817f436",
+      "destination_sha256": "eb21c71102a4883d135bdb9e636fcb94d0c7132879b4cb39a2de8bebb817f436",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\scripts\\qualify_joint_finite_aperture.py",
+      "source_relative_path": "scripts/qualify_joint_finite_aperture.py",
+      "destination_relative_path": "scripts/qualify_joint_finite_aperture.py",
+      "source_bytes": 19589,
+      "destination_bytes": 19589,
+      "source_sha256": "dd06afe758a29a99db593c3c71a59a67137ebf046275dc19ca4ef2ea21a79f49",
+      "destination_sha256": "dd06afe758a29a99db593c3c71a59a67137ebf046275dc19ca4ef2ea21a79f49",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\configs\\validation_policy.json",
+      "source_relative_path": "configs/validation_policy.json",
+      "destination_relative_path": "configs/validation_policy.json",
+      "source_bytes": 1187,
+      "destination_bytes": 1187,
+      "source_sha256": "3c5a6b39ec1a6b9f90ac00f13f9848e852227e2c6bf24261bca072bbf32e62d3",
+      "destination_sha256": "3c5a6b39ec1a6b9f90ac00f13f9848e852227e2c6bf24261bca072bbf32e62d3",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\configs\\large_error_validation_policy.json",
+      "source_relative_path": "configs/large_error_validation_policy.json",
+      "destination_relative_path": "configs/large_error_validation_policy.json",
+      "source_bytes": 6168,
+      "destination_bytes": 6168,
+      "source_sha256": "2b1be3acd95fe5689701676ed88cd1533484fc27f2d802a37df3c73efc0f2031",
+      "destination_sha256": "2b1be3acd95fe5689701676ed88cd1533484fc27f2d802a37df3c73efc0f2031",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\configs\\thesis_methods_policy.json",
+      "source_relative_path": "configs/thesis_methods_policy.json",
+      "destination_relative_path": "configs/thesis_methods_policy.json",
+      "source_bytes": 9098,
+      "destination_bytes": 9098,
+      "source_sha256": "e29feb9adbb04de7c6d543aa2d2e29ac1da0d96603893b240a84dddb896217e5",
+      "destination_sha256": "e29feb9adbb04de7c6d543aa2d2e29ac1da0d96603893b240a84dddb896217e5",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\metadata\\reference_element_geometry.csv",
+      "source_relative_path": "metadata/reference_element_geometry.csv",
+      "destination_relative_path": "metadata/reference_element_geometry.csv",
+      "source_bytes": 53626,
+      "destination_bytes": 53626,
+      "source_sha256": "d9553b6f0d1eaaa1a2c0228b6b568841abc85de5658a82befbffcb10a327bfa3",
+      "destination_sha256": "d9553b6f0d1eaaa1a2c0228b6b568841abc85de5658a82befbffcb10a327bfa3",
+      "byte_identical": true,
+      "change_class": "none"
+    },
+    {
+      "source_path": "D:\\project\\trifles\\20261027 array reconstruct\\metadata\\reference_element_geometry_provenance.json",
+      "source_relative_path": "metadata/reference_element_geometry_provenance.json",
+      "destination_relative_path": "metadata/reference_element_geometry_provenance.json",
+      "source_bytes": 881,
+      "destination_bytes": 881,
+      "source_sha256": "ff01b04e8019ecfb0c76ad172b1b74ce36d84a5d5f2e365bf151a34885ef68cc",
+      "destination_sha256": "ff01b04e8019ecfb0c76ad172b1b74ce36d84a5d5f2e365bf151a34885ef68cc",
+      "byte_identical": true,
+      "change_class": "none"
+    }
+  ],
+  "source_code_inventory": [
+    {
+      "source_relative_path": "src/array_reconstruct/__init__.py",
+      "source_bytes": 106,
+      "source_sha256": "67aaedcad337e7a1ea4c9b8f7e4ad62f790cb1c1100fbe485791499fa0d871fc",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/__main__.py",
+      "source_bytes": 48,
+      "source_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/array_plotting.py",
+      "source_bytes": 2767,
+      "source_sha256": "29b81539de6db8a0fcf9c74ce17ca2fcea4ad8655ca0a65d48db4d0148574ba6",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/bounded_geometry.py",
+      "source_bytes": 8801,
+      "source_sha256": "e009600606b82f6bc26865eb9f7a98a1c70838fcc4a47986dfd208c03ca9f297",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/cli.py",
+      "source_bytes": 10397,
+      "source_sha256": "712cc145900f9b2daa7ecc92c063e08dc43eb37c374b4b291dcbdb52f82d8bf1",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/conditional_square_scan.py",
+      "source_bytes": 34151,
+      "source_sha256": "294be94b067d9857716e2f9e7622e6ff84830a0a22629572e8fe7730911ed3f3",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/diagnostics.py",
+      "source_bytes": 12893,
+      "source_sha256": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/inverse.py",
+      "source_bytes": 12021,
+      "source_sha256": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_amplitude.py",
+      "source_bytes": 14521,
+      "source_sha256": "1768ba5f60db89764eaa311580d0da3fbf9ace0d2e878ff6991a9871118fd8ff",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_amplitude_fast.py",
+      "source_bytes": 27678,
+      "source_sha256": "70f9757b22715c531793c4172981425306558ecfc69e0229773587532087a92c",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_amplitude_gpu.py",
+      "source_bytes": 39546,
+      "source_sha256": "8fd0d8f4dbdda356f45d2b96079bb133b1498859fa890a2f789e9fa4aef50caa",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_backend_qualification.py",
+      "source_bytes": 29337,
+      "source_sha256": "1cff3b204d80394f8afd68196d7ca832b658e347ef5ad2119fd39872a9902575",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_controls_execution.py",
+      "source_bytes": 61425,
+      "source_sha256": "80011011d4e119fce45682c25589431b4e518c77b19f6b9ab68d12b862f2422f",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_diagnostics.py",
+      "source_bytes": 55763,
+      "source_sha256": "342c1881cc3e8a62de4e84dd3939f91c4a1aa3f4fc3f1655d10902e38d4e4b3e",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_finite_aperture_reference.py",
+      "source_bytes": 16295,
+      "source_sha256": "22937de0a965b8eaf6ef82e03d4b26b251420f4ee4c74ce92299789fde1c7d87",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_finite_aperture_vector_reference.py",
+      "source_bytes": 11106,
+      "source_sha256": "97fb6b398a7f43d6a2b6a0265ff22bdac4605136f31d5a37687b41f3e59f1203",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_fit_io.py",
+      "source_bytes": 3687,
+      "source_sha256": "31a2e4a2e6d5bd9f1e44bd876aa464d68099fcccea48f2baf7ec4a8cc16d6c3a",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_geometry.py",
+      "source_bytes": 48935,
+      "source_sha256": "b37b040d3735cbcd38f0d0f0299456a19f444c29707dd9f77f8c49da096e3ace",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_geometry_finite_gpu.py",
+      "source_bytes": 10790,
+      "source_sha256": "49b5b9e1a43ad92196b968d9ebe4f90fbfeffd496e697e5ea7015712e2a39f9e",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_geometry_gpu.py",
+      "source_bytes": 26677,
+      "source_sha256": "cf66d638ca609cd2c9cb4095c14a4e108f31565dbdf4a9e58d607de070e1242c",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_geometry_gpu_amplitude.py",
+      "source_bytes": 26759,
+      "source_sha256": "422488b9a3760f38f12f2d2b0d936312d19da435f3c4243bc038501022d7a4c2",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_nearbound_candidate.py",
+      "source_bytes": 8233,
+      "source_sha256": "2aee14ac6c3f03ab781fffd6b60ffdc3b7fdfd024e5aaf3028fe174673f7290d",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_newton.py",
+      "source_bytes": 15550,
+      "source_sha256": "d6269139291392a8b786f54116c04cc9db016e6db6ec02053a7fa35e8aa9ad5c",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_phase_gauge.py",
+      "source_bytes": 10638,
+      "source_sha256": "79279b2592974780f60f2d9b94a49adaf9ce092962b9b65b3f6c7e82051357b9",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_cpu.py",
+      "source_bytes": 18040,
+      "source_sha256": "f80cabff70bd954ceb088db83f563a40fdaf988c3046b3454bb80c17e600642e",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_gpu.py",
+      "source_bytes": 32882,
+      "source_sha256": "1397961648f1afcdfa6ee804c9e82fc7cf62d5a5e8c10518143086b0d0e03d24",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_information.py",
+      "source_bytes": 12149,
+      "source_sha256": "36a308f0a0990306655dab97196b629c32d4d1fd5f81c1a139647436dac72dde",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_kernel.py",
+      "source_bytes": 11760,
+      "source_sha256": "913adf812759d86c4165a2e180700223146bbcb1586ec1f1e56dc3ade86e2b69",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_newton.py",
+      "source_bytes": 12150,
+      "source_sha256": "1912ba9673399f4302a62bd3de6074e2535cc881d73d46a0c638c8c973b7c875",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_pose_virtual.py",
+      "source_bytes": 9329,
+      "source_sha256": "75d04d21ab55d2e2bbdf91f93ae692f9873e43800da3d8a06f9207759667d1a7",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_staged_selection.py",
+      "source_bytes": 28556,
+      "source_sha256": "811603aa2d5ae2b7c01293a0a3bb023402ee07a70d0ed24710aa1fd4cd1da5c6",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_staged_selection_observed.py",
+      "source_bytes": 37031,
+      "source_sha256": "058826a88ea237e62451e7c4a1b6f6698c71e8baad135ccf98f0fad03c78a59d",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_stress.py",
+      "source_bytes": 25469,
+      "source_sha256": "ff4dbc309a2ecb92e365e704bcf25dc4f588ef317d7823bcf8f638839c7ed5c8",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_training_consistency.py",
+      "source_bytes": 25085,
+      "source_sha256": "9d9e63ab90d463e4738420fe4cad432979e1d9c52374bf463bf946f7c5d9531c",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_virtual.py",
+      "source_bytes": 34855,
+      "source_sha256": "8e6304866c9dbc093cca02cdb20496e6d795b13d4f91bd7d40842faad443f9b8",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/joint_warm_certificate.py",
+      "source_bytes": 27719,
+      "source_sha256": "0e1cf955d4f40ccb8e8275d01667a24fd67b0ad021755fab316ea83be4e22b21",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/large_error_validation.py",
+      "source_bytes": 29847,
+      "source_sha256": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/physics.py",
+      "source_bytes": 15749,
+      "source_sha256": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/real_hypotheses.py",
+      "source_bytes": 35047,
+      "source_sha256": "3dd71a33b95bebaa92e16f2c10ad68e8b82ea050b6b444a92a68396b9562e5eb",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/real_hypotheses_delay.py",
+      "source_bytes": 19034,
+      "source_sha256": "fbcc84138480dbdceb3aac191f9908405c8a7cbe32fade0725b7e9ffa23392e3",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/real_measurement.py",
+      "source_bytes": 27030,
+      "source_sha256": "b6041f038ba695c11351317d1da7bd631266038acf949fd296263cce178f1123",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/scan_inversion.py",
+      "source_bytes": 7995,
+      "source_sha256": "a17075c3dbc934203d3e46bfee3ff8273daa7b16c6d8220ce19b59d353620a4f",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/simulation.py",
+      "source_bytes": 27007,
+      "source_sha256": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/source_registry.py",
+      "source_bytes": 6641,
+      "source_sha256": "bfae203f45093c7d039cb3eaf0fb5bceb1768232cd1e2e8d7fe35de6831de3b8",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement, source-registry, scheduling, qualification, staged-selection or state-bound audit chain outside the simulation closure."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/sparse.py",
+      "source_bytes": 11057,
+      "source_sha256": "baad673dccc85190cdf6a049645d45358f91ead10f363b9f442a0384995d6955",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/sparse_validation.py",
+      "source_bytes": 4720,
+      "source_sha256": "ba536b78381ec7c732b6983139f620928996fb7ccd57e62f15865df474571212",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/thesis_aperture.py",
+      "source_bytes": 27674,
+      "source_sha256": "f5a3d5f00cc6eb7638c849cd2f2fc922f2705b075d388e8eac4b681447fb79f0",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/thesis_calibration.py",
+      "source_bytes": 27696,
+      "source_sha256": "5bc8f61848a9d8f9113a3bd2ff6e0159ed7ec9db5fc9ee2b605ac48d9dab947d",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/thesis_coded.py",
+      "source_bytes": 25366,
+      "source_sha256": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "src/array_reconstruct/validation.py",
+      "source_bytes": 18334,
+      "source_sha256": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_bounded_geometry.py",
+      "source_bytes": 13650,
+      "source_sha256": "eadcb77f299e4855ac6c0b99d5f4224437f43a35b84c63daaaa2ca6de55c5cc6",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_cli_sparse.py",
+      "source_bytes": 3719,
+      "source_sha256": "c15e4a21494bc79291472edf5c8b03a8a326f1ac045e033143df0632b15c0ec1",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_conditional_square_scan.py",
+      "source_bytes": 7408,
+      "source_sha256": "1b77a9ad8c67fd777d3853e56a757cac926bb396bf4d83aaa2bdeb984d95893d",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_finite_gpu_production_preparation.py",
+      "source_bytes": 19280,
+      "source_sha256": "2dfdf85a3fc09c75043b324c3f5b9b63a0cbaf82f7083ba73f87dd25cc83fb68",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_inverse_physics.py",
+      "source_bytes": 19275,
+      "source_sha256": "890595f30bffeeddc121b66117fd1e6e3722f75dfcae2a43e8ce6b624d8b3d3b",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_amplitude.py",
+      "source_bytes": 6147,
+      "source_sha256": "f18a27b583b4171b9d62319f6ff53c18da170c9bb3465fceef7ab8483c42c546",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_amplitude_fast.py",
+      "source_bytes": 5464,
+      "source_sha256": "45425afafbe60311dfac45f1fa0b78c3b91d5eb846706b02050c5f111b828d0d",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_amplitude_gpu.py",
+      "source_bytes": 4919,
+      "source_sha256": "1128cd7305ba86bc92b655b2b02f6a10b5155faef3cb1f9a8450c8d0404d3a34",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_backend_qualification.py",
+      "source_bytes": 37407,
+      "source_sha256": "afde7f35910cc951cd814c7ee996499904ad36ec202bfe79e5a9dc12d01db50f",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case1_lambda_witness.py",
+      "source_bytes": 22082,
+      "source_sha256": "d105c765e5157a5d0fab251d9656ff13b47220f7f7a4ccd46cc0c1be79787cd1",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case4_controls_execution.py",
+      "source_bytes": 7315,
+      "source_sha256": "691564e229fcaaa6ddd685b6171c160dedfb227afd4c3096d4a58e3aca356c99",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case4_frequency_controls.py",
+      "source_bytes": 11741,
+      "source_sha256": "ad8a55348a7d3d5e21d65aa9d1383674b7e72d7b3b1e0bac4c277af62678dc77",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case4_frequency_controls_execution.py",
+      "source_bytes": 30742,
+      "source_sha256": "5e6eb02570ad466cecd7f5b0e3970a23ec7950ebe2c74398adec3430c9a1e891",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case4_frequency_controls_execution_v2.py",
+      "source_bytes": 44626,
+      "source_sha256": "2b6f00851ff55243bd7445e7f6777c1dbf7417da6809b4c0cac1bbb5096e99b9",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_case4_information_controls.py",
+      "source_bytes": 12827,
+      "source_sha256": "defe4f75a9e70fd175eab1908f81474ceab9cb701ef14f8491890aa21b4e45ff",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_batch_metadata_qualification.py",
+      "source_bytes": 11717,
+      "source_sha256": "790bd5b363db9bfbc0d45635420f3cdd280aef81205244bc3b053ff9efaf62db",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_complex_prior_development.py",
+      "source_bytes": 27533,
+      "source_sha256": "223518ae0112524645a89ae73ea01c41812a0d97529bd625ba3ec57c6ba12d76",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_one_start_batch.py",
+      "source_bytes": 14910,
+      "source_sha256": "438469d1b60d3ee8fc6820448b0e1de584ed2ba44fa0ece5c277a91225044858",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_population_contract.py",
+      "source_bytes": 3867,
+      "source_sha256": "507f3da0913a10efa127c99832a3bd66ffcd60783dd692529725601aaf177f12",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_population_index.py",
+      "source_bytes": 12217,
+      "source_sha256": "b55118de385b469293e2fd4e64f20bb54aee979dbc0918a48a93d89e22811bbd",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_conditional_public_geometry.py",
+      "source_bytes": 21883,
+      "source_sha256": "0b18eaa59f322671af7efde4458b175f52c0878e1c7486f034ad07808654a3cd",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_confirmation_backend_io.py",
+      "source_bytes": 20548,
+      "source_sha256": "52b0d8aab0996ae17a474993b6380c5b30f5d0c38788b73590b97221c0ac95dc",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_confirmation_guard.py",
+      "source_bytes": 66153,
+      "source_sha256": "723f5d8a6776ac849e80665329f8bc50df0201532b747ad233fc39e55b8b572c",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_confirmation_solver.py",
+      "source_bytes": 20206,
+      "source_sha256": "2eb8a1473e51223152b6b7901bf7cc4cc41d426bf826219d3786213caf7b1817",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_controls_execution.py",
+      "source_bytes": 16359,
+      "source_sha256": "04ed0dae773b1d4fa2af55e0183b297210d103ca43fabeed90e7c81e253be17b",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_controls_restoration_intent.py",
+      "source_bytes": 6274,
+      "source_sha256": "e6c05834e23c4a6f2e08d14217551f7d82420418c6402f0fe72a4c479a095cbe",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_diagnostics.py",
+      "source_bytes": 34691,
+      "source_sha256": "f8af115b9e9fe7757dbb57b4c5fa4f99891a61011c0e946c699861366ccf7f56",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_finite_aperture_backend.py",
+      "source_bytes": 7029,
+      "source_sha256": "604ef334a79fc47e42fd7f4638169f34a4b3f86b660e377be1d4c5164bdb1818",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_finite_gpu_fd37.py",
+      "source_bytes": 21156,
+      "source_sha256": "172cb72cde2b8e518c68c7acb9ed3d01c8a99516acb02801953c73e7899112b2",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_finite_gpu_trajectory_qualification.py",
+      "source_bytes": 21777,
+      "source_sha256": "0d7cfaf2ca8c76c82f8f785082c844c083adc83419b9ccf3915a02ebd57bd5e3",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_finite_model_sensitivity.py",
+      "source_bytes": 32509,
+      "source_sha256": "4aafd56b56ed61d60ff50994220504f68ad7fe433c092a31d8df575ad74dbcb4",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_finite_vector_reference.py",
+      "source_bytes": 7723,
+      "source_sha256": "6ce4021e4619644d4672adea4e2b93eebc007d617088207ec8604d6b0af10741",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_fit_io.py",
+      "source_bytes": 5445,
+      "source_sha256": "035bc70372296422fa0b06158683a1100538f8b597016df0ec013669be2233c2",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_fixed18_public_scoring.py",
+      "source_bytes": 21558,
+      "source_sha256": "2924593d690f4b8badb3d92b4feed11d2c61bebcdcfa78b14bda0f53ed78369b",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_formal_c0_staged.py",
+      "source_bytes": 20749,
+      "source_sha256": "29ffec85fad0e85ef96ff93aa3c6d9da840bbdbf929de364375a3afb4fd07c00",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_formal_external_controls.py",
+      "source_bytes": 44572,
+      "source_sha256": "8ccea0fe98c59171b83b9b868d4b3c003853b97f1638fdfbcd8373b41cc47c55",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_formal_v3_c0_staged.py",
+      "source_bytes": 16800,
+      "source_sha256": "cbbe0612ea8c43b0c25dd11a08a32705a37c5c889fd48c37325563e3248b338d",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_geometry.py",
+      "source_bytes": 17116,
+      "source_sha256": "849a5f41efa6b59d4a83d89cc03b7273252859c20031ed7106147d2c16266140",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_geometry_gpu.py",
+      "source_bytes": 7679,
+      "source_sha256": "d27c60388bc1473500c900bc480a3a8b3949f3655e07a66745f9bd23d6ea429e",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_geometry_gpu_amplitude.py",
+      "source_bytes": 9469,
+      "source_sha256": "9dbbb53a97b2c026c91cb931eae69913103a853d58c1a117dcc59cae8dcfad89",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_ideal_unknown_response.py",
+      "source_bytes": 20870,
+      "source_sha256": "7d8816e04054f3ec329746f087e9a0ee670123ee748dee9ef3641c9830153d19",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_ideal_unknown_response_plot.py",
+      "source_bytes": 8756,
+      "source_sha256": "ae583a81b41cffa8277f46a35d2e0b2db368f69174076e8a8b5b864f494afe96",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_nearbound_candidate.py",
+      "source_bytes": 15256,
+      "source_sha256": "f579b20dcaa240a835bcc7a62c8f7ceebd25a28d94e922a72e8412dbfdc83e0a",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_newton.py",
+      "source_bytes": 14298,
+      "source_sha256": "9dfeb994c92db44bbc4210d5c4c838ad3cecf4219220f99d4c5a43eb65838dfe",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_phase_gauge.py",
+      "source_bytes": 22681,
+      "source_sha256": "0f6c6545349ad742dd54cf868deb18f29a73fe90860a0679457e155faf76d7b1",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_pose_cpu.py",
+      "source_bytes": 7404,
+      "source_sha256": "ffe04a0d771df26a80623adc2d518edcf8eb4273144d5416d08ba92334445bb6",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_pose_gpu_interface.py",
+      "source_bytes": 9585,
+      "source_sha256": "38ddd170df34739f1a77ac0415a83a10bbfe23ba681eb1f660658f8a385676bf",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_pose_information.py",
+      "source_bytes": 7247,
+      "source_sha256": "fecc7e4f8104cc961f74c2d8aa6ef5402e39baf57c5b4d1efd497309b5af373e",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_pose_kernel.py",
+      "source_bytes": 11620,
+      "source_sha256": "3659ebd8e471c547d2bbd9313df0280c9becc6cedb7ebb97a26a1f4bc8fd4917",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_pose_virtual.py",
+      "source_bytes": 7654,
+      "source_sha256": "0ff708120c9d03615a5f7cf519fba21c5a7bde2fab0bf402f62b4249c4869972",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_retired_cohort_gate.py",
+      "source_bytes": 6972,
+      "source_sha256": "4af5d7686d89f154aabe556117355d699c0331847a18f64a8b75c2cc6be815af",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_staged_development.py",
+      "source_bytes": 16636,
+      "source_sha256": "40e8e12f053dcb67a55c5efa24cada84dddcbe581913b870b4621a6ad7bd491c",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_staged_pair_score.py",
+      "source_bytes": 25421,
+      "source_sha256": "e537dcd01d649876b65557348dd0d397732977f06437a699fa61201498dd8448",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_staged_selection.py",
+      "source_bytes": 28770,
+      "source_sha256": "fcfdd1c750001e473bd36ca08c0d4b89b7cd4a5a48448af504e0c241f38fa89d",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_staged_selection_observed.py",
+      "source_bytes": 15112,
+      "source_sha256": "714f0512b55b64e4e8d90b7bb4b242426c7675edbb27f5195a40a2a6ae209f91",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_stress.py",
+      "source_bytes": 14361,
+      "source_sha256": "cddf550f9ba322b1baf1f558f5f6fa041060a3c36148e98023113a4e2d2ae742",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_tau03_fixed_cross_objective.py",
+      "source_bytes": 7560,
+      "source_sha256": "9ee859ba694fbf5e31814106c3a4aeb15f7246caebb4bf801b393d5ca4102eae",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_tau03_selected_branch_probe.py",
+      "source_bytes": 8872,
+      "source_sha256": "502705d5f5d02978539b66d34c132dd668c2c1a4676d45ab78728814e581a3ff",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_training_consistency.py",
+      "source_bytes": 20920,
+      "source_sha256": "1e09b628fe8a872b87feb64fa071800572733ab56a91da55593d9ebcefe7499d",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_virtual.py",
+      "source_bytes": 7458,
+      "source_sha256": "521f7790b29b4c895a365fe2198d3b92ec0a14ab4fcdfe28b5a9ebb166c952fd",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_joint_warm_certificate.py",
+      "source_bytes": 28434,
+      "source_sha256": "1a7b70ba4e18d6ac0e82854cd4ef5bec88eb6eec45a09e7a442c18b97cf2e1e4",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_joint_window_staged_development.py",
+      "source_bytes": 10160,
+      "source_sha256": "0bba3f37347b3405d926863d18b4a7381588ca296d5fde7804d57bd63f570086",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_large_error_validation.py",
+      "source_bytes": 19026,
+      "source_sha256": "313f825bef138d3144191ed25ef4ce8a4f1db882e6960f6f4d92f8618db2e36a",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_pipeline_boundary.py",
+      "source_bytes": 7330,
+      "source_sha256": "5dee247c41e5315c8d98d3f6abbb635eea5b60c22f74359c0e885fb6fecaac43",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_real_hypotheses.py",
+      "source_bytes": 5637,
+      "source_sha256": "d19eccb9cf9c6cc15827442ae2303bbc5fab1512f762e226bfe252acf502cec4",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_real_hypotheses_delay.py",
+      "source_bytes": 3839,
+      "source_sha256": "2c8d73afb18fb12cc7be61f0c841074a65ea52e83bf85770c724a3a9106f9877",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_real_measurement.py",
+      "source_bytes": 9464,
+      "source_sha256": "b1a5df311f6bcffec8edcfa8ade4835c0dda438df0e3b6f3a3d2607c1edd46d9",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_scan_inversion.py",
+      "source_bytes": 18986,
+      "source_sha256": "bcf78e2a76ad83a89593414b668fa54e1876e945bb6ab4280de65b2eab4e11ac",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_scan_inversion_review.py",
+      "source_bytes": 3456,
+      "source_sha256": "70fc6cdeb2d68baf967c06c8d4926fe16bef14f2872c8c50ff9c1e64c8de166d",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_simulation.py",
+      "source_bytes": 9735,
+      "source_sha256": "d2702752e73a7f358cf968bd76c171cdea2f238ba9ca373078cd3e36cdef0d2d",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_single_finite_cpu_runner.py",
+      "source_bytes": 11499,
+      "source_sha256": "32450ad324a81e3b5bf32077072261396bf8ee57cd975568604c6ee94ed50ef7",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_source_registry.py",
+      "source_bytes": 9943,
+      "source_sha256": "afad98dcfa6471b5c7aad40f9f31d4140a21cbc94b1ed1da42a924659d31341c",
+      "disposition": "left_at_source",
+      "reason": "Checks for excluded historical code, scheduler/state contracts or historical real-measurement runners."
+    },
+    {
+      "source_relative_path": "tests/test_sparse.py",
+      "source_bytes": 15104,
+      "source_sha256": "caf1552b599fb00ee14c9aed07a06bdbf607e49f8109bb531d1b55ac7b423492",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_thesis_aperture.py",
+      "source_bytes": 5989,
+      "source_sha256": "846ed596ca8bf26bd463190233abcfd2c08d1eda584776688b8917b7d78602f7",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_thesis_calibration.py",
+      "source_bytes": 12011,
+      "source_sha256": "dded8e2524852ea4006b7308d2b5f229bc697dbb33bdd5d5ce21ec51f704d382",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "tests/test_thesis_coded.py",
+      "source_bytes": 15372,
+      "source_sha256": "9de285441d04b01eb616fd8fa418ec8c184339420ff1667361fc1a3b2e0ad526",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/analyze_new_scan_spectrum.py",
+      "source_bytes": 22505,
+      "source_sha256": "95fd43a8a9ae78626237e3c0f8e001d9563cee733ad32d901ade23e80d290c4c",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/analyze_scan_aperture.py",
+      "source_bytes": 44287,
+      "source_sha256": "306a9ce932232305253130bc7a6088e686b8a598c4eab414a0639bf0233b4289",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/audit_joint_amplitude_endpoint_consistency.py",
+      "source_bytes": 10575,
+      "source_sha256": "332e87df5097df531f7f265f885491c9d6e4d7b8b10c380cd03980813865048a",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/audit_scan_input.py",
+      "source_bytes": 24713,
+      "source_sha256": "cccb625847755a1d90abdd3f90dce106c35e7005b5e068794d598e1169c245a8",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/benchmark_amplitude_damping_fixtures.py",
+      "source_bytes": 27920,
+      "source_sha256": "8849db9770219ffa720e5bec54495a3d1a65e99192fc2cd2f8b1efa6aef0ac7b",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/build_minimum_scan_gallery.py",
+      "source_bytes": 13895,
+      "source_sha256": "69c1ba1b09b3e69cbb24228d87480887cc4c6d397a3d687f078ca4c08ebcc46f",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_bounded_geometry.py",
+      "source_bytes": 37323,
+      "source_sha256": "5e1b613cc42d147e398b0c0a73980b0b21062f8ae0bbc9f58480d0bc5b6ec2a8",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_bounded_masks.py",
+      "source_bytes": 33669,
+      "source_sha256": "230fb1947311f47bcfcb7754ed16a712923c26f202e9a4424e4abe087f0e038d",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_bounded_report_tables.py",
+      "source_bytes": 6152,
+      "source_sha256": "382172b4484761a657398856530626e3b9b8290fdc4b597cd8ebebd8e8261f0c",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_project_storage.py",
+      "source_bytes": 8031,
+      "source_sha256": "8fb3fa14758651b4b5e74a05fd964ee035935fdc05ab809c1f5ff84d6386dae4",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_real_delivery.py",
+      "source_bytes": 2753,
+      "source_sha256": "8e8fc82291940cf3f1924a6f253a042cf6e6cf0a381def13354712bffe56924a",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/check_square_scan_experiments.py",
+      "source_bytes": 10912,
+      "source_sha256": "79aebfc7d5018a0792bc26632ab09279123274bd67503067e51d2d729f2bccab",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/diagnose_bounded_masks.py",
+      "source_bytes": 30145,
+      "source_sha256": "b662aa571e73cfd1cef26a86846bc97a4f57decb53a61f8c813244ad382d5203",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/extract_compact_range_info_configuration.py",
+      "source_bytes": 7635,
+      "source_sha256": "ad987f2d16357f18f875ae030c4f4a8db063ef5d141f57a905264da4e57f09dc",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/finalize_compact_range_metadata.py",
+      "source_bytes": 17903,
+      "source_sha256": "9235265c232fdd5f34cb1284f99c7a3cbca3b3710d64b3e7f937548fcbade847",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/inspect_chamber_mapping.py",
+      "source_bytes": 18913,
+      "source_sha256": "f177356e6b51174ba48401332b18620b2c02068aba80c4fc068cccd4ff91e9da",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/inspect_chamber_protocol.py",
+      "source_bytes": 7893,
+      "source_sha256": "f9b740d256d572e31fae912ff4fa763c3632f4d0b32cc815241d75850aac8346",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/inspect_compact_range_info_structure.py",
+      "source_bytes": 8806,
+      "source_sha256": "be3ce6f315233cb2083a409c093d428b5b9e1f5d7e917091650361a24240fb42",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/inspect_new_nearfield_scan.py",
+      "source_bytes": 35384,
+      "source_sha256": "5eb2822e23c057c67d412a631ab672cee457a6a010877dbbd0876ffc9f798736",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/investigation_code.py",
+      "source_bytes": 6812,
+      "source_sha256": "fba1f8ff6d4c892ec8226c9fc86a81b8c93189bccd4eecdd605adb58b0d4e362",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/investigation_compact_range.py",
+      "source_bytes": 8679,
+      "source_sha256": "69cb644300e557f2e273bda87d4a6a0211f528f501864845950dc90b0bf8fcaf",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/investigation_nearfield.py",
+      "source_bytes": 14911,
+      "source_sha256": "b2410ee0f6cc8801d4fad7c2c737e1da3c6a856f79d5fdab4ba51494c15784f8",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/joint_retired_cohort_gate.py",
+      "source_bytes": 10711,
+      "source_sha256": "fa43f950a19699f92855be19e2761803f70345c6f39314d1e46b8e7d808339e6",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/lock_joint_fixed18_development.py",
+      "source_bytes": 26984,
+      "source_sha256": "8c2deffbf02c8e5dc12c1c53e22cc561cb289c81fac255b214e05ad506c2a2f5",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_bounded_geometry.py",
+      "source_bytes": 45029,
+      "source_sha256": "6c783bfbdb9d0bbb86287b90bbb82228bf9c5c96aa9bc8bc299368f82b264b28",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_joint_case1_training_consistency.py",
+      "source_bytes": 6064,
+      "source_sha256": "8f7a5af953b88d4ddfe8d5c7a6070b2b83f15ce1a9c3e5b0857de8d702744457",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_joint_geometry_virtual.py",
+      "source_bytes": 12029,
+      "source_sha256": "c150dbc36013b3ad30b2ea745ae3bca0d6e8cbe9f60569b01ddc4c2c93735554",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_joint_ideal_unknown_response.py",
+      "source_bytes": 21366,
+      "source_sha256": "0e6b54c38ee8f7ca7bcf60964c630e83dd2eeb4c36ce9a38ba56352a854b0d60",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_joint_local_sensitivity.py",
+      "source_bytes": 4978,
+      "source_sha256": "b599da7e2e3e34b4b45ae160d1d6dbdabe3c664fac000e177448de553a885941",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_large_error_validation.py",
+      "source_bytes": 20161,
+      "source_sha256": "68cc9675c9bf2d14cf330554014e87c31be187c9b1e3803d411254f5387d9af7",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_minimum_scan_result.py",
+      "source_bytes": 38741,
+      "source_sha256": "4d483917b454141ff954a8cfef61b97f04bda307b255a43bcdc5f86ac3b7a767",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_raw_measurement.py",
+      "source_bytes": 12144,
+      "source_sha256": "6b38792aa9adfbf5c5717516908fbf94bec105ec0368201f3eb675e914316bb4",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_real_measurement.py",
+      "source_bytes": 33631,
+      "source_sha256": "cf0e23e12fe433550ce91a6706adf50abc0dbe3277abd4d8f2b63a898abb3fa4",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_scan_interpolation_control.py",
+      "source_bytes": 4537,
+      "source_sha256": "ddde398c5e711d5350d0adfc973dcbe404028246cf147e42fde0a8e4b262723e",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_scan_inversion.py",
+      "source_bytes": 22211,
+      "source_sha256": "bb63335f2761f902864360c89de53c297e7b56811dc0bb99268ffbb51fc92b39",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_square_scan_experiments.py",
+      "source_bytes": 31063,
+      "source_sha256": "0516d9632ab1c2eba1a43e805c6c1458ae331547fe76ed97b47c5a78969ea110",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/plot_thesis_methods.py",
+      "source_bytes": 24551,
+      "source_sha256": "57b1bc7da5bdeab80543c0135b33bb2f0f4419b6a82fecc436f1740145ea12d6",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_calibration_gpu_domains.py",
+      "source_bytes": 7328,
+      "source_sha256": "b058f83883e9d78f56a7f75ee2fa132bee63e590522ddf482f42b6d808771d88",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_finite_gpu_production.py",
+      "source_bytes": 36155,
+      "source_sha256": "3045b41918b6cc7cf1eff48ed0025899a90a97943429aeb663bd8e41b31e4c17",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_finite_vector_reference.py",
+      "source_bytes": 16343,
+      "source_sha256": "728da464484e7af6b45fa68de56dcc82ba95b7abf1e65beb939cb07324028f11",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_nearbound_candidate.py",
+      "source_bytes": 9141,
+      "source_sha256": "771e9cb51285af6ee65dab4b8f92dba7edef5731ae840722bb27e3aaa3d08075",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_real_inputs.py",
+      "source_bytes": 4563,
+      "source_sha256": "7f866de32c0fd1a6cc89e7bb9b507bbe2ef5649002e5393170a309ffd6f411ff",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/prepare_joint_stress_development.py",
+      "source_bytes": 18064,
+      "source_sha256": "be73be7b8d6a71a7dbd843e32eea8789b3f91b6aede2e9e4b9ecd2e5e0ac49cb",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/preview_new_scan_color_ranges.py",
+      "source_bytes": 2581,
+      "source_sha256": "671a6068d17cae7ba48b5dbbb6c619826f6af3f7c95f7bf828d3cbe322e8827b",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/qualify_joint_finite_aperture.py",
+      "source_bytes": 19589,
+      "source_sha256": "dd06afe758a29a99db593c3c71a59a67137ebf046275dc19ca4ef2ea21a79f49",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/register_memory_trial.py",
+      "source_bytes": 9332,
+      "source_sha256": "02e3c5055697187bc8f24819242f8ab49ec3b00bbcd3b36403edce7e2439ec24",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/replot_new_scan_shared_scale.py",
+      "source_bytes": 12528,
+      "source_sha256": "58503b926cd2e195cac4dc82cedf3b2c06ff46b78ea8bf9bc2fa6353b549eb50",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/replot_staggered_results.py",
+      "source_bytes": 14008,
+      "source_sha256": "7d72445d82c118294d1f57fee87582968753eda4666ba626be7cb550dddf73ab",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_bounded_geometry.py",
+      "source_bytes": 29964,
+      "source_sha256": "770ec24142fe32ae8961ca72ac85923861590aa088108fa228aa7ff068d9fa8f",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_calibration_cpu_references.py",
+      "source_bytes": 12726,
+      "source_sha256": "7ec317d7573371789de79db57a64b0398a794b56b684ef1771518018fe573fc4",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_calibration_development.py",
+      "source_bytes": 27249,
+      "source_sha256": "fa89b5655fcf97cc7dfe0e1b7e957bb1bf4a8ca625a00f5a021c4cab7d31828a",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_calibration_gpu_development.py",
+      "source_bytes": 100765,
+      "source_sha256": "32064ccde19c02056ed56a26dd720133417467cb3377a9df08b4769f947f5a5d",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case1_calibration_matched.py",
+      "source_bytes": 17437,
+      "source_sha256": "59f20c332f7abc082444e1260114e4187c572026373a11d86d747cec74282286",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case1_lambda_witness.py",
+      "source_bytes": 46063,
+      "source_sha256": "bbe61acb09506a29ef4004a658f89fd334c50f9ccf1df9f0bce7082d051d66d6",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case1_tau0p3_texture_pair.py",
+      "source_bytes": 16427,
+      "source_sha256": "169e4491d906dbd4e6a36e06b607f9cc2442fa135e46e2c16697aac966cf1220",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case4_controls_execution.py",
+      "source_bytes": 20900,
+      "source_sha256": "3f971075f233d6ed73a2e8984df529dab82f19863585e0030df088ad5ebe8ef1",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case4_frequency_controls.py",
+      "source_bytes": 20621,
+      "source_sha256": "762d3c4288ec5b01ab9b8d417528e86d02b61674059013f7ae0bd3aef20128e6",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case4_frequency_controls_execution.py",
+      "source_bytes": 44785,
+      "source_sha256": "9a12b9bc2db944998a9122a7ec076fb647311973a00c6b8d1efee4607b51c2f9",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case4_frequency_controls_execution_v2.py",
+      "source_bytes": 65424,
+      "source_sha256": "749c88ff4296d7035542be54c00979d6edf660ec82adc20fae5dfbf66466c58e",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_case4_information_controls.py",
+      "source_bytes": 25839,
+      "source_sha256": "8b55dc7b3521554d9511cb43a30a88f5986b1e42e6d858afdab526b618c3db43",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_batch_metadata_qualification.py",
+      "source_bytes": 9196,
+      "source_sha256": "825c2c84bec2e4dbd5c0af1dcdd9b636cde2fc29f77084439c604c2d1c83495e",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_complex_prior_development.py",
+      "source_bytes": 44350,
+      "source_sha256": "82592bc313d41f08b11d93380b11aec1200876dc67ca1caef2ef838c625226f3",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_one_start_batch.py",
+      "source_bytes": 24838,
+      "source_sha256": "754140db33ddfe96c67509f47679eae7641bddec686d3c6e87ed8727d71c6a43",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_population_contract.py",
+      "source_bytes": 14948,
+      "source_sha256": "652b268c3aea4fc1219b0b14c6f5a67837c3549df73f51fea402723b74b383a0",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_population_index.py",
+      "source_bytes": 37575,
+      "source_sha256": "3a639decb2cb2c4e004f97f41e6a46f0739e5d73a2ec33567f99fed838c109cf",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_conditional_public_geometry.py",
+      "source_bytes": 51716,
+      "source_sha256": "1333648476670035c19484ecd8a10a75b856692df3d8f552700ce5b08c10c0f1",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_finite_gpu_fd37.py",
+      "source_bytes": 37680,
+      "source_sha256": "cfb5f682d3b0e677aa947a6346f865ecd972f19d28cb56cc4e1fe1abf0a8dfc5",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_finite_gpu_trajectory_qualification.py",
+      "source_bytes": 36342,
+      "source_sha256": "757cca06f538635c3fe912bcbb38d7bad7b17a702572cc385e304c146fe4eee9",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_finite_model_sensitivity.py",
+      "source_bytes": 55235,
+      "source_sha256": "87b09118b511557c234600b9f25cb9e61a920f08462d49fd22c67fb10a14fbca",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_formal_c0_staged.py",
+      "source_bytes": 40303,
+      "source_sha256": "69c9655286816e539184617fd440b8a801d4ae43c851a08bc7f5386abd6f2ae0",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_formal_external_controls.py",
+      "source_bytes": 100341,
+      "source_sha256": "c33e90ff02abc2791b96f4b51eeaafbd492c2aa3d2021cdc0237abbbdb843722",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_formal_v3_c0_staged.py",
+      "source_bytes": 31020,
+      "source_sha256": "273e370d30f4f6225cdcf7196a9b0aaf176e606c61d5da5ca92f0fa6c46dfe5e",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_full32_stress_fit_development.py",
+      "source_bytes": 42904,
+      "source_sha256": "ddcf9f569fb326f6070ffbd60cc6a7beb1257a3565ef4537e94240eb6c9eae92",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_geometry_confirmation.py",
+      "source_bytes": 147523,
+      "source_sha256": "25d98e2cb64f630fbf9f15faec0da2d60a27456868ba78bab46b7048c66c8a15",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_geometry_oracle.py",
+      "source_bytes": 7297,
+      "source_sha256": "eb21c71102a4883d135bdb9e636fcb94d0c7132879b4cb39a2de8bebb817f436",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_geometry_virtual.py",
+      "source_bytes": 51099,
+      "source_sha256": "c894eaaec80591217213aeec627dfe06b30f02536120ed0b6ac2b455346b4deb",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_gpu_validation.py",
+      "source_bytes": 14076,
+      "source_sha256": "1f3ca75fcf725307743c49c5634678fefd638ce25c434e847d730b61c4a7af55",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_ideal_unknown_response.py",
+      "source_bytes": 36666,
+      "source_sha256": "c50bdfbd4ace314c0cb09d39d29531db50226b69f5df86a0ab9fd32f1c233956",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_information_controls.py",
+      "source_bytes": 36287,
+      "source_sha256": "013c7085d9e3d2b68f29a07649f5025f0c3c2ead0a1030aa91a0d6681344173c",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_staged_development.py",
+      "source_bytes": 47869,
+      "source_sha256": "ab33332cd53b3e0d482609b2d57d1e198f53a8f0821fdd6fa09c78692b133ce4",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_stress_development.py",
+      "source_bytes": 9768,
+      "source_sha256": "1704639d5c584d96c757964ed2b435c180721cfc9fbea6599800556cf91126ef",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_tau03_fixed_cross_objective.py",
+      "source_bytes": 20963,
+      "source_sha256": "4d58c8d84f24fba63ae8051f4eee5000e3ba3fae00a7645b9e6f401129d6fd2b",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_tau03_selected_branch_probe.py",
+      "source_bytes": 24760,
+      "source_sha256": "7744c7f38ae3997231ec97104afb67a622f9e4b0884afcb31e59e16636bced07",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_warm_certificate_cpu_development.py",
+      "source_bytes": 4431,
+      "source_sha256": "c87941c986545f4d96b7b8ec47a7f536285ffed33dcc64e4c182fb090233ab62",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_joint_window_staged_development.py",
+      "source_bytes": 23393,
+      "source_sha256": "4799a0e11ba0b20312cacaa5421da5d587dc5ffb3723e1d54fc15950036691cc",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_large_error_validation.py",
+      "source_bytes": 965,
+      "source_sha256": "8a56b5b9dc540d50d851ebbcd788f5a7d1e9fa1ea779a2db3e350d888fc8f27a",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/run_real_hypotheses.py",
+      "source_bytes": 843,
+      "source_sha256": "60fad775daa8c43a83ca15f4dd0e70d08968ff18014d3794377b5b741fd1f96b",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_real_hypotheses_delay.py",
+      "source_bytes": 1036,
+      "source_sha256": "e7920baf4707c25931178431b58a90461fbaace3eb5c0443e81e27cb81360d9d",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_scan_inversion.py",
+      "source_bytes": 35699,
+      "source_sha256": "2ba41f02a527c90aecef65bcaf52a02674adb0a679ccc128d51dc83e459227da",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_single_finite_cpu_reference.py",
+      "source_bytes": 34890,
+      "source_sha256": "07ed36052e8dd51adf59c7cea6b29f72dbe4dc945ae9bf1f66744903067db197",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_square_scan_experiments.py",
+      "source_bytes": 1936,
+      "source_sha256": "bc1d4a037d9d5b3e6da47ae14a294c0d2f957f97d0a2c5d806c11462219bc632",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/run_thesis_aperture.py",
+      "source_bytes": 864,
+      "source_sha256": "4ea0d3681d5965d47005a34aa63cbfb6e44defb940c620b5d1cd9a549aab7017",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/run_thesis_calibration.py",
+      "source_bytes": 1007,
+      "source_sha256": "c91a9a8c1cc302044d95cdf5534f5a40a09ef425d019e90b0737804c68733bfe",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/run_thesis_coded.py",
+      "source_bytes": 968,
+      "source_sha256": "a28354920f0f2df394092808b0451685567f81c18e1168992f10fc27c6d55513",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "scripts/scan_interpolation_control.py",
+      "source_bytes": 18542,
+      "source_sha256": "9abdd390810cbff39eaea196a9518358330883bf9d468c2a1230b75c209861fa",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/score_joint_fixed18_descriptors.py",
+      "source_bytes": 11169,
+      "source_sha256": "0c0e61592d682ce044d2785617a55d365653ca0dec107266d6e3ccb02dfa4ebd",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/score_joint_staged_case4_pair.py",
+      "source_bytes": 32704,
+      "source_sha256": "1ccf9396e0ea419b736c7c12056d9ab96d8e937e3eb2bfc0f7017eca09fc3f13",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/summarize_bounded_geometry.py",
+      "source_bytes": 5407,
+      "source_sha256": "62b0bceaff1467a688eca2c3bfe08154367638b57da61fb6f9e7a0633d732686",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/summarize_large_error_validation.py",
+      "source_bytes": 7156,
+      "source_sha256": "5baf9343220dab7d246195bfe42266de353c2cf69e26ab6a8cf77a0092e76f22",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/summarize_scan_inversion.py",
+      "source_bytes": 4313,
+      "source_sha256": "7c0533e43ed45279da136929279d66f503db53195993865244c82bd93297e327",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/summarize_square_scan_experiments.py",
+      "source_bytes": 7331,
+      "source_sha256": "6560de0dfe0ff148ddedfe3c146a4cac8f07036b9f192142d06ffbe2571c7529",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "scripts/verify_new_nearfield_scan_exports.py",
+      "source_bytes": 8417,
+      "source_sha256": "069cbde8aff8cb4449bc5bd1cb4a5b98d5387e05279696a64f075106555f5af6",
+      "disposition": "left_at_source",
+      "reason": "Historical investigation, measured-data inversion, plotting/delivery, memory, scheduling, staged or state-bound runner; original remains the recovery location."
+    },
+    {
+      "source_relative_path": "configs/joint_geometry_execution_policy.json",
+      "source_bytes": 5170,
+      "source_sha256": "bb4d4d0e74a905c9ad69fc52409b8cced91cad79cf7bd802f5d3f8e8b50ba45d",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement or joint-execution state policy; not a clean simulation default."
+    },
+    {
+      "source_relative_path": "configs/large_error_validation_policy.json",
+      "source_bytes": 6168,
+      "source_sha256": "2b1be3acd95fe5689701676ed88cd1533484fc27f2d802a37df3c73efc0f2031",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "configs/real_measurement_policy.json",
+      "source_bytes": 499,
+      "source_sha256": "b69ccbb643e2154b5a75fe1810364bacf9fd4820d7942efb2f3628250d3a4dcf",
+      "disposition": "left_at_source",
+      "reason": "Historical real-measurement or joint-execution state policy; not a clean simulation default."
+    },
+    {
+      "source_relative_path": "configs/thesis_methods_policy.json",
+      "source_bytes": 9098,
+      "source_sha256": "e29feb9adbb04de7c6d543aa2d2e29ac1da0d96603893b240a84dddb896217e5",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    },
+    {
+      "source_relative_path": "configs/validation_policy.json",
+      "source_bytes": 1187,
+      "source_sha256": "3c5a6b39ec1a6b9f90ac00f13f9848e852227e2c6bf24261bca072bbf32e62d3",
+      "disposition": "copied",
+      "reason": "Selected simulation dependency closure or maintained check."
+    }
+  ],
+  "excluded_groups": [
+    {
+      "path": ".memory/",
+      "reason": "Legacy memory database/state, not an active project service."
+    },
+    {
+      "path": "outputs/",
+      "reason": "Historical experiment outputs, receipts, seals, caches and scheduling state; retain at original path."
+    },
+    {
+      "path": "sources/",
+      "reason": "Large original measurement/source archives; retain at original path."
+    },
+    {
+      "path": "temp/",
+      "reason": "Legacy temporary source locations; retain at original path."
+    },
+    {
+      "path": ".pytest_cache/ and .test-tmp/ and **/__pycache__/",
+      "reason": "Disposable caches, excluded."
+    },
+    {
+      "path": "20261030-resource-QA-15-import/",
+      "reason": "Historical resource import and review bundle, outside numerical closure."
+    },
+    {
+      "path": "metadata/ except reference_element_geometry.csv and its provenance JSON",
+      "reason": "Real-data investigations, conversations and evidence are handled by project-level history migration, not the active numerical package."
+    },
+    {
+      "path": "docs/, README.md and AGENTS.md",
+      "reason": "Legacy conclusions and instructions are handled by project-level history migration; old operating rules are not inherited here."
+    }
+  ],
+  "migration_adaptations": [
+    {
+      "path": "pyproject.toml",
+      "reason": "Route-specific simulation entry point and optional torch dependency; original pytest discovery is preserved."
+    },
+    {
+      "path": "src/array_reconstruct/__main__.py",
+      "reason": "Route module invocation delegates to simulation-only entry point."
+    },
+    {
+      "path": "src/array_reconstruct/simulation_cli.py",
+      "reason": "New command-routing wrapper; calls unchanged legacy numerical command functions and rejects excluded real-data command."
+    }
+  ],
+  "path_decisions": [
+    "Keep the 53626-byte geometry CSV at metadata/reference_element_geometry.csv to preserve joint_virtual.py bytes and its default 32x32 fixture lookup.",
+    "Run commands from the experiment directory; always pass output paths under project-root tmp for disposable work.",
+    "Historical outputs strings in policies and joint_stress are provenance, not new active state.",
+    "Thesis calibration/coded full historical runners need explicit --operators pointing at retained legacy operator NPZ; caches are not copied. Their numeric APIs and maintained tests are independent.",
+    "Original cli.py remains byte-identical but its historical analyze-real branch is excluded from the shipped entry point and lacks real_measurement.py in this package."
+  ],
+  "validation": {
+    "status": "passed within migration scope",
+    "date": "2026-11-10",
+    "environment": {
+      "compiled_files": 71,
+      "imported_modules": 35,
+      "python": "3.13.17 (tags/v3.13.17:64e080d, Oct 21 2026, 14:08:53) [MSC v.1944 64 bit (AMD64)]",
+      "executable": "C:\\Program Files\\Python313\\python.exe",
+      "versions": {
+        "numpy": "2.5.4",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pytest": "9.2.0",
+        "torch": "2.10.0+cu128",
+        "setuptools": "70.2.0"
+      },
+      "cuda_executed": false
+    },
+    "pytest": {
+      "passed": 441,
+      "warnings": 2,
+      "elapsed_seconds": 23.41,
+      "scope": "Existing CPU-only maintained unit tests; no historical full experiments.",
+      "excluded_optional_test_modules": [
+        "test_joint_amplitude_gpu.py",
+        "test_joint_geometry_gpu.py",
+        "test_joint_geometry_gpu_amplitude.py",
+        "test_joint_pose_gpu_interface.py",
+        "test_joint_finite_aperture_backend.py"
+      ],
+      "default_discovery_unchanged": true,
+      "command": "python -B -m pytest -q -p no:cacheprovider --basetemp ../../tmp/migration-code/pytest --ignore=tests/test_joint_amplitude_gpu.py --ignore=tests/test_joint_geometry_gpu.py --ignore=tests/test_joint_geometry_gpu_amplitude.py --ignore=tests/test_joint_pose_gpu_interface.py --ignore=tests/test_joint_finite_aperture_backend.py",
+      "warning_interpretation": "Two RuntimeWarnings from deliberately nonfinite inputs in one guard test; passed. Global pytest-asyncio loop-scope deprecation also reported."
+    },
+    "entry_checks": {
+      "top_level_help": true,
+      "simulate_help": true,
+      "reconstruct_help": true,
+      "legacy_real_command_rejected_exit_code": 2
+    },
+    "hashes": {
+      "copied_files": 77,
+      "unchanged_files": 75,
+      "entry_or_declaration_adapted_files": 2,
+      "numeric_modules_including_legacy_cli_byte_identical": 35,
+      "source_inventory_files_reverified": 233
+    },
+    "new_full_simulations": 0,
+    "cuda_executed": false,
+    "source_changed": false,
+    "temporary_logs": "../../tmp/migration-code/",
+    "stable_summary": "../../devDoc/system/simulation-route.md"
+  },
+  "generated": [
+    {
+      "destination_relative_path": "src/array_reconstruct/simulation_cli.py",
+      "source_path": null,
+      "source_sha256": null,
+      "destination_sha256": "dc74570762ee142f4f71690d1a33c9433e5da3f6760355a1e271345045a26ee2",
+      "destination_bytes": 1004,
+      "purpose": "Simulation-only command router; no numeric implementation."
+    },
+    {
+      "destination_relative_path": "README.md",
+      "source_path": null,
+      "source_sha256": null,
+      "destination_sha256": "5023edfe2d5fde67fc3f6c0719837f728d9585420336049240cf5cbf1a3135a3",
+      "destination_bytes": 4093,
+      "purpose": "Route entry points and scope."
+    },
+    {
+      "destination_relative_path": "data/README.md",
+      "source_path": null,
+      "source_sha256": null,
+      "destination_sha256": "906829f9f572cbbbe2ad5413ca9127d9a5806aec21746c60c8c9351d4ee46d5b",
+      "destination_bytes": 960,
+      "purpose": "Stable fixture provenance and original location navigation."
+    }
+  ]
+}

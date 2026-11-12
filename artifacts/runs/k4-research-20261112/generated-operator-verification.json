@@ -1,0 +1,88 @@
+{
+  "generated_full_scale": true,
+  "new_scientific_cases": 0,
+  "seconds": 6.453841700000339,
+  "generated_input": {
+    "path": "tmp\\k4-research-20261112\\generated-compatibility\\operators_11700000000Hz.npz",
+    "sha256": "b082e256bb11f9f545ecabc1470ab5efdab8f6459d9e02bee8271853fb1180e6",
+    "generated": true,
+    "verification": {
+      "training": {
+        "point_relative_error": 0.0,
+        "truth_probe_relative_error": 7.535797024768222e-16,
+        "tolerance": 5e-13,
+        "passed": true
+      },
+      "validation": {
+        "point_relative_error": 0.0,
+        "truth_probe_relative_error": 7.2645929054414965e-16,
+        "tolerance": 5e-13,
+        "passed": true
+      },
+      "test": {
+        "point_relative_error": 0.0,
+        "truth_probe_relative_error": 7.489279848667131e-16,
+        "tolerance": 5e-13,
+        "passed": true
+      }
+    },
+    "frequency_hz": 11700000000.0
+  },
+  "array_comparison_to_historical": [
+    {
+      "operator": "point_training",
+      "shape": [
+        3969,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "operator": "point_validation",
+      "shape": [
+        1323,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "operator": "point_test",
+      "shape": [
+        1323,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "operator": "truth_training",
+      "shape": [
+        3969,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "operator": "truth_validation",
+      "shape": [
+        1323,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    },
+    {
+      "operator": "truth_test",
+      "shape": [
+        1323,
+        1024
+      ],
+      "relative_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "all_passed": true
+}

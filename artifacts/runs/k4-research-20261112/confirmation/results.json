@@ -1,0 +1,5809 @@
+{
+  "schema_version": 1,
+  "stage": "confirmation",
+  "synthetic_only": true,
+  "actual_measurements_read": false,
+  "started_utc": "2026-11-12T06:00:25.210350+00:00",
+  "config_sha256": "53414dd181b6e6ad2808f86aeb702ceda31e94dd14bd0a0518bd40731b434110",
+  "policy_source": "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\configs\\k4_confirmation_20261112.json",
+  "policy": {
+    "schema_version": 1,
+    "registered_on": "2026-11-12",
+    "synthetic_only": true,
+    "geometry": {
+      "array_side": 32,
+      "pitch_m": 0.011,
+      "row_offset_m": 0.0055,
+      "scan_side": 63,
+      "scan_step_m": 0.00835,
+      "scan_distance_m": 0.06,
+      "frequency_hz": 11700000000.0,
+      "validation_x_offset_m": 0.004175,
+      "test_y_offset_m": -0.0027,
+      "test_z_offset_m": 0.007
+    },
+    "truth": {
+      "source_aperture_wavelength_fraction": 0.1,
+      "quadrature_order": 3,
+      "directionality_power": 0.0,
+      "probe_aperture_m": 0.0,
+      "coupling": "identity",
+      "common_gain": [
+        1.0,
+        0.0
+      ]
+    },
+    "scenario": {
+      "name": "span5_phase5",
+      "amplitude_distribution": "uniform",
+      "amplitude_half_range_db": 2.5,
+      "amplitude_std_db": null,
+      "phase_std_deg": 5.0
+    },
+    "frequencies_hz": [
+      11700000000.0
+    ],
+    "fault_states": [
+      false,
+      true
+    ],
+    "initial_snr_db": 40.0,
+    "alphas": [
+      1e-08,
+      2.1544346900318822e-08,
+      4.641588833612772e-08,
+      1e-07,
+      2.1544346900318822e-07,
+      4.6415888336127725e-07,
+      1e-06,
+      2.1544346900318822e-06,
+      4.641588833612773e-06,
+      1e-05,
+      2.1544346900318823e-05,
+      4.641588833612773e-05,
+      0.0001,
+      0.00021544346900318823,
+      0.00046415888336127773,
+      0.001,
+      0.002154434690031882,
+      0.004641588833612773,
+      0.01,
+      0.021544346900318822,
+      0.046415888336127725,
+      0.1,
+      0.21544346900318823,
+      0.46415888336127725,
+      1.0
+    ],
+    "targets": {
+      "baseline": {
+        "active_amplitude_rmse_db": 0.5,
+        "active_phase_rmse_deg": 5.0,
+        "complex_nrmse": 0.1
+      }
+    },
+    "max_total_seconds": 1800,
+    "max_case_seconds": 120,
+    "phase_mask_ratio": 0.1,
+    "coefficient_gauge": "Evaluation only: one complex scalar minimizes coefficient squared error. Unaligned errors are also reported.",
+    "selection": "Training-only common gain and nominal-centered ridge; the unchanged 25 alpha grid is selected by independent noisy spatial validation. Truth, injected labels and final test are excluded.",
+    "state_stability": "Unknown nonreference per-element state errors are fixed over training, validation and test; reference unchanged. No inter-session gain, phase, base-response drift, geometry or probe uncertainty.",
+    "noise": "Each plane uses uncoded initial clean RMS/100, fixed across the four codes. Proper complex independent state/plane noise; matched latent streams across regimes and healthy/faulted cases.",
+    "seed_policy": "Normal/fault streams use root.spawn(3); receiver noise keys (64001,plane,state); state errors keys (64002,state).spawn(2). Pairing across regimes/health intentional. All replicate roots below are disjoint from historical/development roots.",
+    "domain_assignment": "Preassigned by simulation state-error regime; no truth-based selection, rejection, relabeling or conditional relaxation.",
+    "rejection_rule": "None. Failed, timed-out, unstarted and rejected cases remain in their registered denominator and fail baseline acceptance.",
+    "coverage_requirement": 1.0,
+    "coefficient_acceptance": "Every registered declared-domain case must return successfully and meet all three baseline gates. Fault detection is descriptive and separately scored.",
+    "limitations": [
+      "Scalar equivalent radiating coefficients only; relative gain/phase accuracy.",
+      "11.7 GHz only; one specified i.i.d. normal scatter distribution.",
+      "Stable known geometry, ideal nominal coding, unknown fixed-per-code errors.",
+      "Finite Monte Carlo evidence is not a universal guarantee or 95 percent reliability certification.",
+      "No GPU, real-hardware, session-drift or injected-fault diagnosis certification."
+    ],
+    "stage": "confirmation",
+    "frozen": true,
+    "seeds": [
+      71312001,
+      71312002,
+      71312003,
+      71312004,
+      71312005,
+      71312006,
+      71312007,
+      71312008,
+      71312009,
+      71312010
+    ],
+    "excluded_seeds": [
+      20261029,
+      20261030,
+      20261031,
+      20261101,
+      20261102,
+      20261111,
+      20261112,
+      20261113,
+      61312001,
+      61312002
+    ],
+    "max_cases": 20,
+    "state_error_regimes": [
+      {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      }
+    ],
+    "question": "Independent confirmation of the inherited stable mild K4 first-version domain; frozen before any new scientific result.",
+    "stopping_rule": "Exactly 20 cases unless execution budget is exceeded. No retuning after reading results. Any unmet case means baseline not confirmed for this version; preserve complete denominator. No midpoint promotion from development."
+  },
+  "source_hashes": {
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\k4_research.py": "5c1511bdfe2182eb7b8bf4c7f5d4f94fc741299be6c1cfb5161f149dce280cd4",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\thesis_coded.py": "16ddbbfd8248e833b0329069f99abd38b7963025aaf78efca882acafb83ce39b",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\large_error_validation.py": "b39c82a28edce49c3f23df33cbacb7ebd938b4f36e876686dfc86d78807f025a",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\inverse.py": "9c0aa734569acd5fa77cc1f1b7c8165759e0d0481197a0b208ff3a9c09a0d542",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\validation.py": "d2d08b11c72a409d73a0fe349cfa13766d59d1550dacc3d7b96ef58a41dd476b",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\diagnostics.py": "f3f65959ae23ccbe4420011c72e0dd2e350d9151482e309d005d124e41d6ef25",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\physics.py": "bacf97eb691d5b02b4e4ef2611f2469eb2a48851da7607ba49f9cad94a8e94ec",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\src\\array_reconstruct\\simulation.py": "f63d41f195cf0eb863a221370792526858f7a97dd4f0c982b1e42877548fd940",
+    "D:\\project\\20261109 array reconstruct\\experiments\\20261027-simulation\\scripts\\run_k4_research.py": "5271188f114d3ab556575c17c98fd10566635c64eb8bd89682e5fcac744b3717"
+  },
+  "targets": {
+    "baseline": {
+      "active_amplitude_rmse_db": 0.5,
+      "active_phase_rmse_deg": 5.0,
+      "complex_nrmse": 0.1
+    }
+  },
+  "budget_semantics": "Cooperative wall-clock budgets; no interruption inside NumPy/SciPy; prep counts toward total",
+  "scoring": {
+    "gauge": "evaluation-only single least-squares complex scalar",
+    "phase_mask_ratio": 0.1,
+    "phase_mask": "truth and aligned estimate amplitudes >=0.1*max(abs(truth)); both strictly positive",
+    "off_elements_in_complex_nrmse": true,
+    "rejection_rule": "none",
+    "baseline_required_coverage": 1.0
+  },
+  "seed_policy": {
+    "excitation": "SeedSequence(seed).spawn(3): amplitude, phase, fault positions",
+    "noise_spawn_key": [
+      64001,
+      "plane_id",
+      "canonical_state_id"
+    ],
+    "state_errors_spawn_key": [
+      64002,
+      "canonical_state_id"
+    ],
+    "state_errors_substreams": "spawn(2): amplitude, phase",
+    "plane_ids": {
+      "training": 0,
+      "validation": 1,
+      "test": 2
+    },
+    "pairing": "Same normal coefficients/fault locations/unit noise/state standard normals across healthy/faulted, regimes and frequencies; independent replicate seeds",
+    "reference_state_unchanged": true,
+    "state_errors_fixed_across_planes": true,
+    "noise_sigma": "Each case/plane initial uncoded clean RMS * 10^(-initial_snr_db/20), constant across all four states"
+  },
+  "environment": {
+    "python": "3.13.17 (tags/v3.13.17:64e080d, Oct 21 2026, 14:08:53) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.0",
+    "thread_environment": {
+      "OPENBLAS_NUM_THREADS": "4",
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4"
+    }
+  },
+  "operator_inputs": [
+    {
+      "path": "D:\\project\\trifles\\20261027 array reconstruct\\outputs\\large_error_validation_20261028_independent_noise\\operators_11.7GHz.npz",
+      "sha256": "f02f654b7aaedfb13c48fad7012eff33628d8f15220f79d0fb1f78bc3fde6cdc",
+      "frequency_hz": 11700000000.0
+    }
+  ],
+  "operators": [
+    {
+      "path": "D:\\project\\trifles\\20261027 array reconstruct\\outputs\\large_error_validation_20261028_independent_noise\\operators_11.7GHz.npz",
+      "sha256": "f02f654b7aaedfb13c48fad7012eff33628d8f15220f79d0fb1f78bc3fde6cdc",
+      "generated": false,
+      "verification": {
+        "training": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.535797024768222e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        },
+        "validation": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.2645929054414965e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        },
+        "test": {
+          "point_relative_error": 0.0,
+          "truth_probe_relative_error": 7.489279848667131e-16,
+          "tolerance": 5e-13,
+          "passed": true
+        }
+      },
+      "frequency_hz": 11700000000.0
+    }
+  ],
+  "conditioning": [
+    {
+      "frequency_hz": 11700000000.0,
+      "matrix_shape": [
+        15876,
+        1024
+      ],
+      "normalized_condition_number": 4.955724109981139,
+      "normalized_sigma_max": 1.8311982658130672,
+      "normalized_sigma_min": 0.36951174544299575,
+      "numerical_rank": 1024,
+      "direct_svd": true,
+      "seconds": 6.640644800005248
+    }
+  ],
+  "in_progress": false,
+  "cases": [
+    {
+      "name": "f11700000000_seed71312001_healthy_mild",
+      "pair_id": "f11700000000_seed71312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312001,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15193554064367876,
+        "active_phase_rmse_deg": 1.8655141753268416,
+        "complex_nrmse": 0.035835017243825616,
+        "unaligned_complex_nrmse": 0.0358388384530019,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0003772399617188,
+          -0.00036349682351753925
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15193554064367876,
+        "active_phase_rmse_deg": 1.8655141753268416,
+        "complex_nrmse": 0.035835017243825616,
+        "unaligned_complex_nrmse": 0.0358388384530019,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0003772399617188,
+          -0.00036349682351753925
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "true_negatives": 1023,
+        "precision": 0.0,
+        "recall": 0.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false,
+        "flagged_indices": [
+          983
+        ],
+        "normal_noninjected_threshold_crossings": 1,
+        "legacy_joint_acceptance_passed": false
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.035835017243825616,
+        "amplitude_rmse_db": 0.15193554064367876,
+        "phase_rmse_deg": 1.8655141753268416,
+        "true_amplitude_std_db": 1.4545873277565347,
+        "estimated_amplitude_std_db": 1.45016729828775,
+        "true_phase_std_deg": 4.943219126371237,
+        "estimated_phase_std_deg": 5.205892548270196
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1520536083436776,
+        "active_phase_rmse_deg": 1.86556729499172,
+        "complex_nrmse": 0.0358388384530019
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13335151188326722
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13335151188326722
+      },
+      "selected_alpha": 1e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07595481465881487,
+      "training_field_nrmse": 0.07502915401469397,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 1.8311982658130673e-08,
+      "training_common_gain": [
+        1.0016144426654716,
+        0.0027486594650749023
+      ],
+      "noise_sigmas": {
+        "training": 1.483515091769605,
+        "validation": 1.4569179335740583,
+        "test": 1.4954369369431704
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        120,
+        225,
+        384,
+        417,
+        990
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03057066612258874,
+      "independent_test_noisy_field_nrmse": 0.03200204344660961,
+      "fit_seconds": 0.19752770000195596,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.35150917696032,
+            "absolute_noise_sigma": 1.483515091769605,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.00695916485363
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.58285144876675,
+            "absolute_noise_sigma": 1.483515091769605,
+            "expected_snr_db": 32.909966530070385,
+            "realized_snr_db": 32.911243862206504
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.68387634223719,
+            "absolute_noise_sigma": 1.483515091769605,
+            "expected_snr_db": 31.79524936858805,
+            "realized_snr_db": 31.884734012916972
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.48322348911733,
+            "absolute_noise_sigma": 1.483515091769605,
+            "expected_snr_db": 30.28599036353741,
+            "realized_snr_db": 30.24850976823793
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 145.69179335740563,
+            "absolute_noise_sigma": 1.4569179335740583,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.83823972220903
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.88565266557293,
+            "absolute_noise_sigma": 1.4569179335740583,
+            "expected_snr_db": 33.107115265100376,
+            "realized_snr_db": 33.25829054067575
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 59.48015485384155,
+            "absolute_noise_sigma": 1.4569179335740583,
+            "expected_snr_db": 32.21874002682493,
+            "realized_snr_db": 32.253774274856
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.92964135519574,
+            "absolute_noise_sigma": 1.4569179335740583,
+            "expected_snr_db": 30.52273886602544,
+            "realized_snr_db": 30.504650646689065
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.54369369431706,
+            "absolute_noise_sigma": 1.4954369369431704,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.81657003493462
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.33978953079001,
+            "absolute_noise_sigma": 1.4954369369431704,
+            "expected_snr_db": 32.5381702504677,
+            "realized_snr_db": 32.508622925575935
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.82520529476572,
+            "absolute_noise_sigma": 1.4954369369431704,
+            "expected_snr_db": 31.441244508601038,
+            "realized_snr_db": 31.229456342373236
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.15296273197058,
+            "absolute_noise_sigma": 1.4954369369431704,
+            "expected_snr_db": 29.788629636696392,
+            "realized_snr_db": 29.74253461545179
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312001_healthy_mild.npz",
+      "archive_sha256": "93bbe3071ddc3c4a8851fe05d9aa5a7e6478488eb5e1168f3838eca6514798fb",
+      "seconds": 0.2887590999962413
+    },
+    {
+      "name": "f11700000000_seed71312001_faulted_mild",
+      "pair_id": "f11700000000_seed71312001",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312001,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.1522767963046716,
+        "active_phase_rmse_deg": 1.8691662211768727,
+        "complex_nrmse": 0.035912008651186156,
+        "unaligned_complex_nrmse": 0.03591665747761988,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          120,
+          225,
+          384,
+          417,
+          990
+        ],
+        "actual_fault_indices": [
+          120,
+          225,
+          384,
+          417,
+          990
+        ],
+        "alignment_complex": [
+          1.0004046795685404,
+          -0.0004133465520560152
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.1522767963046716,
+        "active_phase_rmse_deg": 1.8691662211768727,
+        "complex_nrmse": 0.035912008651186156,
+        "unaligned_complex_nrmse": 0.03591665747761988,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          120,
+          225,
+          384,
+          417,
+          990
+        ],
+        "actual_fault_indices": [
+          120,
+          225,
+          384,
+          417,
+          990
+        ],
+        "alignment_complex": [
+          1.0004046795685404,
+          -0.0004133465520560152
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 1,
+        "true_negatives": 1018,
+        "precision": 1.0,
+        "recall": 0.8333333333333334,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false,
+        "flagged_indices": [
+          120,
+          225,
+          384,
+          417,
+          983,
+          990
+        ],
+        "normal_noninjected_threshold_crossings": 1,
+        "legacy_joint_acceptance_passed": false
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.03591397159714546,
+        "amplitude_rmse_db": 0.1516511797073289,
+        "phase_rmse_deg": 1.8710665711186945,
+        "true_amplitude_std_db": 1.4516926637221137,
+        "estimated_amplitude_std_db": 1.4473208534786908,
+        "true_phase_std_deg": 4.931967357772449,
+        "estimated_phase_std_deg": 5.194062566399082
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15241517494569248,
+        "active_phase_rmse_deg": 1.869245160556259,
+        "complex_nrmse": 0.03591665747761988
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13335151188326722
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13335151188326722
+      },
+      "selected_alpha": 1e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.075544605989173,
+      "training_field_nrmse": 0.07471188755214975,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 1.8311982658130673e-08,
+      "training_common_gain": [
+        0.9975309746484884,
+        0.007235941837812422
+      ],
+      "noise_sigmas": {
+        "training": 1.4811947179782772,
+        "validation": 1.4547336869382699,
+        "test": 1.4936381525778266
+      },
+      "physical_fault_indices": [
+        120,
+        225,
+        384,
+        417,
+        990
+      ],
+      "paired_fault_indices": [
+        120,
+        225,
+        384,
+        417,
+        990
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03053875798882633,
+      "independent_test_noisy_field_nrmse": 0.03194984815816573,
+      "fit_seconds": 0.18946649999998044,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.11947179782788,
+            "absolute_noise_sigma": 1.4811947179782772,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 40.006959164853654
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.42789922976294,
+            "absolute_noise_sigma": 1.4811947179782772,
+            "expected_snr_db": 33.034767270249844,
+            "realized_snr_db": 33.036044602385964
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.50693784708989,
+            "absolute_noise_sigma": 1.4811947179782772,
+            "expected_snr_db": 31.931904276281227,
+            "realized_snr_db": 32.02138892061015
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.22937859091834,
+            "absolute_noise_sigma": 1.4811947179782772,
+            "expected_snr_db": 30.43224398327635,
+            "realized_snr_db": 30.394763387976873
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 145.47336869382704,
+            "absolute_noise_sigma": 1.4547336869382699,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.838239722209046
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.92036727794292,
+            "absolute_noise_sigma": 1.4547336869382699,
+            "expected_snr_db": 33.255496400351845,
+            "realized_snr_db": 33.40667167592722
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 60.37160457062033,
+            "absolute_noise_sigma": 1.4547336869382699,
+            "expected_snr_db": 32.36098445953254,
+            "realized_snr_db": 32.396018707563606
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.72308844514369,
+            "absolute_noise_sigma": 1.4547336869382699,
+            "expected_snr_db": 30.6754920057188,
+            "realized_snr_db": 30.657403786382428
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.3638152577827,
+            "absolute_noise_sigma": 1.4936381525778266,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.81657003493462
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 64.23882420312118,
+            "absolute_noise_sigma": 1.4936381525778266,
+            "expected_snr_db": 32.67104369577829,
+            "realized_snr_db": 32.64149637088653
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 56.59611694725577,
+            "absolute_noise_sigma": 1.4936381525778266,
+            "expected_snr_db": 31.57082473767248,
+            "realized_snr_db": 31.35903657144468
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.174659712957485,
+            "absolute_noise_sigma": 1.4936381525778266,
+            "expected_snr_db": 29.989267553959337,
+            "realized_snr_db": 29.943172532714737
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312001_faulted_mild.npz",
+      "archive_sha256": "e9491f53b48f2c4ec335f45c73d97e7913fdcb26272b8e81486d714f48a1dbcf",
+      "seconds": 0.28216260000044713
+    },
+    {
+      "name": "f11700000000_seed71312002_healthy_mild",
+      "pair_id": "f11700000000_seed71312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312002,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15694417165310962,
+        "active_phase_rmse_deg": 1.9628996616676861,
+        "complex_nrmse": 0.03754013225402902,
+        "unaligned_complex_nrmse": 0.03754131995888578,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0001421134464463,
+          0.00026292510539054135
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15694417165310962,
+        "active_phase_rmse_deg": 1.9628996616676861,
+        "complex_nrmse": 0.03754013225402902,
+        "unaligned_complex_nrmse": 0.03754131995888578,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0001421134464463,
+          0.00026292510539054135
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03754013225402902,
+        "amplitude_rmse_db": 0.15694417165310962,
+        "phase_rmse_deg": 1.9628996616676861,
+        "true_amplitude_std_db": 1.4632016016386309,
+        "estimated_amplitude_std_db": 1.444938826455005,
+        "true_phase_std_deg": 5.204101824686596,
+        "estimated_phase_std_deg": 5.533485243170327
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15694800222377875,
+        "active_phase_rmse_deg": 1.9629623015408317,
+        "complex_nrmse": 0.03754131995888578
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333176892698268
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333176892698268
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07873485996081162,
+      "training_field_nrmse": 0.0771953805805473,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        1.0146020363998398,
+        -0.010203785957698651
+      ],
+      "noise_sigmas": {
+        "training": 1.500230016059596,
+        "validation": 1.4765190624244542,
+        "test": 1.5124410877132632
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        28,
+        80,
+        109,
+        405,
+        1003
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.032101067619179816,
+      "independent_test_noisy_field_nrmse": 0.033424013101521856,
+      "fit_seconds": 0.20137589999649208,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 150.02300160595968,
+            "absolute_noise_sigma": 1.500230016059596,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.03836166204963
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 69.39471350384677,
+            "absolute_noise_sigma": 1.500230016059596,
+            "expected_snr_db": 33.30337073395801,
+            "realized_snr_db": 33.44558415995267
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.83704392356792,
+            "absolute_noise_sigma": 1.500230016059596,
+            "expected_snr_db": 31.72096474907451,
+            "realized_snr_db": 31.743039582372038
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.06645316576141,
+            "absolute_noise_sigma": 1.500230016059596,
+            "expected_snr_db": 30.292536302744516,
+            "realized_snr_db": 30.253297073391202
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.65190624244548,
+            "absolute_noise_sigma": 1.4765190624244542,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.91464809757666
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.76572683039669,
+            "absolute_noise_sigma": 1.4765190624244542,
+            "expected_snr_db": 33.36265958902727,
+            "realized_snr_db": 33.423987709211914
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.06681886728832,
+            "absolute_noise_sigma": 1.4765190624244542,
+            "expected_snr_db": 31.893779521011403,
+            "realized_snr_db": 31.80729856148986
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.14512940076495,
+            "absolute_noise_sigma": 1.4765190624244542,
+            "expected_snr_db": 30.444828493448025,
+            "realized_snr_db": 30.384769540774336
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 151.24410877132627,
+            "absolute_noise_sigma": 1.5124410877132632,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.961342294967345
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 67.76034822365541,
+            "absolute_noise_sigma": 1.5124410877132632,
+            "expected_snr_db": 33.025943241632795,
+            "realized_snr_db": 32.95946780265209
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.44541176632579,
+            "absolute_noise_sigma": 1.5124410877132632,
+            "expected_snr_db": 31.12565639166523,
+            "realized_snr_db": 31.11878067183044
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.8772557337496,
+            "absolute_noise_sigma": 1.5124410877132632,
+            "expected_snr_db": 30.0090156421572,
+            "realized_snr_db": 30.142261016852807
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312002_healthy_mild.npz",
+      "archive_sha256": "2c51ed88302d012fbd9876d603abc044439977ccf2ed043b9a6192a045413651",
+      "seconds": 0.2988194999998086
+    },
+    {
+      "name": "f11700000000_seed71312002_faulted_mild",
+      "pair_id": "f11700000000_seed71312002",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312002,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.1570132360634833,
+        "active_phase_rmse_deg": 1.9692742703220905,
+        "complex_nrmse": 0.03759260430279942,
+        "unaligned_complex_nrmse": 0.03759414175405163,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          28,
+          80,
+          109,
+          405,
+          1003
+        ],
+        "actual_fault_indices": [
+          28,
+          80,
+          109,
+          405,
+          1003
+        ],
+        "alignment_complex": [
+          1.0002204564439146,
+          0.00025924806332784845
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.1570132360634833,
+        "active_phase_rmse_deg": 1.9692742703220905,
+        "complex_nrmse": 0.03759260430279942,
+        "unaligned_complex_nrmse": 0.03759414175405163,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          28,
+          80,
+          109,
+          405,
+          1003
+        ],
+        "actual_fault_indices": [
+          28,
+          80,
+          109,
+          405,
+          1003
+        ],
+        "alignment_complex": [
+          1.0002204564439146,
+          0.00025924806332784845
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          28,
+          80,
+          109,
+          405,
+          1003
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.037552865217802475,
+        "amplitude_rmse_db": 0.15692971190509813,
+        "phase_rmse_deg": 1.9622188460721928,
+        "true_amplitude_std_db": 1.4642863595964257,
+        "estimated_amplitude_std_db": 1.4458372243164053,
+        "true_phase_std_deg": 5.2120798222925115,
+        "estimated_phase_std_deg": 5.543705976230688
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1570222532783996,
+        "active_phase_rmse_deg": 1.9693368648657266,
+        "complex_nrmse": 0.03759414175405163
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333176892698268
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333176892698268
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07847472476026106,
+      "training_field_nrmse": 0.07691406263896094,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        1.0103883745333946,
+        -0.007375696585131431
+      ],
+      "noise_sigmas": {
+        "training": 1.4988443357757961,
+        "validation": 1.4757085235039902,
+        "test": 1.5111618832766782
+      },
+      "physical_fault_indices": [
+        28,
+        80,
+        109,
+        405,
+        1003
+      ],
+      "paired_fault_indices": [
+        28,
+        80,
+        109,
+        405,
+        1003
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03214517192018684,
+      "independent_test_noisy_field_nrmse": 0.033470125564595575,
+      "fit_seconds": 0.195141699994565,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.88443357757959,
+            "absolute_noise_sigma": 1.4988443357757961,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.03836166204963
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 69.47928096322731,
+            "absolute_noise_sigma": 1.4988443357757961,
+            "expected_snr_db": 33.32197568561186,
+            "realized_snr_db": 33.46418911160653
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.50267642993667,
+            "absolute_noise_sigma": 1.4988443357757961,
+            "expected_snr_db": 31.82838407954028,
+            "realized_snr_db": 31.850458912837812
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.727191533817525,
+            "absolute_noise_sigma": 1.4988443357757961,
+            "expected_snr_db": 30.416748020766843,
+            "realized_snr_db": 30.37750879141353
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.57085235039906,
+            "absolute_noise_sigma": 1.4757085235039902,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.91464809757666
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.8971242680575,
+            "absolute_noise_sigma": 1.4757085235039902,
+            "expected_snr_db": 33.38401018666035,
+            "realized_snr_db": 33.445338306845
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.65277602000275,
+            "absolute_noise_sigma": 1.4757085235039902,
+            "expected_snr_db": 31.985759725249725,
+            "realized_snr_db": 31.899278765728177
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.62069593342911,
+            "absolute_noise_sigma": 1.4757085235039902,
+            "expected_snr_db": 30.533245305420756,
+            "realized_snr_db": 30.473186352747067
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 151.11618832766774,
+            "absolute_noise_sigma": 1.5111618832766782,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.961342294967345
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.06169610116214,
+            "absolute_noise_sigma": 1.5111618832766782,
+            "expected_snr_db": 33.071835537839554,
+            "realized_snr_db": 33.00536009885886
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.12944746531562,
+            "absolute_noise_sigma": 1.5111618832766782,
+            "expected_snr_db": 31.241452982830012,
+            "realized_snr_db": 31.23457726299522
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.29703096992231,
+            "absolute_noise_sigma": 1.5111618832766782,
+            "expected_snr_db": 30.092188858859338,
+            "realized_snr_db": 30.225434233554942
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312002_faulted_mild.npz",
+      "archive_sha256": "b9fd1be5143924b69a789455c76eed4e50f09adebd3d5488032c2cb0508f98b1",
+      "seconds": 0.5643108000003849
+    },
+    {
+      "name": "f11700000000_seed71312003_healthy_mild",
+      "pair_id": "f11700000000_seed71312003",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312003,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.1569569570864105,
+        "active_phase_rmse_deg": 1.9431182540796297,
+        "complex_nrmse": 0.03724017659561753,
+        "unaligned_complex_nrmse": 0.03724236164023946,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0003703700005053,
+          -0.00016099843773414023
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.1569569570864105,
+        "active_phase_rmse_deg": 1.9431182540796297,
+        "complex_nrmse": 0.03724017659561753,
+        "unaligned_complex_nrmse": 0.03724236164023946,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0003703700005053,
+          -0.00016099843773414023
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03724017659561753,
+        "amplitude_rmse_db": 0.1569569570864105,
+        "phase_rmse_deg": 1.9431182540796297,
+        "true_amplitude_std_db": 1.4583858302981494,
+        "estimated_amplitude_std_db": 1.456236233286708,
+        "true_phase_std_deg": 4.884877974940329,
+        "estimated_phase_std_deg": 5.30851830481215
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1570944882683424,
+        "active_phase_rmse_deg": 1.943059905233772,
+        "complex_nrmse": 0.03724236164023946
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13333815534191068
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13333815534191068
+      },
+      "selected_alpha": 0.002154434690031882,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07553754102226035,
+      "training_field_nrmse": 0.07604780160017015,
+      "regularized_effective_rank": 1023.9725608071276,
+      "normalized_lambda_absolute": 0.003945197068193895,
+      "training_common_gain": [
+        1.0000370899372544,
+        -0.0007618338101492159
+      ],
+      "noise_sigmas": {
+        "training": 1.4795564764064328,
+        "validation": 1.4636745094302663,
+        "test": 1.4898494837561325
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        148,
+        163,
+        507,
+        936,
+        983
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03181784519592713,
+      "independent_test_noisy_field_nrmse": 0.03366614891429446,
+      "fit_seconds": 0.1841943000035826,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.9556476406431,
+            "absolute_noise_sigma": 1.4795564764064328,
+            "expected_snr_db": 39.999999999999986,
+            "realized_snr_db": 39.98237470776609
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.16745851910525,
+            "absolute_noise_sigma": 1.4795564764064328,
+            "expected_snr_db": 33.010258128868195,
+            "realized_snr_db": 32.99994126761383
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.064703380281024,
+            "absolute_noise_sigma": 1.4795564764064328,
+            "expected_snr_db": 31.87561328945172,
+            "realized_snr_db": 31.840803789030833
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.40972825198879,
+            "absolute_noise_sigma": 1.4795564764064328,
+            "expected_snr_db": 30.29602194785457,
+            "realized_snr_db": 30.36556195741605
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.36745094302668,
+            "absolute_noise_sigma": 1.4636745094302663,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.093088198546
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.2362538889354,
+            "absolute_noise_sigma": 1.4636745094302663,
+            "expected_snr_db": 33.113025054075514,
+            "realized_snr_db": 33.07720857740855
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.22360907893826,
+            "absolute_noise_sigma": 1.4636745094302663,
+            "expected_snr_db": 31.99309225765638,
+            "realized_snr_db": 31.959350476185982
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.52535739675128,
+            "absolute_noise_sigma": 1.4636745094302663,
+            "expected_snr_db": 30.41048466519883,
+            "realized_snr_db": 30.430872577546296
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.9849483756131,
+            "absolute_noise_sigma": 1.4898494837561325,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.9895695057246
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.88051114658493,
+            "absolute_noise_sigma": 1.4898494837561325,
+            "expected_snr_db": 32.64451975457676,
+            "realized_snr_db": 32.5844251907243
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.356460983664,
+            "absolute_noise_sigma": 1.4898494837561325,
+            "expected_snr_db": 31.400518449510393,
+            "realized_snr_db": 31.345232022698166
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.650801789161704,
+            "absolute_noise_sigma": 1.4898494837561325,
+            "expected_snr_db": 30.098556356468844,
+            "realized_snr_db": 30.08799781378091
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312003_healthy_mild.npz",
+      "archive_sha256": "24ac54815bc62cd945d25facf37740428f6f68a54c0120f5546b8b8081839e65",
+      "seconds": 0.26907260000007227
+    },
+    {
+      "name": "f11700000000_seed71312003_faulted_mild",
+      "pair_id": "f11700000000_seed71312003",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312003,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15700444453738135,
+        "active_phase_rmse_deg": 1.9451580700929911,
+        "complex_nrmse": 0.0372395963415031,
+        "unaligned_complex_nrmse": 0.03724224749141991,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          148,
+          163,
+          507,
+          936,
+          983
+        ],
+        "actual_fault_indices": [
+          148,
+          163,
+          507,
+          936,
+          983
+        ],
+        "alignment_complex": [
+          1.0004074855258875,
+          -0.00017847545489529124
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15700444453738135,
+        "active_phase_rmse_deg": 1.9451580700929911,
+        "complex_nrmse": 0.0372395963415031,
+        "unaligned_complex_nrmse": 0.03724224749141991,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          148,
+          163,
+          507,
+          936,
+          983
+        ],
+        "actual_fault_indices": [
+          148,
+          163,
+          507,
+          936,
+          983
+        ],
+        "alignment_complex": [
+          1.0004074855258875,
+          -0.00017847545489529124
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          148,
+          163,
+          507,
+          936,
+          983
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.03723512444090681,
+        "amplitude_rmse_db": 0.15664624399908733,
+        "phase_rmse_deg": 1.9450017747058204,
+        "true_amplitude_std_db": 1.4595399640091218,
+        "estimated_amplitude_std_db": 1.4579784033246248,
+        "true_phase_std_deg": 4.8799602202739205,
+        "estimated_phase_std_deg": 5.302791324878855
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15716299768410555,
+        "active_phase_rmse_deg": 1.9450867681117883,
+        "complex_nrmse": 0.03724224749141991
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13333815534191068
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13333815534191068
+      },
+      "selected_alpha": 0.002154434690031882,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07529273921659559,
+      "training_field_nrmse": 0.07569594074473313,
+      "regularized_effective_rank": 1023.9725608071276,
+      "normalized_lambda_absolute": 0.003945197068193895,
+      "training_common_gain": [
+        0.9961281102024956,
+        0.0005837210404482885
+      ],
+      "noise_sigmas": {
+        "training": 1.4788368945256736,
+        "validation": 1.4584334021075895,
+        "test": 1.490070983322243
+      },
+      "physical_fault_indices": [
+        148,
+        163,
+        507,
+        936,
+        983
+      ],
+      "paired_fault_indices": [
+        148,
+        163,
+        507,
+        936,
+        983
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03181553363334389,
+      "independent_test_noisy_field_nrmse": 0.033649648127797346,
+      "fit_seconds": 0.18615549999958603,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.88368945256727,
+            "absolute_noise_sigma": 1.4788368945256736,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.9823747077661
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.94102104221692,
+            "absolute_noise_sigma": 1.4788368945256736,
+            "expected_snr_db": 32.98470781175435,
+            "realized_snr_db": 32.97439095049998
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.529809779076935,
+            "absolute_noise_sigma": 1.4788368945256736,
+            "expected_snr_db": 31.94913671407783,
+            "realized_snr_db": 31.91432721365695
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.075795716631454,
+            "absolute_noise_sigma": 1.4788368945256736,
+            "expected_snr_db": 30.418941460641907,
+            "realized_snr_db": 30.488481470203386
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 145.84334021075895,
+            "absolute_noise_sigma": 1.4584334021075895,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.093088198546
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.89683877018814,
+            "absolute_noise_sigma": 1.4584334021075895,
+            "expected_snr_db": 33.09955957305388,
+            "realized_snr_db": 33.06374309638691
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 59.04819004455297,
+            "absolute_noise_sigma": 1.4584334021075895,
+            "expected_snr_db": 32.14639975585439,
+            "realized_snr_db": 32.11265797438399
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.101543295392226,
+            "absolute_noise_sigma": 1.4584334021075895,
+            "expected_snr_db": 30.544170804446974,
+            "realized_snr_db": 30.564558716794437
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.00709833222433,
+            "absolute_noise_sigma": 1.490070983322243,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.98956950572462
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.610590126107596,
+            "absolute_noise_sigma": 1.490070983322243,
+            "expected_snr_db": 32.60644933980617,
+            "realized_snr_db": 32.54635477595371
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.71621344854599,
+            "absolute_noise_sigma": 1.490070983322243,
+            "expected_snr_db": 31.455492717388744,
+            "realized_snr_db": 31.400206290576516
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.33440738667257,
+            "absolute_noise_sigma": 1.490070983322243,
+            "expected_snr_db": 30.220988811652777,
+            "realized_snr_db": 30.210430268964842
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312003_faulted_mild.npz",
+      "archive_sha256": "ef9c3d950086c10e3c3cae42859a319973021f11c9d1a999ba54310a99cc8788",
+      "seconds": 0.28000250000332016
+    },
+    {
+      "name": "f11700000000_seed71312004_healthy_mild",
+      "pair_id": "f11700000000_seed71312004",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312004,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.14502203234370462,
+        "active_phase_rmse_deg": 1.8967829808087378,
+        "complex_nrmse": 0.036126151006651126,
+        "unaligned_complex_nrmse": 0.036133249064662955,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0000052520052212,
+          -0.000716623855407539
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.14502203234370462,
+        "active_phase_rmse_deg": 1.8967829808087378,
+        "complex_nrmse": 0.036126151006651126,
+        "unaligned_complex_nrmse": 0.036133249064662955,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0000052520052212,
+          -0.000716623855407539
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.036126151006651126,
+        "amplitude_rmse_db": 0.14502203234370462,
+        "phase_rmse_deg": 1.8967829808087378,
+        "true_amplitude_std_db": 1.425721068902246,
+        "estimated_amplitude_std_db": 1.4199649349950454,
+        "true_phase_std_deg": 5.073295244387449,
+        "estimated_phase_std_deg": 5.352533588990288
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1450233737963769,
+        "active_phase_rmse_deg": 1.8968767980761385,
+        "complex_nrmse": 0.036133249064662955
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13329390866326107
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13329390866326107
+      },
+      "selected_alpha": 1e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07699606151636156,
+      "training_field_nrmse": 0.076707080769776,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 1.8311982658130673e-08,
+      "training_common_gain": [
+        1.0132854877393207,
+        -0.003586675374054436
+      ],
+      "noise_sigmas": {
+        "training": 1.4817856106346403,
+        "validation": 1.4735621077553618,
+        "test": 1.492414077148572
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        16,
+        573,
+        600,
+        779,
+        997
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.031988345294385635,
+      "independent_test_noisy_field_nrmse": 0.03343458910986496,
+      "fit_seconds": 0.18920559999969555,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.17856106346395,
+            "absolute_noise_sigma": 1.4817856106346403,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.94478398157105
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.53044845667927,
+            "absolute_noise_sigma": 1.4817856106346403,
+            "expected_snr_db": 33.30196401400614,
+            "realized_snr_db": 33.315480176387915
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 59.57715097271156,
+            "absolute_noise_sigma": 1.4817856106346403,
+            "expected_snr_db": 32.08588715912548,
+            "realized_snr_db": 32.1281425958702
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.9507978311962,
+            "absolute_noise_sigma": 1.4817856106346403,
+            "expected_snr_db": 30.20020928968907,
+            "realized_snr_db": 30.132258806627416
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.35621077553608,
+            "absolute_noise_sigma": 1.4735621077553618,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.027384472927785
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.25871004584364,
+            "absolute_noise_sigma": 1.4735621077553618,
+            "expected_snr_db": 33.31579262966472,
+            "realized_snr_db": 33.46237495050054
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 61.1637197620768,
+            "absolute_noise_sigma": 1.4735621077553618,
+            "expected_snr_db": 32.36250889143165,
+            "realized_snr_db": 32.32461344062303
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.9727269534903,
+            "absolute_noise_sigma": 1.4735621077553618,
+            "expected_snr_db": 30.252519217915086,
+            "realized_snr_db": 30.32826980605038
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.24140771485713,
+            "absolute_noise_sigma": 1.492414077148572,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.9042834643216
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.03696439773893,
+            "absolute_noise_sigma": 1.492414077148572,
+            "expected_snr_db": 32.91795528889176,
+            "realized_snr_db": 33.07732553776861
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.194710000569444,
+            "absolute_noise_sigma": 1.492414077148572,
+            "expected_snr_db": 31.669330508717618,
+            "realized_snr_db": 31.618704825337872
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 45.802784767376885,
+            "absolute_noise_sigma": 1.492414077148572,
+            "expected_snr_db": 29.740050933127584,
+            "realized_snr_db": 29.67453533668031
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312004_healthy_mild.npz",
+      "archive_sha256": "b55e5b4689a5998e15d607bb8b8435601a34c4cf431aa0850573ab310182228f",
+      "seconds": 0.2840405000024475
+    },
+    {
+      "name": "f11700000000_seed71312004_faulted_mild",
+      "pair_id": "f11700000000_seed71312004",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312004,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.14517107182685116,
+        "active_phase_rmse_deg": 1.9096364353205144,
+        "complex_nrmse": 0.03618684611282168,
+        "unaligned_complex_nrmse": 0.03619571838626767,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          16,
+          573,
+          600,
+          779,
+          997
+        ],
+        "actual_fault_indices": [
+          16,
+          573,
+          600,
+          779,
+          997
+        ],
+        "alignment_complex": [
+          1.0000206400964078,
+          -0.0008016488649711411
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.14517107182685116,
+        "active_phase_rmse_deg": 1.9096364353205144,
+        "complex_nrmse": 0.03618684611282168,
+        "unaligned_complex_nrmse": 0.03619571838626767,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          16,
+          573,
+          600,
+          779,
+          997
+        ],
+        "actual_fault_indices": [
+          16,
+          573,
+          600,
+          779,
+          997
+        ],
+        "alignment_complex": [
+          1.0000206400964078,
+          -0.0008016488649711411
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          16,
+          573,
+          600,
+          779,
+          997
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.036148232086754814,
+        "amplitude_rmse_db": 0.1451430295230103,
+        "phase_rmse_deg": 1.8978674170770558,
+        "true_amplitude_std_db": 1.425473027005353,
+        "estimated_amplitude_std_db": 1.420372196545246,
+        "true_phase_std_deg": 5.076389649641014,
+        "estimated_phase_std_deg": 5.350712811629706
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.14517693514639973,
+        "active_phase_rmse_deg": 1.9095793972685136,
+        "complex_nrmse": 0.03619571838626767
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13329390866326107
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13329390866326107
+      },
+      "selected_alpha": 4.641588833612772e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07683846933570083,
+      "training_field_nrmse": 0.07651719013049649,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 8.499669422729006e-08,
+      "training_common_gain": [
+        1.0092493520219064,
+        -0.002292078370657534
+      ],
+      "noise_sigmas": {
+        "training": 1.4797903358362718,
+        "validation": 1.4726835747611497,
+        "test": 1.4897025986516568
+      },
+      "physical_fault_indices": [
+        16,
+        573,
+        600,
+        779,
+        997
+      ],
+      "paired_fault_indices": [
+        16,
+        573,
+        600,
+        779,
+        997
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.032026272476311485,
+      "independent_test_noisy_field_nrmse": 0.03347156971736038,
+      "fit_seconds": 0.19252899999992223,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.97903358362697,
+            "absolute_noise_sigma": 1.4797903358362718,
+            "expected_snr_db": 39.999999999999986,
+            "realized_snr_db": 39.94478398157105
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.9244375932358,
+            "absolute_noise_sigma": 1.4797903358362718,
+            "expected_snr_db": 33.36346088669394,
+            "realized_snr_db": 33.37697704907571
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 60.03577591091638,
+            "absolute_noise_sigma": 1.4797903358362718,
+            "expected_snr_db": 32.164198823405336,
+            "realized_snr_db": 32.20645426015007
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.46056513892435,
+            "absolute_noise_sigma": 1.4797903358362718,
+            "expected_snr_db": 30.30376575560826,
+            "realized_snr_db": 30.23581527254661
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.26835747611503,
+            "absolute_noise_sigma": 1.4726835747611497,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.02738447292779
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.74706864550154,
+            "absolute_noise_sigma": 1.4726835747611497,
+            "expected_snr_db": 33.3828948333481,
+            "realized_snr_db": 33.52947715418391
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 61.57147118477665,
+            "absolute_noise_sigma": 1.4726835747611497,
+            "expected_snr_db": 32.42540175354732,
+            "realized_snr_db": 32.38750630273871
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.34621667532889,
+            "absolute_noise_sigma": 1.4726835747611497,
+            "expected_snr_db": 30.32506102135978,
+            "realized_snr_db": 30.400811609495072
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.97025986516581,
+            "absolute_noise_sigma": 1.4897025986516568,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 39.90428346432161
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.33700931781007,
+            "absolute_noise_sigma": 1.4897025986516568,
+            "expected_snr_db": 32.97312625803161,
+            "realized_snr_db": 33.13249650690845
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.66886149068271,
+            "absolute_noise_sigma": 1.4897025986516568,
+            "expected_snr_db": 31.75683604438486,
+            "realized_snr_db": 31.706210361005112
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.37220509750689,
+            "absolute_noise_sigma": 1.4897025986516568,
+            "expected_snr_db": 29.863163453273543,
+            "realized_snr_db": 29.797647856826266
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312004_faulted_mild.npz",
+      "archive_sha256": "86fc1e72e85ece18f5a8201e708059c9e6a9a7d600d4107c0beae638088dc254",
+      "seconds": 0.2817720999955782
+    },
+    {
+      "name": "f11700000000_seed71312005_healthy_mild",
+      "pair_id": "f11700000000_seed71312005",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312005,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15262888423960086,
+        "active_phase_rmse_deg": 1.8608651829554228,
+        "complex_nrmse": 0.03588074620271944,
+        "unaligned_complex_nrmse": 0.035892070217931095,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          793
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0005483501507442,
+          -0.0007169445261998122
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15262888423960086,
+        "active_phase_rmse_deg": 1.8608651829554228,
+        "complex_nrmse": 0.03588074620271944,
+        "unaligned_complex_nrmse": 0.035892070217931095,
+        "fault_precision": 0.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          793
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0005483501507442,
+          -0.0007169445261998122
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": 0.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03588074620271944,
+        "amplitude_rmse_db": 0.15262888423960086,
+        "phase_rmse_deg": 1.8608651829554228,
+        "true_amplitude_std_db": 1.45669125497081,
+        "estimated_amplitude_std_db": 1.4546970529735954,
+        "true_phase_std_deg": 4.975322128638978,
+        "estimated_phase_std_deg": 5.279074642528667
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15286367981553803,
+        "active_phase_rmse_deg": 1.8610272226803468,
+        "complex_nrmse": 0.035892070217931095
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13320168944927657
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13320168944927657
+      },
+      "selected_alpha": 0.004641588833612773,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07626951899152028,
+      "training_field_nrmse": 0.07492720378355654,
+      "regularized_effective_rank": 1023.8726602869938,
+      "normalized_lambda_absolute": 0.008499669422729008,
+      "training_common_gain": [
+        1.0058449593363528,
+        0.004245614821723571
+      ],
+      "noise_sigmas": {
+        "training": 1.4872642649462595,
+        "validation": 1.4673227258180097,
+        "test": 1.5053063985956303
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        228,
+        418,
+        437,
+        563,
+        689
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03216903636552671,
+      "independent_test_noisy_field_nrmse": 0.03394141767189129,
+      "fit_seconds": 0.19744749999517808,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.7264264946256,
+            "absolute_noise_sigma": 1.4872642649462595,
+            "expected_snr_db": 39.99999999999998,
+            "realized_snr_db": 39.90263121155769
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.12350334017695,
+            "absolute_noise_sigma": 1.4872642649462595,
+            "expected_snr_db": 33.218176618341644,
+            "realized_snr_db": 33.26105968084161
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.34759210440773,
+            "absolute_noise_sigma": 1.4872642649462595,
+            "expected_snr_db": 31.872695902483986,
+            "realized_snr_db": 31.835284446157832
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.618676172682456,
+            "absolute_noise_sigma": 1.4872642649462595,
+            "expected_snr_db": 30.107783489692316,
+            "realized_snr_db": 30.118596381601872
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.73227258180103,
+            "absolute_noise_sigma": 1.4673227258180097,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.10246944088739
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.81678007869345,
+            "absolute_noise_sigma": 1.4673227258180097,
+            "expected_snr_db": 33.423374085960816,
+            "realized_snr_db": 33.446510400570276
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 59.74536206817438,
+            "absolute_noise_sigma": 1.4673227258180097,
+            "expected_snr_db": 32.1955710691235,
+            "realized_snr_db": 32.159631654890184
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.71924230367798,
+            "absolute_noise_sigma": 1.4673227258180097,
+            "expected_snr_db": 30.24335790618272,
+            "realized_snr_db": 30.18655786643557
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 150.53063985956305,
+            "absolute_noise_sigma": 1.5053063985956303,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.94259538457663
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.51789718653463,
+            "absolute_noise_sigma": 1.5053063985956303,
+            "expected_snr_db": 32.774700849940785,
+            "realized_snr_db": 32.73609680442325
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 56.628371992283434,
+            "absolute_noise_sigma": 1.5053063985956303,
+            "expected_snr_db": 31.508183371928457,
+            "realized_snr_db": 31.47824930854525
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.08686645628291,
+            "absolute_noise_sigma": 1.5053063985956303,
+            "expected_snr_db": 29.719045456765745,
+            "realized_snr_db": 29.87467383300061
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312005_healthy_mild.npz",
+      "archive_sha256": "e4abd7fa65909993492af0cc5086abfc7918982e6c8cc5b427c33856a3ca22cb",
+      "seconds": 0.2869745999996667
+    },
+    {
+      "name": "f11700000000_seed71312005_faulted_mild",
+      "pair_id": "f11700000000_seed71312005",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312005,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15499175441646745,
+        "active_phase_rmse_deg": 1.8443188361272107,
+        "complex_nrmse": 0.035722473876264926,
+        "unaligned_complex_nrmse": 0.035734872163275894,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          228,
+          418,
+          437,
+          563,
+          689,
+          793
+        ],
+        "actual_fault_indices": [
+          228,
+          418,
+          437,
+          563,
+          689
+        ],
+        "alignment_complex": [
+          1.0005444803513923,
+          -0.00076914798011582
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15499175441646745,
+        "active_phase_rmse_deg": 1.8443188361272107,
+        "complex_nrmse": 0.035722473876264926,
+        "unaligned_complex_nrmse": 0.035734872163275894,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          228,
+          418,
+          437,
+          563,
+          689,
+          793
+        ],
+        "actual_fault_indices": [
+          228,
+          418,
+          437,
+          563,
+          689
+        ],
+        "alignment_complex": [
+          1.0005444803513923,
+          -0.00076914798011582
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          228,
+          418,
+          437,
+          563,
+          689
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.035652436618011873,
+        "amplitude_rmse_db": 0.15239627976714046,
+        "phase_rmse_deg": 1.8431814797249737,
+        "true_amplitude_std_db": 1.4553475344590487,
+        "estimated_amplitude_std_db": 1.4534299520595113,
+        "true_phase_std_deg": 4.97119416710729,
+        "estimated_phase_std_deg": 5.256485555506406
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15520123814779607,
+        "active_phase_rmse_deg": 1.844494296059688,
+        "complex_nrmse": 0.035734872163275894
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13320168944927657
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13320168944927657
+      },
+      "selected_alpha": 0.01,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07562609707526059,
+      "training_field_nrmse": 0.07436844882235231,
+      "regularized_effective_rank": 1023.4094090601959,
+      "normalized_lambda_absolute": 0.018311982658130672,
+      "training_common_gain": [
+        1.0037088237612277,
+        0.004530571803031486
+      ],
+      "noise_sigmas": {
+        "training": 1.486608189152905,
+        "validation": 1.4693786977585501,
+        "test": 1.5048216817013258
+      },
+      "physical_fault_indices": [
+        228,
+        418,
+        437,
+        563,
+        689
+      ],
+      "paired_fault_indices": [
+        228,
+        418,
+        437,
+        563,
+        689
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.0320897310574878,
+      "independent_test_noisy_field_nrmse": 0.03384104855024221,
+      "fit_seconds": 0.18623759999900358,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.6608189152904,
+            "absolute_noise_sigma": 1.486608189152905,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.90263121155771
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 69.07535731171157,
+            "absolute_noise_sigma": 1.486608189152905,
+            "expected_snr_db": 33.342532385397405,
+            "realized_snr_db": 33.38541544789737
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.96598467271786,
+            "absolute_noise_sigma": 1.486608189152905,
+            "expected_snr_db": 31.968100687662577,
+            "realized_snr_db": 31.930689231336423
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.242961077911346,
+            "absolute_noise_sigma": 1.486608189152905,
+            "expected_snr_db": 30.402952784139757,
+            "realized_snr_db": 30.413765676049312
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.93786977585503,
+            "absolute_noise_sigma": 1.4693786977585501,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.10246944088739
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 69.71354291634974,
+            "absolute_noise_sigma": 1.4693786977585501,
+            "expected_snr_db": 33.5236683042456,
+            "realized_snr_db": 33.546804618855056
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 60.23564119697599,
+            "absolute_noise_sigma": 1.4693786977585501,
+            "expected_snr_db": 32.25439596585116,
+            "realized_snr_db": 32.21845655161784
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.161020816837556,
+            "absolute_noise_sigma": 1.4693786977585501,
+            "expected_snr_db": 30.489743058736064,
+            "realized_snr_db": 30.432943018988915
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 150.48216817013247,
+            "absolute_noise_sigma": 1.5048216817013258,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.94259538457662
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.2830806629591,
+            "absolute_noise_sigma": 1.5048216817013258,
+            "expected_snr_db": 32.87835290221751,
+            "realized_snr_db": 32.83974885669997
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.12315844624058,
+            "absolute_noise_sigma": 1.5048216817013258,
+            "expected_snr_db": 31.58654344834261,
+            "realized_snr_db": 31.5566093849594
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.4069269964126,
+            "absolute_noise_sigma": 1.5048216817013258,
+            "expected_snr_db": 29.967135290020813,
+            "realized_snr_db": 30.12276366625568
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312005_faulted_mild.npz",
+      "archive_sha256": "c3514ef594407cbc5136355939d92c97749b42b135b8793e29ef72a4a5600b3f",
+      "seconds": 0.2715258000025642
+    },
+    {
+      "name": "f11700000000_seed71312006_healthy_mild",
+      "pair_id": "f11700000000_seed71312006",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312006,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.16410690508600057,
+        "active_phase_rmse_deg": 1.8912105634829834,
+        "complex_nrmse": 0.03644849929920229,
+        "unaligned_complex_nrmse": 0.036456453072992494,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0006247241417487,
+          -0.000437134352094209
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.16410690508600057,
+        "active_phase_rmse_deg": 1.8912105634829834,
+        "complex_nrmse": 0.03644849929920229,
+        "unaligned_complex_nrmse": 0.036456453072992494,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0006247241417487,
+          -0.000437134352094209
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03644849929920229,
+        "amplitude_rmse_db": 0.16410690508600057,
+        "phase_rmse_deg": 1.8912105634829834,
+        "true_amplitude_std_db": 1.449342838068759,
+        "estimated_amplitude_std_db": 1.4443445060369005,
+        "true_phase_std_deg": 5.203137050261956,
+        "estimated_phase_std_deg": 5.57222581274495
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.16433581849691498,
+        "active_phase_rmse_deg": 1.8913478637390297,
+        "complex_nrmse": 0.036456453072992494
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1332320955705218
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1332320955705218
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.0781682033778504,
+      "training_field_nrmse": 0.07734436524116217,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        1.0003952801515545,
+        0.00037555939592079655
+      ],
+      "noise_sigmas": {
+        "training": 1.4852166492887946,
+        "validation": 1.4706309524655907,
+        "test": 1.4957978327783756
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        206,
+        335,
+        461,
+        865,
+        981
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.031652152165325444,
+      "independent_test_noisy_field_nrmse": 0.03321041354195925,
+      "fit_seconds": 0.18889149999449728,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.52166492887952,
+            "absolute_noise_sigma": 1.4852166492887946,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.03735842885501
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.07213157361122,
+            "absolute_noise_sigma": 1.4852166492887946,
+            "expected_snr_db": 32.96457017836649,
+            "realized_snr_db": 32.95354148771581
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.16625315431876,
+            "absolute_noise_sigma": 1.4852166492887946,
+            "expected_snr_db": 31.706998383477803,
+            "realized_snr_db": 31.663531212745063
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.145291705387216,
+            "absolute_noise_sigma": 1.4852166492887946,
+            "expected_snr_db": 30.215280267039333,
+            "realized_snr_db": 30.21376752222819
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.06309524655916,
+            "absolute_noise_sigma": 1.4706309524655907,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 39.950725624313414
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.25337607739671,
+            "absolute_noise_sigma": 1.4706309524655907,
+            "expected_snr_db": 33.07408622374753,
+            "realized_snr_db": 33.2163065915809
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.22924442738231,
+            "absolute_noise_sigma": 1.4706309524655907,
+            "expected_snr_db": 31.952749049163994,
+            "realized_snr_db": 31.789235070491838
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.47154558204508,
+            "absolute_noise_sigma": 1.4706309524655907,
+            "expected_snr_db": 30.178593387675477,
+            "realized_snr_db": 30.292235666096023
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.57978327783758,
+            "absolute_noise_sigma": 1.4957978327783756,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.222012671559696
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.61619393926991,
+            "absolute_noise_sigma": 1.4957978327783756,
+            "expected_snr_db": 32.57389565431954,
+            "realized_snr_db": 32.477654721922974
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.901247217662814,
+            "absolute_noise_sigma": 1.4957978327783756,
+            "expected_snr_db": 31.29418621971286,
+            "realized_snr_db": 31.21359746161201
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.77931714175367,
+            "absolute_noise_sigma": 1.4957978327783756,
+            "expected_snr_db": 29.903619565637225,
+            "realized_snr_db": 29.923864674392647
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312006_healthy_mild.npz",
+      "archive_sha256": "683950fbff07dc30b921c53a225db5b0c74c656a64b252921ddded514c020e1a",
+      "seconds": 0.278683300006378
+    },
+    {
+      "name": "f11700000000_seed71312006_faulted_mild",
+      "pair_id": "f11700000000_seed71312006",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312006,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.16614417047096447,
+        "active_phase_rmse_deg": 1.894710028099332,
+        "complex_nrmse": 0.03648309995627526,
+        "unaligned_complex_nrmse": 0.03649230594228455,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          206,
+          335,
+          461,
+          865,
+          981
+        ],
+        "actual_fault_indices": [
+          206,
+          335,
+          461,
+          865,
+          981
+        ],
+        "alignment_complex": [
+          1.0006945061572345,
+          -0.0004373808364191109
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.16614417047096447,
+        "active_phase_rmse_deg": 1.894710028099332,
+        "complex_nrmse": 0.03648309995627526,
+        "unaligned_complex_nrmse": 0.03649230594228455,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          206,
+          335,
+          461,
+          865,
+          981
+        ],
+        "actual_fault_indices": [
+          206,
+          335,
+          461,
+          865,
+          981
+        ],
+        "alignment_complex": [
+          1.0006945061572345,
+          -0.0004373808364191109
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          206,
+          335,
+          461,
+          865,
+          981
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.036440030083307304,
+        "amplitude_rmse_db": 0.1642465611297364,
+        "phase_rmse_deg": 1.8899465567553286,
+        "true_amplitude_std_db": 1.4496133372033375,
+        "estimated_amplitude_std_db": 1.4451170129597266,
+        "true_phase_std_deg": 5.200466439765454,
+        "estimated_phase_std_deg": 5.562823038862032
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.16639896475711935,
+        "active_phase_rmse_deg": 1.8947962616836977,
+        "complex_nrmse": 0.03649230594228455
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1332320955705218
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1332320955705218
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.077899894191589,
+      "training_field_nrmse": 0.0771074904822142,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        0.9975297270575489,
+        0.0020320091037245983
+      ],
+      "noise_sigmas": {
+        "training": 1.4850637681097008,
+        "validation": 1.4711856241724364,
+        "test": 1.4973410596151246
+      },
+      "physical_fault_indices": [
+        206,
+        335,
+        461,
+        865,
+        981
+      ],
+      "paired_fault_indices": [
+        206,
+        335,
+        461,
+        865,
+        981
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03164466947846814,
+      "independent_test_noisy_field_nrmse": 0.03320218079277121,
+      "fit_seconds": 0.18958399999974063,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.50637681096995,
+            "absolute_noise_sigma": 1.4850637681097008,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.037358428855
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.66156228596729,
+            "absolute_noise_sigma": 1.4850637681097008,
+            "expected_snr_db": 33.042607702031646,
+            "realized_snr_db": 33.03157901138097
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.713220926862355,
+            "absolute_noise_sigma": 1.4850637681097008,
+            "expected_snr_db": 31.79060420189522,
+            "realized_snr_db": 31.74713703116248
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.998961859078435,
+            "absolute_noise_sigma": 1.4850637681097008,
+            "expected_snr_db": 30.368835524508388,
+            "realized_snr_db": 30.367322779697243
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.1185624172436,
+            "absolute_noise_sigma": 1.4711856241724364,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.95072562431341
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.83916175545168,
+            "absolute_noise_sigma": 1.4711856241724364,
+            "expected_snr_db": 33.14727044343394,
+            "realized_snr_db": 33.289490811267314
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.65016428644398,
+            "absolute_noise_sigma": 1.4711856241724364,
+            "expected_snr_db": 32.01203520929377,
+            "realized_snr_db": 31.84852123062161
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.17899070851861,
+            "absolute_noise_sigma": 1.4711856241724364,
+            "expected_snr_db": 30.303804506254078,
+            "realized_snr_db": 30.417446784674617
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.73410596151248,
+            "absolute_noise_sigma": 1.4973410596151246,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.22201267155968
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 64.18750353968154,
+            "absolute_noise_sigma": 1.4973410596151246,
+            "expected_snr_db": 32.64259502110633,
+            "realized_snr_db": 32.546354088709755
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.428797015298606,
+            "absolute_noise_sigma": 1.4973410596151246,
+            "expected_snr_db": 31.36829438520096,
+            "realized_snr_db": 31.287705627100117
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.64115297660801,
+            "absolute_noise_sigma": 1.4973410596151246,
+            "expected_snr_db": 30.05323059164313,
+            "realized_snr_db": 30.073475700398554
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312006_faulted_mild.npz",
+      "archive_sha256": "3086f1141311c160ec96c2739c07f27c1f4d44373baba2de852d4f27e541f2ab",
+      "seconds": 0.27710539999679895
+    },
+    {
+      "name": "f11700000000_seed71312007_healthy_mild",
+      "pair_id": "f11700000000_seed71312007",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312007,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.14677427829069778,
+        "active_phase_rmse_deg": 1.9294948848566134,
+        "complex_nrmse": 0.036737360703986525,
+        "unaligned_complex_nrmse": 0.036741990204235436,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0005839691154985,
+          3.2292716560376466e-06
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.14677427829069778,
+        "active_phase_rmse_deg": 1.9294948848566134,
+        "complex_nrmse": 0.036737360703986525,
+        "unaligned_complex_nrmse": 0.036741990204235436,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0005839691154985,
+          3.2292716560376466e-06
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.036737360703986525,
+        "amplitude_rmse_db": 0.14677427829069778,
+        "phase_rmse_deg": 1.9294948848566134,
+        "true_amplitude_std_db": 1.4137498356939557,
+        "estimated_amplitude_std_db": 1.3992881000702038,
+        "true_phase_std_deg": 5.090476035061454,
+        "estimated_phase_std_deg": 5.33116804223215
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1469092227587066,
+        "active_phase_rmse_deg": 1.9294923431360744,
+        "complex_nrmse": 0.036741990204235436
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333192047712192
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333192047712192
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07434401759181153,
+      "training_field_nrmse": 0.07406218126805993,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        1.0089355375117937,
+        0.0013345403508307058
+      ],
+      "noise_sigmas": {
+        "training": 1.4908872208487953,
+        "validation": 1.475312746783081,
+        "test": 1.504237288560899
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        72,
+        552,
+        770,
+        875,
+        947
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03126692901856594,
+      "independent_test_noisy_field_nrmse": 0.03269233131963244,
+      "fit_seconds": 0.18457450000278186,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.08872208487952,
+            "absolute_noise_sigma": 1.4908872208487953,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.99443644279749
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 67.77733301330554,
+            "absolute_noise_sigma": 1.4908872208487953,
+            "expected_snr_db": 33.152793669540145,
+            "realized_snr_db": 33.15343653521371
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 56.50224212709791,
+            "absolute_noise_sigma": 1.4908872208487953,
+            "expected_snr_db": 31.57241779345227,
+            "realized_snr_db": 31.7131609490256
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.34842327084286,
+            "absolute_noise_sigma": 1.4908872208487953,
+            "expected_snr_db": 30.03721458254975,
+            "realized_snr_db": 30.01828927192776
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.5312746783082,
+            "absolute_noise_sigma": 1.475312746783081,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 39.95926475385637
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 67.88152215909284,
+            "absolute_noise_sigma": 1.475312746783081,
+            "expected_snr_db": 33.25734955025788,
+            "realized_snr_db": 33.18345550860221
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.16250975501646,
+            "absolute_noise_sigma": 1.475312746783081,
+            "expected_snr_db": 31.76454387489742,
+            "realized_snr_db": 31.818779141051564
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.146847306050915,
+            "absolute_noise_sigma": 1.475312746783081,
+            "expected_snr_db": 29.905158823408907,
+            "realized_snr_db": 29.788934137974703
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 150.42372885608992,
+            "absolute_noise_sigma": 1.504237288560899,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.920681191600266
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.46097315427173,
+            "absolute_noise_sigma": 1.504237288560899,
+            "expected_snr_db": 32.77332214219789,
+            "realized_snr_db": 32.79569724902216
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 53.88401217677568,
+            "absolute_noise_sigma": 1.504237288560899,
+            "expected_snr_db": 31.08287150796987,
+            "realized_snr_db": 31.21942115309544
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 44.87795789814564,
+            "absolute_noise_sigma": 1.504237288560899,
+            "expected_snr_db": 29.494334731865145,
+            "realized_snr_db": 29.370185210854313
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312007_healthy_mild.npz",
+      "archive_sha256": "d01b2ee83115add7f0db276b4d7572ab666cc7170c94298c8334cbedccb9ab49",
+      "seconds": 0.2702687999990303
+    },
+    {
+      "name": "f11700000000_seed71312007_faulted_mild",
+      "pair_id": "f11700000000_seed71312007",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312007,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.14793675240102358,
+        "active_phase_rmse_deg": 1.9300867636072023,
+        "complex_nrmse": 0.03678620833527155,
+        "unaligned_complex_nrmse": 0.03679151889770857,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          72,
+          552,
+          770,
+          875,
+          947
+        ],
+        "actual_fault_indices": [
+          72,
+          552,
+          770,
+          875,
+          947
+        ],
+        "alignment_complex": [
+          1.000625824712985,
+          -1.0094648770201922e-05
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.14793675240102358,
+        "active_phase_rmse_deg": 1.9300867636072023,
+        "complex_nrmse": 0.03678620833527155,
+        "unaligned_complex_nrmse": 0.03679151889770857,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          72,
+          552,
+          770,
+          875,
+          947
+        ],
+        "actual_fault_indices": [
+          72,
+          552,
+          770,
+          875,
+          947
+        ],
+        "alignment_complex": [
+          1.000625824712985,
+          -1.0094648770201922e-05
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          72,
+          552,
+          770,
+          875,
+          947
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.03676747581407443,
+        "amplitude_rmse_db": 0.14697938998005977,
+        "phase_rmse_deg": 1.9315739030375392,
+        "true_amplitude_std_db": 1.4165129910852226,
+        "estimated_amplitude_std_db": 1.4020276590843839,
+        "true_phase_std_deg": 5.073949593430724,
+        "estimated_phase_std_deg": 5.3254604886778205
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1480791884095289,
+        "active_phase_rmse_deg": 1.9300940712879577,
+        "complex_nrmse": 0.03679151889770857
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333192047712192
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333192047712192
+      },
+      "selected_alpha": 0.021544346900318822,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07390391008469276,
+      "training_field_nrmse": 0.07364703441946976,
+      "regularized_effective_rank": 1021.2687269155742,
+      "normalized_lambda_absolute": 0.03945197068193896,
+      "training_common_gain": [
+        1.0051907165857508,
+        0.0023579321357277976
+      ],
+      "noise_sigmas": {
+        "training": 1.4907907380599201,
+        "validation": 1.4773202820864335,
+        "test": 1.5033706282029442
+      },
+      "physical_fault_indices": [
+        72,
+        552,
+        770,
+        875,
+        947
+      ],
+      "paired_fault_indices": [
+        72,
+        552,
+        770,
+        875,
+        947
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03112418360254002,
+      "independent_test_noisy_field_nrmse": 0.03255935088444085,
+      "fit_seconds": 0.18516900000395253,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.07907380599212,
+            "absolute_noise_sigma": 1.4907907380599201,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 39.99443644279751
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 67.99183609707245,
+            "absolute_noise_sigma": 1.4907907380599201,
+            "expected_snr_db": 33.180801667861154,
+            "realized_snr_db": 33.181444533534716
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.49454304980501,
+            "absolute_noise_sigma": 1.4907907380599201,
+            "expected_snr_db": 31.72419881513828,
+            "realized_snr_db": 31.864941970711605
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.43263449706252,
+            "absolute_noise_sigma": 1.4907907380599201,
+            "expected_snr_db": 30.23442814508069,
+            "realized_snr_db": 30.215502834458697
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 147.73202820864336,
+            "absolute_noise_sigma": 1.4773202820864335,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.95926475385637
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.03532335474544,
+            "absolute_noise_sigma": 1.4773202820864335,
+            "expected_snr_db": 33.26519585873061,
+            "realized_snr_db": 33.19130181707494
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.96741258957491,
+            "absolute_noise_sigma": 1.4773202820864335,
+            "expected_snr_db": 31.87418511046554,
+            "realized_snr_db": 31.928420376619684
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.05195858363704,
+            "absolute_noise_sigma": 1.4773202820864335,
+            "expected_snr_db": 30.062060915733866,
+            "realized_snr_db": 29.945836230299662
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 150.33706282029436,
+            "absolute_noise_sigma": 1.5033706282029442,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 39.92068119160025
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.52756586921755,
+            "absolute_noise_sigma": 1.5033706282029442,
+            "expected_snr_db": 32.78715949218848,
+            "realized_snr_db": 32.80953459901275
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.637500165193345,
+            "absolute_noise_sigma": 1.5033706282029442,
+            "expected_snr_db": 31.20849519515367,
+            "realized_snr_db": 31.345044840279233
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 45.868081137633425,
+            "absolute_noise_sigma": 1.5033706282029442,
+            "expected_snr_db": 29.688890220440523,
+            "realized_snr_db": 29.564740699429688
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312007_faulted_mild.npz",
+      "archive_sha256": "253280860b9a425d11509edf8fefca3195d0cb2f1583005f307cb3c4007f5423",
+      "seconds": 0.2743512000015471
+    },
+    {
+      "name": "f11700000000_seed71312008_healthy_mild",
+      "pair_id": "f11700000000_seed71312008",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312008,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15306317996859933,
+        "active_phase_rmse_deg": 1.9166088163720305,
+        "complex_nrmse": 0.03624671149943261,
+        "unaligned_complex_nrmse": 0.03624941314513781,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          210
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0004388578549153,
+          -6.076563661930059e-05
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15306317996859933,
+        "active_phase_rmse_deg": 1.9166088163720305,
+        "complex_nrmse": 0.03624671149943261,
+        "unaligned_complex_nrmse": 0.03624941314513781,
+        "fault_precision": 0.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          210
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0004388578549153,
+          -6.076563661930059e-05
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": 0.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03624671149943261,
+        "amplitude_rmse_db": 0.15306317996859933,
+        "phase_rmse_deg": 1.9166088163720305,
+        "true_amplitude_std_db": 1.4571578649701236,
+        "estimated_amplitude_std_db": 1.4559588662301715,
+        "true_phase_std_deg": 5.0564454939623955,
+        "estimated_phase_std_deg": 5.402246077989798
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.1532407144099845,
+        "active_phase_rmse_deg": 1.916634129384228,
+        "complex_nrmse": 0.03624941314513781
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13319752541503022
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13319752541503022
+      },
+      "selected_alpha": 1e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07769006691523694,
+      "training_field_nrmse": 0.07639529212480715,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 1.8311982658130673e-08,
+      "training_common_gain": [
+        1.004286292247144,
+        0.0021378636428004034
+      ],
+      "noise_sigmas": {
+        "training": 1.490947668591686,
+        "validation": 1.4694353794192205,
+        "test": 1.4913830402248573
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        406,
+        443,
+        590,
+        687,
+        827
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.030098397143626714,
+      "independent_test_noisy_field_nrmse": 0.03205044780209189,
+      "fit_seconds": 0.1881476999988081,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.09476685916852,
+            "absolute_noise_sigma": 1.490947668591686,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.08897556976645
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.53532530331634,
+            "absolute_noise_sigma": 1.490947668591686,
+            "expected_snr_db": 32.99179768664965,
+            "realized_snr_db": 33.04182479480506
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.85177705692718,
+            "absolute_noise_sigma": 1.490947668591686,
+            "expected_snr_db": 31.777086073248334,
+            "realized_snr_db": 31.776272442746976
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.40114720050751,
+            "absolute_noise_sigma": 1.490947668591686,
+            "expected_snr_db": 30.227865102995143,
+            "realized_snr_db": 30.108649915071272
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.943537941922,
+            "absolute_noise_sigma": 1.4694353794192205,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.0948488094852
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.839212573969,
+            "absolute_noise_sigma": 1.4694353794192205,
+            "expected_snr_db": 33.15761665563204,
+            "realized_snr_db": 33.27019055792217
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.38185007318276,
+            "absolute_noise_sigma": 1.4694353794192205,
+            "expected_snr_db": 31.982547224348355,
+            "realized_snr_db": 32.09420054287196
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.409857137749604,
+            "absolute_noise_sigma": 1.4694353794192205,
+            "expected_snr_db": 30.174363091030642,
+            "realized_snr_db": 30.201606952713483
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.13830402248564,
+            "absolute_noise_sigma": 1.4913830402248573,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.04472805490673
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 64.09170671418114,
+            "absolute_noise_sigma": 1.4913830402248573,
+            "expected_snr_db": 32.66425273242816,
+            "realized_snr_db": 32.61861202353893
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.1707591419017,
+            "absolute_noise_sigma": 1.4913830402248573,
+            "expected_snr_db": 31.36239519552619,
+            "realized_snr_db": 31.225613930594314
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.36318238258602,
+            "absolute_noise_sigma": 1.4913830402248573,
+            "expected_snr_db": 29.85168076726098,
+            "realized_snr_db": 29.854490025558537
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312008_healthy_mild.npz",
+      "archive_sha256": "37d9e984a7f3630de85b526d4b4f83d3e7d90321ece253bff2af0cff5fef5696",
+      "seconds": 0.27425270000094315
+    },
+    {
+      "name": "f11700000000_seed71312008_faulted_mild",
+      "pair_id": "f11700000000_seed71312008",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312008,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15581941707654212,
+        "active_phase_rmse_deg": 1.9149124689466577,
+        "complex_nrmse": 0.03619259774602986,
+        "unaligned_complex_nrmse": 0.03619558267746011,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          210,
+          406,
+          443,
+          590,
+          687,
+          827
+        ],
+        "actual_fault_indices": [
+          406,
+          443,
+          590,
+          687,
+          827
+        ],
+        "alignment_complex": [
+          1.0004605134674922,
+          -6.696137656981508e-05
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15581941707654212,
+        "active_phase_rmse_deg": 1.9149124689466577,
+        "complex_nrmse": 0.03619259774602986,
+        "unaligned_complex_nrmse": 0.03619558267746011,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          210,
+          406,
+          443,
+          590,
+          687,
+          827
+        ],
+        "actual_fault_indices": [
+          406,
+          443,
+          590,
+          687,
+          827
+        ],
+        "alignment_complex": [
+          1.0004605134674922,
+          -6.696137656981508e-05
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          406,
+          443,
+          590,
+          687,
+          827
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.03611966318119914,
+        "amplitude_rmse_db": 0.15294089018779133,
+        "phase_rmse_deg": 1.9083502328548647,
+        "true_amplitude_std_db": 1.458169858806538,
+        "estimated_amplitude_std_db": 1.4564633160371305,
+        "true_phase_std_deg": 5.056248891948799,
+        "estimated_phase_std_deg": 5.401743347530142
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15600161612169086,
+        "active_phase_rmse_deg": 1.9149536836314605,
+        "complex_nrmse": 0.03619558267746011
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13319752541503022
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13319752541503022
+      },
+      "selected_alpha": 1e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07749546724417608,
+      "training_field_nrmse": 0.07605576575208739,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 1.8311982658130673e-08,
+      "training_common_gain": [
+        1.0015772342205003,
+        0.002545038492505372
+      ],
+      "noise_sigmas": {
+        "training": 1.4918772658203685,
+        "validation": 1.468575416500084,
+        "test": 1.493584420048489
+      },
+      "physical_fault_indices": [
+        406,
+        443,
+        590,
+        687,
+        827
+      ],
+      "paired_fault_indices": [
+        406,
+        443,
+        590,
+        687,
+        827
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.030061721286630986,
+      "independent_test_noisy_field_nrmse": 0.03201010762025077,
+      "fit_seconds": 0.18438330000208225,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.18772658203693,
+            "absolute_noise_sigma": 1.4918772658203685,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 40.08897556976646
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 67.7453828580767,
+            "absolute_noise_sigma": 1.4918772658203685,
+            "expected_snr_db": 33.14293211111038,
+            "realized_snr_db": 33.192959219265795
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.389682550841044,
+            "absolute_noise_sigma": 1.4918772658203685,
+            "expected_snr_db": 31.85206036337812,
+            "realized_snr_db": 31.851246732876763
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.547437282073474,
+            "absolute_noise_sigma": 1.4918772658203685,
+            "expected_snr_db": 30.425762013105047,
+            "realized_snr_db": 30.306546825181183
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.85754165000824,
+            "absolute_noise_sigma": 1.468575416500084,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.09484880948519
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 68.00195157209545,
+            "absolute_noise_sigma": 1.468575416500084,
+            "expected_snr_db": 33.312502452478945,
+            "realized_snr_db": 33.42507635476907
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.6958600268765,
+            "absolute_noise_sigma": 1.468575416500084,
+            "expected_snr_db": 32.03422432841737,
+            "realized_snr_db": 32.145877646940974
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.590136680884314,
+            "absolute_noise_sigma": 1.468575416500084,
+            "expected_snr_db": 30.39303733459837,
+            "realized_snr_db": 30.420281196281213
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.358442004849,
+            "absolute_noise_sigma": 1.493584420048489,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 40.04472805490675
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.04292435800771,
+            "absolute_noise_sigma": 1.493584420048489,
+            "expected_snr_db": 32.77940568724159,
+            "realized_snr_db": 32.73376497835236
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.5618574925281,
+            "absolute_noise_sigma": 1.493584420048489,
+            "expected_snr_db": 31.410939630165938,
+            "realized_snr_db": 31.27415836523406
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.34461068621254,
+            "absolute_noise_sigma": 1.493584420048489,
+            "expected_snr_db": 30.020815499544838,
+            "realized_snr_db": 30.02362475784239
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312008_faulted_mild.npz",
+      "archive_sha256": "69d3b14dcf18313cba5edb54d48e85d519d0f8aea39ad2aee31b8ebf3daf0b54",
+      "seconds": 0.2702474000034272
+    },
+    {
+      "name": "f11700000000_seed71312009_healthy_mild",
+      "pair_id": "f11700000000_seed71312009",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312009,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15556093733128665,
+        "active_phase_rmse_deg": 1.8849549160814043,
+        "complex_nrmse": 0.03648811500438718,
+        "unaligned_complex_nrmse": 0.036489363536044005,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          555
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.000128923696231,
+          0.0002732002494678664
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15556093733128665,
+        "active_phase_rmse_deg": 1.8849549160814043,
+        "complex_nrmse": 0.03648811500438718,
+        "unaligned_complex_nrmse": 0.036489363536044005,
+        "fault_precision": 0.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009765625,
+        "true_positive": 0,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          555
+        ],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.000128923696231,
+          0.0002732002494678664
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1023,
+        "precision": 0.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009765625,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.03648811500438718,
+        "amplitude_rmse_db": 0.15556093733128665,
+        "phase_rmse_deg": 1.8849549160814043,
+        "true_amplitude_std_db": 1.447071610623029,
+        "estimated_amplitude_std_db": 1.4439624321515327,
+        "true_phase_std_deg": 5.079275343555123,
+        "estimated_phase_std_deg": 5.426309487410044
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15559877784676387,
+        "active_phase_rmse_deg": 1.8847778632036198,
+        "complex_nrmse": 0.036489363536044005
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13328283072254513
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.13328283072254513
+      },
+      "selected_alpha": 2.1544346900318822e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07863167426713302,
+      "training_field_nrmse": 0.07731946236267988,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 3.945197068193896e-08,
+      "training_common_gain": [
+        1.000590666618709,
+        0.005418948951559629
+      ],
+      "noise_sigmas": {
+        "training": 1.4869685878469097,
+        "validation": 1.4663698442374757,
+        "test": 1.4967586437794815
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        30,
+        196,
+        224,
+        634,
+        640
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.031327366472160854,
+      "independent_test_noisy_field_nrmse": 0.03262255798295479,
+      "fit_seconds": 0.18036530000244966,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.696858784691,
+            "absolute_noise_sigma": 1.4869685878469097,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.990292331755754
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.86967684469586,
+            "absolute_noise_sigma": 1.4869685878469097,
+            "expected_snr_db": 32.92767477283641,
+            "realized_snr_db": 32.874098530737
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 56.6142817754659,
+            "absolute_noise_sigma": 1.4869685878469097,
+            "expected_snr_db": 31.61248415879687,
+            "realized_snr_db": 31.66129089313346
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.86506614402094,
+            "absolute_noise_sigma": 1.4869685878469097,
+            "expected_snr_db": 30.154337384594193,
+            "realized_snr_db": 30.218035674489705
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.63698442374755,
+            "absolute_noise_sigma": 1.4663698442374757,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.85759029350004
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.68860801612212,
+            "absolute_noise_sigma": 1.4663698442374757,
+            "expected_snr_db": 33.02493076332486,
+            "realized_snr_db": 33.098024511194104
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.16468843206937,
+            "absolute_noise_sigma": 1.4663698442374757,
+            "expected_snr_db": 31.81768639910182,
+            "realized_snr_db": 32.03418826575365
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.64439240445227,
+            "absolute_noise_sigma": 1.4663698442374757,
+            "expected_snr_db": 30.235365441287048,
+            "realized_snr_db": 30.26742510701222
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.67586437794816,
+            "absolute_noise_sigma": 1.4967586437794815,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.029158651799015
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.42355473508496,
+            "absolute_noise_sigma": 1.4967586437794815,
+            "expected_snr_db": 32.54197609282761,
+            "realized_snr_db": 32.542820465300835
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.162961043991764,
+            "absolute_noise_sigma": 1.4967586437794815,
+            "expected_snr_db": 31.17101247937576,
+            "realized_snr_db": 31.078349086998998
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 46.04538089126254,
+            "absolute_noise_sigma": 1.4967586437794815,
+            "expected_snr_db": 29.760685899321228,
+            "realized_snr_db": 29.699192205489613
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312009_healthy_mild.npz",
+      "archive_sha256": "8965699ac6c5ab9bb8a70ca502cd0366b2d37fb04233a263f2b1a98a991ae7bc",
+      "seconds": 0.2674170000027516
+    },
+    {
+      "name": "f11700000000_seed71312009_faulted_mild",
+      "pair_id": "f11700000000_seed71312009",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312009,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15963523060028045,
+        "active_phase_rmse_deg": 1.88747825711449,
+        "complex_nrmse": 0.036495619184768756,
+        "unaligned_complex_nrmse": 0.03649727286826003,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          30,
+          196,
+          224,
+          555,
+          634,
+          640
+        ],
+        "actual_fault_indices": [
+          30,
+          196,
+          224,
+          634,
+          640
+        ],
+        "alignment_complex": [
+          1.000161262643669,
+          0.0003080608476889551
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15963523060028045,
+        "active_phase_rmse_deg": 1.88747825711449,
+        "complex_nrmse": 0.036495619184768756,
+        "unaligned_complex_nrmse": 0.03649727286826003,
+        "fault_precision": 0.8333333333333334,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0009813542688910696,
+        "true_positive": 5,
+        "false_positive": 1,
+        "false_negative": 0,
+        "flagged_indices": [
+          30,
+          196,
+          224,
+          555,
+          634,
+          640
+        ],
+        "actual_fault_indices": [
+          30,
+          196,
+          224,
+          634,
+          640
+        ],
+        "alignment_complex": [
+          1.000161262643669,
+          0.0003080608476889551
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": false,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_negatives": 1018,
+        "precision": 0.8333333333333334,
+        "recall": 1.0,
+        "false_positive_rate": 0.0009813542688910696,
+        "exact_mask_match": false
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          30,
+          196,
+          224,
+          634,
+          640
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.036414396285071024,
+        "amplitude_rmse_db": 0.15518271687701518,
+        "phase_rmse_deg": 1.8810197298135842,
+        "true_amplitude_std_db": 1.447952642915137,
+        "estimated_amplitude_std_db": 1.4445035221581972,
+        "true_phase_std_deg": 5.080188448272281,
+        "estimated_phase_std_deg": 5.422695252447643
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15967119397912757,
+        "active_phase_rmse_deg": 1.8873107055672118,
+        "complex_nrmse": 0.03649727286826003
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13328283072254513
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.13328283072254513
+      },
+      "selected_alpha": 4.641588833612772e-08,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07839438154800964,
+      "training_field_nrmse": 0.07705552425581297,
+      "regularized_effective_rank": 1023.9999999999999,
+      "normalized_lambda_absolute": 8.499669422729006e-08,
+      "training_common_gain": [
+        0.9968831193208622,
+        0.007507286887296178
+      ],
+      "noise_sigmas": {
+        "training": 1.4867425986110956,
+        "validation": 1.465572795317743,
+        "test": 1.4947771364925828
+      },
+      "physical_fault_indices": [
+        30,
+        196,
+        224,
+        634,
+        640
+      ],
+      "paired_fault_indices": [
+        30,
+        196,
+        224,
+        634,
+        640
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.031358100894981214,
+      "independent_test_noisy_field_nrmse": 0.032654637934198844,
+      "fit_seconds": 0.18053140000120038,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.67425986110962,
+            "absolute_noise_sigma": 1.4867425986110956,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.990292331755754
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.36517865400367,
+            "absolute_noise_sigma": 1.4867425986110956,
+            "expected_snr_db": 32.99408965397288,
+            "realized_snr_db": 32.94051341187347
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.4380197481929,
+            "absolute_noise_sigma": 1.4867425986110956,
+            "expected_snr_db": 31.739273469366736,
+            "realized_snr_db": 31.788080203703327
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.751797316337125,
+            "absolute_noise_sigma": 1.4867425986110956,
+            "expected_snr_db": 30.31509692347507,
+            "realized_snr_db": 30.378795213370587
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 146.55727953177438,
+            "absolute_noise_sigma": 1.465572795317743,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 39.85759029350004
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 66.10534133905513,
+            "absolute_noise_sigma": 1.465572795317743,
+            "expected_snr_db": 33.084583145339856,
+            "realized_snr_db": 33.15767689320909
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 58.10849175124828,
+            "absolute_noise_sigma": 1.465572795317743,
+            "expected_snr_db": 31.964644166809748,
+            "realized_snr_db": 32.18114603346158
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.56201721375773,
+            "absolute_noise_sigma": 1.465572795317743,
+            "expected_snr_db": 30.405786475093322,
+            "realized_snr_db": 30.437846140818493
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.47771364925813,
+            "absolute_noise_sigma": 1.4947771364925828,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.02915865179901
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 64.02715016364706,
+            "absolute_noise_sigma": 1.4947771364925828,
+            "expected_snr_db": 32.63575450907289,
+            "realized_snr_db": 32.63659888154612
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.96743646936299,
+            "absolute_noise_sigma": 1.4947771364925828,
+            "expected_snr_db": 31.310580733957355,
+            "realized_snr_db": 31.21791734158059
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.07325855349096,
+            "absolute_noise_sigma": 1.4947771364925828,
+            "expected_snr_db": 29.96395632181656,
+            "realized_snr_db": 29.90246262798495
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312009_faulted_mild.npz",
+      "archive_sha256": "b0f1e69401bedcc4aba8d9116c9f40acefcf00a6a34d5a98bdae179e4d5b2912",
+      "seconds": 0.2669820000010077
+    },
+    {
+      "name": "f11700000000_seed71312010_healthy_mild",
+      "pair_id": "f11700000000_seed71312010",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312010,
+      "with_faults": false,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.1523726182265012,
+        "active_phase_rmse_deg": 1.8751343901116087,
+        "complex_nrmse": 0.036299231849288835,
+        "unaligned_complex_nrmse": 0.03630659189790567,
+        "fault_precision": null,
+        "fault_recall": null,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0007018370648124,
+          0.00020799892247842314
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.1523726182265012,
+        "active_phase_rmse_deg": 1.8751343901116087,
+        "complex_nrmse": 0.036299231849288835,
+        "unaligned_complex_nrmse": 0.03630659189790567,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 0,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [],
+        "actual_fault_indices": [],
+        "alignment_complex": [
+          1.0007018370648124,
+          0.00020799892247842314
+        ],
+        "active_phase_count": 1024,
+        "phase_unscored_count": 0
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1024,
+        "precision": null,
+        "recall": null,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1024,
+        "complex_nrmse": 0.036299231849288835,
+        "amplitude_rmse_db": 0.1523726182265012,
+        "phase_rmse_deg": 1.8751343901116087,
+        "true_amplitude_std_db": 1.467266074922811,
+        "estimated_amplitude_std_db": 1.4599952191865755,
+        "true_phase_std_deg": 4.986430763637481,
+        "estimated_phase_std_deg": 5.3118003243722915
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15262737365069826,
+        "active_phase_rmse_deg": 1.8751105222752122,
+        "complex_nrmse": 0.03630659189790567
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333160017950128
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1024,
+        "truth_inactive_count": 0,
+        "phase_scored_count": 1024,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 0,
+        "absolute_amplitude_threshold": 0.1333160017950128
+      },
+      "selected_alpha": 1e-07,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07460362159997286,
+      "training_field_nrmse": 0.0746236373303027,
+      "regularized_effective_rank": 1023.9999999999281,
+      "normalized_lambda_absolute": 1.831198265813067e-07,
+      "training_common_gain": [
+        0.9939272966991565,
+        -0.007558999005004558
+      ],
+      "noise_sigmas": {
+        "training": 1.4823597244152706,
+        "validation": 1.4548796558481665,
+        "test": 1.4955523222837113
+      },
+      "physical_fault_indices": [],
+      "paired_fault_indices": [
+        49,
+        290,
+        359,
+        477,
+        887
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.031728812942788495,
+      "independent_test_noisy_field_nrmse": 0.03338345307058917,
+      "fit_seconds": 0.17971340000076452,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.23597244152668,
+            "absolute_noise_sigma": 1.4823597244152706,
+            "expected_snr_db": 39.99999999999998,
+            "realized_snr_db": 39.95631989509377
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.26039713095354,
+            "absolute_noise_sigma": 1.4823597244152706,
+            "expected_snr_db": 32.873922111132515,
+            "realized_snr_db": 32.881138592352286
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 55.55447384231196,
+            "absolute_noise_sigma": 1.4823597244152706,
+            "expected_snr_db": 31.475308640176962,
+            "realized_snr_db": 31.453686274008664
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.30867669598552,
+            "absolute_noise_sigma": 1.4823597244152706,
+            "expected_snr_db": 30.43939481473007,
+            "realized_snr_db": 30.419969268472325
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 145.48796558481672,
+            "absolute_noise_sigma": 1.4548796558481665,
+            "expected_snr_db": 40.00000000000001,
+            "realized_snr_db": 40.11527243909674
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.44254398598628,
+            "absolute_noise_sigma": 1.4548796558481665,
+            "expected_snr_db": 33.06066205123943,
+            "realized_snr_db": 32.98603557190054
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.55243606913758,
+            "absolute_noise_sigma": 1.4548796558481665,
+            "expected_snr_db": 31.944732801651096,
+            "realized_snr_db": 31.903587702371794
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.89125129350033,
+            "absolute_noise_sigma": 1.4548796558481665,
+            "expected_snr_db": 30.52808162937897,
+            "realized_snr_db": 30.610966324347938
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.55523222837112,
+            "absolute_noise_sigma": 1.4955523222837113,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.11039580498259
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.31499209430917,
+            "absolute_noise_sigma": 1.4955523222837113,
+            "expected_snr_db": 32.53409890890521,
+            "realized_snr_db": 32.56211595731857
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 53.54128974247376,
+            "absolute_noise_sigma": 1.4955523222837113,
+            "expected_snr_db": 31.077744340967037,
+            "realized_snr_db": 31.024843850788976
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 47.68697911952976,
+            "absolute_noise_sigma": 1.4955523222837113,
+            "expected_snr_db": 30.071964000575026,
+            "realized_snr_db": 30.162877327919816
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312010_healthy_mild.npz",
+      "archive_sha256": "04a8c479c8451f365a45fd2de6535ccb6b07fecb7fbac36dc635166672f22075",
+      "seconds": 0.26711530000466155
+    },
+    {
+      "name": "f11700000000_seed71312010_faulted_mild",
+      "pair_id": "f11700000000_seed71312010",
+      "frequency_hz": 11700000000.0,
+      "seed": 71312010,
+      "with_faults": true,
+      "regime": {
+        "name": "mild",
+        "amplitude_std_db": 0.2,
+        "phase_std_deg": 3.0,
+        "domain": "declared"
+      },
+      "domain": "declared",
+      "status": "completed",
+      "metrics": {
+        "active_amplitude_rmse_db": 0.15347487837700877,
+        "active_phase_rmse_deg": 1.8765317449295411,
+        "complex_nrmse": 0.03637091114018739,
+        "unaligned_complex_nrmse": 0.036379393941178735,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          49,
+          290,
+          359,
+          477,
+          887
+        ],
+        "actual_fault_indices": [
+          49,
+          290,
+          359,
+          477,
+          887
+        ],
+        "alignment_complex": [
+          1.000763400206009,
+          0.00019002049248837633
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "legacy_metrics": {
+        "active_amplitude_rmse_db": 0.15347487837700877,
+        "active_phase_rmse_deg": 1.8765317449295411,
+        "complex_nrmse": 0.03637091114018739,
+        "unaligned_complex_nrmse": 0.036379393941178735,
+        "fault_precision": 1.0,
+        "fault_recall": 1.0,
+        "healthy_false_positive_rate": 0.0,
+        "true_positive": 5,
+        "false_positive": 0,
+        "false_negative": 0,
+        "flagged_indices": [
+          49,
+          290,
+          359,
+          477,
+          887
+        ],
+        "actual_fault_indices": [
+          49,
+          290,
+          359,
+          477,
+          887
+        ],
+        "alignment_complex": [
+          1.000763400206009,
+          0.00019002049248837633
+        ],
+        "active_phase_count": 1023,
+        "phase_unscored_count": 1
+      },
+      "coefficient_acceptance_passed": true,
+      "legacy_joint_acceptance_passed": true,
+      "injected_fault_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "oracle_nominal_threshold_detection": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true
+      },
+      "truth_through_detector": {
+        "true_positives": 5,
+        "false_positives": 0,
+        "false_negatives": 0,
+        "true_negatives": 1019,
+        "precision": 1.0,
+        "recall": 1.0,
+        "false_positive_rate": 0.0,
+        "exact_mask_match": true,
+        "flagged_indices": [
+          49,
+          290,
+          359,
+          477,
+          887
+        ],
+        "normal_noninjected_threshold_crossings": 0,
+        "legacy_joint_acceptance_passed": true
+      },
+      "truth_used_for_model_selection": false,
+      "noninjected_metrics": {
+        "count": 1019,
+        "complex_nrmse": 0.036364132851070964,
+        "amplitude_rmse_db": 0.15288730429457656,
+        "phase_rmse_deg": 1.876583430159087,
+        "true_amplitude_std_db": 1.4664103498594103,
+        "estimated_amplitude_std_db": 1.4590674516067041,
+        "true_phase_std_deg": 4.987240347491585,
+        "estimated_phase_std_deg": 5.312017513439398
+      },
+      "target_passed": {
+        "baseline": true
+      },
+      "unaligned_metrics": {
+        "active_amplitude_rmse_db": 0.15373619092393415,
+        "active_phase_rmse_deg": 1.8765282395164053,
+        "complex_nrmse": 0.036379393941178735
+      },
+      "aligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333160017950128
+      },
+      "unaligned_mask_counts": {
+        "truth_active_count": 1023,
+        "truth_inactive_count": 1,
+        "phase_scored_count": 1023,
+        "truth_active_but_estimate_low_count": 0,
+        "phase_unscored_count": 1,
+        "absolute_amplitude_threshold": 0.1333160017950128
+      },
+      "selected_alpha": 2.1544346900318822e-07,
+      "selection_method": "independent_validation",
+      "selection_field_nrmse": 0.07426201135982581,
+      "training_field_nrmse": 0.07428497150006394,
+      "regularized_effective_rank": 1023.9999999997264,
+      "normalized_lambda_absolute": 3.9451970681938956e-07,
+      "training_common_gain": [
+        0.9902759384682689,
+        -0.006650240091717149
+      ],
+      "noise_sigmas": {
+        "training": 1.481479534887406,
+        "validation": 1.452629562389131,
+        "test": 1.4919014712083725
+      },
+      "physical_fault_indices": [
+        49,
+        290,
+        359,
+        477,
+        887
+      ],
+      "paired_fault_indices": [
+        49,
+        290,
+        359,
+        477,
+        887
+      ],
+      "measurement_states": 4,
+      "observation_counts": {
+        "training": 15876,
+        "validation": 5292,
+        "test": 5292
+      },
+      "truth_used_for_selection": false,
+      "test_used_for_selection": false,
+      "independent_test_clean_field_nrmse": 0.03181135537849572,
+      "independent_test_noisy_field_nrmse": 0.033459146379860936,
+      "fit_seconds": 0.1787038999973447,
+      "state_snr": {
+        "training": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 148.1479534887406,
+            "absolute_noise_sigma": 1.481479534887406,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 39.95631989509379
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.6484446164421,
+            "absolute_noise_sigma": 1.481479534887406,
+            "expected_snr_db": 32.93057568893906,
+            "realized_snr_db": 32.93779217015882
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 56.17262078468845,
+            "absolute_noise_sigma": 1.481479534887406,
+            "expected_snr_db": 31.576580604515414,
+            "realized_snr_db": 31.554958238347112
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 50.22031084890914,
+            "absolute_noise_sigma": 1.481479534887406,
+            "expected_snr_db": 30.60367480026036,
+            "realized_snr_db": 30.58424925400262
+          }
+        ],
+        "validation": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 145.26295623891306,
+            "absolute_noise_sigma": 1.452629562389131,
+            "expected_snr_db": 39.99999999999999,
+            "realized_snr_db": 40.11527243909673
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 65.78209729048852,
+            "absolute_noise_sigma": 1.452629562389131,
+            "expected_snr_db": 33.11905674987207,
+            "realized_snr_db": 33.04443027053317
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 57.99610733760616,
+            "absolute_noise_sigma": 1.452629562389131,
+            "expected_snr_db": 32.02487933495426,
+            "realized_snr_db": 31.983734235674962
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 49.92927031811517,
+            "absolute_noise_sigma": 1.452629562389131,
+            "expected_snr_db": 30.72400681933995,
+            "realized_snr_db": 30.80689151430892
+          }
+        ],
+        "test": [
+          {
+            "canonical_state_id": 0,
+            "clean_rms": 149.19014712083722,
+            "absolute_noise_sigma": 1.4919014712083725,
+            "expected_snr_db": 40.0,
+            "realized_snr_db": 40.11039580498259
+          },
+          {
+            "canonical_state_id": 1,
+            "clean_rms": 63.48262499941714,
+            "absolute_noise_sigma": 1.4919014712083725,
+            "expected_snr_db": 32.57829468518765,
+            "realized_snr_db": 32.60631173360101
+          },
+          {
+            "canonical_state_id": 2,
+            "clean_rms": 54.263881015003314,
+            "absolute_noise_sigma": 1.4919014712083725,
+            "expected_snr_db": 31.21541419106054,
+            "realized_snr_db": 31.16251370088248
+          },
+          {
+            "canonical_state_id": 3,
+            "clean_rms": 48.595130121510635,
+            "absolute_noise_sigma": 1.4919014712083725,
+            "expected_snr_db": 30.25705214271366,
+            "realized_snr_db": 30.34796547005845
+          }
+        ]
+      },
+      "archive": "f11700000000_seed71312010_faulted_mild.npz",
+      "archive_sha256": "70b28716bb4cafb7c77841a26fe10ca1990331dbacaf56ddc3bfb6f5cc27a2d3",
+      "seconds": 0.26612330000352813
+    }
+  ],
+  "total_seconds": 12.767672300004051,
+  "summary": [
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": false,
+      "denominator": 10,
+      "counts": {
+        "completed": 10,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 10
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.153536550486959,
+          "minimum": 0.14502203234370462,
+          "maximum": 0.16410690508600057
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9026583825742958,
+          "minimum": 1.8608651829554228,
+          "maximum": 1.9628996616676861
+        },
+        "complex_nrmse": {
+          "mean": 0.03648421416591402,
+          "minimum": 0.035835017243825616,
+          "maximum": 0.03754013225402902
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 0,
+        "false_positives": 3,
+        "false_negatives": 0,
+        "true_negatives": 10237
+      }
+    },
+    {
+      "frequency_hz": 11700000000.0,
+      "regime": "mild",
+      "domain": "declared",
+      "with_faults": true,
+      "denominator": 10,
+      "counts": {
+        "completed": 10,
+        "failed": 0,
+        "timed_out": 0,
+        "rejected": 0,
+        "pending": 0
+      },
+      "coverage": 1.0,
+      "target_pass_counts": {
+        "baseline": 10
+      },
+      "all_cases_baseline_passed": true,
+      "completed_case_metrics": {
+        "active_amplitude_rmse_db": {
+          "mean": 0.1549467752074674,
+          "minimum": 0.14517107182685116,
+          "maximum": 0.16614417047096447
+        },
+        "active_phase_rmse_deg": {
+          "mean": 1.9041273095736906,
+          "minimum": 1.8443188361272107,
+          "maximum": 1.9692742703220905
+        },
+        "complex_nrmse": {
+          "mean": 0.0364981965647108,
+          "minimum": 0.035722473876264926,
+          "maximum": 0.03759260430279942
+        }
+      },
+      "injected_detection_counts": {
+        "true_positives": 50,
+        "false_positives": 3,
+        "false_negatives": 0,
+        "true_negatives": 10187
+      }
+    }
+  ],
+  "completed_utc": "2026-11-12T06:00:37.977766+00:00",
+  "registered_case_count": 20,
+  "completed_case_count": 20,
+  "failed_case_count": 0,
+  "timed_out_case_count": 0,
+  "rejected_case_count": 0
+}
