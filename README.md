@@ -1,21 +1,36 @@
-# field2array · 阵列复幅度反演
+# field2array
 
-用虚拟测量环境研究近场阵列复幅度反演。[GitHub 仓库](https://github.com/YS-Pan/field2array)。现有实测数据路线已退出。
+Recover relative antenna array element amplitudes and phases from simulated near-field measurements.
 
-稳定轻档 K4 受限首版在20例独立确认中全部通过原三项系数基准，最坏幅度 RMSE **0.166 dB**、相位 RMSE **1.969°**、复系数 NRMSE **3.759%**。支持11.7 GHz、已知32×32错列几何、正常幅度±2.5 dB／相位σ5°，以及跨平面固定的非参考码未知误差σ0.2 dB／3°。恢复的是相对逐元标量等效辐射系数。
+This Python project studies how well individual element coefficients can be recovered when amplitudes and phases vary across an array. The current K4 method combines complex near-field scans from four excitation sign patterns: all ones, alternating rows, alternating columns, and a checkerboard. It uses ridge regression, with the regularization parameter selected on separate noisy validation measurements.
 
-会话漂移、其他频率及未知几何尚未确认；故障诊断存在误报，单状态反演不继承K4的通过结论。完整条件、评分定义和逐案结果见[首版报告](devDoc/tasks/20261112-simulation-research/research/k4-first-version-results.md)。
+The current benchmark covers a known 32 × 32 staggered array at 11.7 GHz. All 20 confirmation cases passed the predefined coefficient-error thresholds under the conditions below. These are simulation results; real measurement data are outside the current scope.
 
-## 安装与复现
+## Install and reproduce
 
-Python 3.10及以上，从项目根执行：
+Requires Python 3.10 or later. From a terminal:
 
-```powershell
+```sh
 git clone https://github.com/YS-Pan/field2array.git
 cd field2array
 python -m pip install -e "./experiments/20261027-simulation[test]"
 python -m array_reconstruct --help
+```
 
+Run the K4 confirmation benchmark from the repository root. It generates its own operators and runs the 20 registered cases; no previous checkout, measurement data, GPU, or local memory service is required.
+
+**Bash / zsh**
+
+```sh
+export OPENBLAS_NUM_THREADS=4 OMP_NUM_THREADS=4 MKL_NUM_THREADS=4
+python -B experiments/20261027-simulation/scripts/run_k4_research.py \
+  --policy experiments/20261027-simulation/configs/k4_confirmation_20261112.json \
+  --generate-operators --output tmp/k4-confirmation-reproduction
+```
+
+**PowerShell**
+
+```powershell
 $env:OPENBLAS_NUM_THREADS = '4'
 $env:OMP_NUM_THREADS = '4'
 $env:MKL_NUM_THREADS = '4'
@@ -24,30 +39,51 @@ python -B experiments/20261027-simulation/scripts/run_k4_research.py `
   --generate-operators --output tmp/k4-confirmation-reproduction
 ```
 
-输出目录须尚不存在。完整确认会重建算子并执行20案，不需要旧项目、实测数据、GPU或basePack。其他shell可设置同名环境变量，并将最后一条命令合并为一行。普通wheel安装也包含所需参考几何；可选GPU依赖和CPU测试命令见[路线说明](experiments/20261027-simulation/README.md)。
+The output directory must not already exist. Results, per-case coefficients, and run receipts are written there. To reproduce the 16 development cases, use `k4_development_20261112.json` and a different output directory. The reference geometry is included in both editable and wheel installations.
 
-## 结果与证据
+The `reconstruct` CLI command is a separate, single-state baseline. Use the script above to reproduce the K4 results.
 
-![独立确认的逐元真值、恢复及误差](artifacts/runs/k4-visuals-20261112/element_maps.png)
+## Results and tested conditions
 
-[36案指标 CSV](artifacts/runs/k4-research-20261112/metrics.csv)、[确认结果 JSON](artifacts/runs/k4-research-20261112/confirmation/results.json)、[开发结果 JSON](artifacts/runs/k4-research-20261112/development/results.json)和[47秒中文演示视频](artifacts/runs/k4-visuals-20261112/k4-explained.mp4)随仓库提供。公开小证据的大小与SHA-256见[发布清单](devDoc/archive/20261112-github-publication/published-evidence.json)；完整NPZ和历史档案仅保存在本机，清单中的全量归档路径不表示文件均随Git分发。
+The confirmation set uses 10 independent random seeds, each with a healthy array and a paired array containing five injected faults: 20 cases in total. All cases completed and passed all three thresholds.
 
-## 项目入口
+| Metric | Worst across 20 cases | Threshold per case |
+| --- | ---: | ---: |
+| Element amplitude RMSE | 0.166 dB | ≤ 0.5 dB |
+| Element phase RMSE | 1.969° | ≤ 5° |
+| Complex coefficient NRMSE | 3.759% | ≤ 10% |
 
-| 入口 | 内容 |
+Each row reports its own worst value; the three values need not come from the same case. Scores remove one common complex scalar, so the recovery claim concerns relative element coefficients. A switched-off element is excluded from amplitude and phase RMSE but remains in the full-array complex coefficient error.
+
+| Condition | Confirmation setting |
 | --- | --- |
-| [项目纲领](devDoc/project-charter.md) | 用户目标、本次范围及意图原文 |
-| [当前系统](devDoc/system/overview.md) | 新结构、可用能力与边界 |
-| [当前研究计划（active）](devDoc/tasks/20261112-simulation-research/plan.md) | 有界开发16案、稳定轻档K4确认20/20；会话及频率扩展仍开放 |
-| [仿真路线](experiments/20261027-simulation/README.md) | 迁入代码、依赖、验证及运行入口 |
-| [发布检查](devDoc/archive/20261112-github-publication/result.md) | 打包修正、检查范围与首版发布状态 |
-| [旧实验结论](devDoc/archive/legacy-20261027/experimental-conclusions.md) | 仿真与实测结果、FFT/角谱结论及局限 |
-| [聊天历史索引](devDoc/archive/legacy-20261027/chat-history-index.md) | 人类原话、完整日志、覆盖范围与缺口 |
-| [迁移记录](devDoc/archive/20261110-migration/result.md) | 来源到新结构的映射、校验及保留范围 |
-| [迁移后续整改计划](devDoc/tasks/20261110-migration-followup/plan.md) | 提供者原话补迁、几何打包与恢复核验；待执行 |
-| [basepack 接入](devDoc/system/basepack.md) | 独立记忆库与本机工具使用 |
-| [basepack 实测问题](devDoc/archive/20261110-migration/basepack-test-findings.md) | 本次作为测试样本发现的问题、处理和待修复项 |
+| Array and frequency | Known 32 × 32 staggered geometry, 11.7 GHz |
+| Normal element variation | Independent uniform amplitude offsets within ±2.5 dB; Gaussian phase offsets with σ = 5° |
+| Excitation | Four coherent sign patterns applied to the same underlying element coefficients |
+| Unknown switching errors | Non-reference patterns: Gaussian amplitude σ = 0.2 dB and phase σ = 3°, fixed across training, validation, and test planes |
+| Forward and inverse models | Finite-aperture simulated fields; point-source inverse model |
+| Noise | Fixed absolute noise per plane, set from the clean uncoded field RMS divided by 100 |
 
-根目录只保留一套开发文档 `devDoc/`；路线代码和依赖在 `experiments/`。完整聊天日志、用户请求原文、历史原件和本机basePack配置/凭据/数据库不进入公开Git；`artifacts/` 仅精确放行本次已审查的小型科学证据与媒体，`tmp/` 保持忽略。聊天索引是本机档案导航，不包含聊天正文。
+The Gaussian σ values describe distributions, not hard bounds on each element's error. Session drift, other frequencies, unknown geometry, and larger switching errors have not been confirmed. Fault detection has false positives and is assessed separately from coefficient recovery. Passing these finite simulation cases does not establish a general reliability guarantee or validate real hardware.
 
-旧项目仍留在原位，以便查阅未迁入的大型数据与运行产物。历史运行计划和记录属于档案，后续工作从项目纲领和当前系统入口开始。
+![Element amplitude and phase: ground truth, reconstruction, and error](artifacts/runs/k4-visuals-20261112/element_maps.png)
+
+The figure shows the faulted confirmation case with the largest complex coefficient NRMSE. Existing figures and the [47-second demonstration video](artifacts/runs/k4-visuals-20261112/k4-explained.mp4) have Chinese captions.
+
+The repository includes [metrics for all 36 cases](artifacts/runs/k4-research-20261112/metrics.csv), [confirmation results](artifacts/runs/k4-research-20261112/confirmation/results.json), and [development results](artifacts/runs/k4-research-20261112/development/results.json). The [evidence manifest](devDoc/archive/20261112-github-publication/published-evidence.json) lists the published files and their SHA-256 hashes. Full per-case NPZ archives and historical raw material are retained locally; the full archive manifests also list files that are not distributed in Git.
+
+## Validation and documentation
+
+The 2026-11-12 publication checks passed 469 CPU tests and 43 additional tensor CPU interface checks. A full replay of the K4 confirmation command reproduced all 20 cases with identical coefficient-error metrics. CUDA execution was not tested. See the [publication record](devDoc/archive/20261112-github-publication/result.md) for details.
+
+Supporting documentation is currently in Chinese:
+
+| Document | Contents |
+| --- | --- |
+| [K4 result report](devDoc/tasks/20261112-simulation-research/research/k4-first-version-results.md) | Model assumptions, scoring, per-case evidence, and limitations |
+| [Simulation route](experiments/20261027-simulation/README.md) | Code entry points, dependencies, CPU test commands, and optional GPU modules |
+| [Research plan](devDoc/tasks/20261112-simulation-research/plan.md) | Completed work and open questions |
+| [System overview](devDoc/system/overview.md) | Implementation layout and links to historical material |
+| [Project charter](devDoc/project-charter.md) | Research goals and scope |
+
+Complete chat logs, user-request originals, local memory databases, credentials, and large raw archives are excluded from public Git. Only the reviewed scientific evidence listed above is included from `artifacts/`.
